@@ -4,10 +4,11 @@
             <h1>Théo Migeat</h1>
             <h2>Étudiant et alternant en informatique !</h2>
             <section>
-                <a href="https://www.linkedin.com/in/theo-migeat/" target="_blank"><font-awesome-icon class="icon" :icon="['fab', 'linkedin-in']"/></a>
-                <a href="https://github.com/STM3900" target="_blank"><font-awesome-icon class="icon" :icon="['fab', 'github']"/></a>
-                <a href="mailto:theo.migeat@epsi.fr" target="_blank"><font-awesome-icon class="icon" :icon="['fas', 'envelope']"/></a>
-                <a href="" target="_blank"><font-awesome-icon class="icon" :icon="['fas', 'file']"/></a>
+                <a @mouseover="changeLabel('Linkedin')" href="https://www.linkedin.com/in/theo-migeat/" target="_blank"><font-awesome-icon class="icon" :icon="['fab', 'linkedin-in']"/></a>
+                <a @mouseover="changeLabel('Github')" href="https://github.com/STM3900" target="_blank"><font-awesome-icon class="icon" :icon="['fab', 'github']"/></a>
+                <a @mouseover="changeLabel('Mail')" href="mailto:theo.migeat@epsi.fr" target="_blank"><font-awesome-icon class="icon" :icon="['fas', 'envelope']"/></a>
+                <a @mouseover="changeLabel('Voir mon CV')" href="" target="_blank"><font-awesome-icon class="icon" :icon="['fas', 'file']"/></a>
+                <p>{{ iconText }}</p>
             </section>
         </article>
         <aside>
@@ -37,7 +38,7 @@
                             },
                             links: {
                                 color: '#ffffff',
-                                distance: 50,
+                                distance: 100,
                                 enable: true,
                                 opacity: 0.5,
                                 width: 1
@@ -50,7 +51,7 @@
                                 enable: true,
                                 outMode: 'out',
                                 random: true,
-                                speed: 0.1,
+                                speed: 0.2,
                                 straight: false
                             },
                             number: {
@@ -58,7 +59,7 @@
                                     enable: true,
                                     value_area: 800
                                 },
-                                value: 40
+                                value: 20
                             },
                             opacity: {
                                 value: 0.8
@@ -80,7 +81,17 @@
 
 <script>
 export default {
-    name: 'Home'
+    name: 'Home',
+    data: function () {
+        return {
+            iconText: 'slt'
+        }
+    },
+    methods: {
+        changeLabel(label){
+            this.iconText = label;
+        }
+    }
 }
 </script>
 
@@ -88,8 +99,7 @@ export default {
     aside{
         position: absolute;
         height: 100vh;
-        width: 100vw;
-
+        width: 100%;
     }
 
     aside .particle{
@@ -142,17 +152,42 @@ export default {
         color: white;
     }
 
+    p{
+        transition: 0.3s;
+        opacity: 0;
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        color: white;
+
+        
+    }
+
+    a:hover ~ p{
+        opacity: 1;
+    }
+
     section{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         align-content: center;
+        flex-wrap: wrap;
+
+        width: 350px;
+        overflow: hidden;
     }
 
     section a{
         transition: 0.3s;
         color: #0CAADC;
+        width: 25%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     section a:hover{

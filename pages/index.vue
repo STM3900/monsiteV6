@@ -1,14 +1,16 @@
 <template>
   <div>
     <Home/>
+    <About/>
   </div>
 </template>
 
 <script>
 import Home from "../components/Home";
+import About from "../components/About";
 
 export default {
-  components: { Home }
+  components: { Home, About }
 }
 </script>
 
@@ -20,5 +22,6 @@ export default {
   body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    max-width: 100vw;
   }
 </style>
