@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <header>
         <article>
             <h1>Théo Migeat</h1>
             <h2>Étudiant et alternant en informatique !</h2>
@@ -76,7 +76,7 @@
                     }"
                 />
         </aside>
-    </div>
+    </header>
 </template>
 
 <script>
@@ -108,7 +108,7 @@ export default {
         animation-timing-function: ease;
     }
 
-    div{
+    header{
         height: 100vh;
         width: 100%;
 
