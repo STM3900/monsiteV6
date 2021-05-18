@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="part">
     <h1>Presentation</h1>
   </div>
 </template>
@@ -12,6 +12,6 @@ export default {
 
 <style scoped>
 div {
-  background: #152852;
+  background: #fdfffc;
 }
 </style>

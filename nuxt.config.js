@@ -11,7 +11,15 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Quicksand&display=swap'
+      }
     ]
   },
 
@@ -28,6 +36,20 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    ['nuxt-fontawesome', {
+      component: 'fa', //customize component name
+      imports: [{
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['faEnvelope', 'faFileAlt']
+          },
+          {set: '@fortawesome/free-brands-svg-icons',
+          icons: ['faLinkedinIn','faGithub']
+          },
+          {set: '@fortawesome/free-regular-svg-icons',
+          icons: []
+          },
+      ]
+   }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

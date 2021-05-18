@@ -30,7 +30,17 @@ export default {
 </script>
 
 <style>
-div {
-  height: 50vh;
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.part {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.part h1 {
+  padding-top: 25px;
 }
 </style>

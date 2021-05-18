@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="part">
     <h1>GlobalPath</h1>
   </div>
 </template>
@@ -12,6 +12,6 @@ export default {
 
 <style scoped>
 div {
-  background: #4b3d60;
+  background: #fdfffc;
 }
 </style>
