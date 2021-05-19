@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Particles class="particle" id="tsparticles" :options="particleConfig" />
     <header>
       <h1>Théo Migeat</h1>
       <p>Étudiant et développeur front-end</p>
@@ -46,7 +47,67 @@ export default {
       ],
       iconLabel: ["LinkedIn", "Github", "Envoyer un mail", "Voir mon CV"],
       index: 0,
-      isHover: false
+      isHover: false,
+      particleConfig: {
+        fpsLimit: 120,
+        interactivity: {
+          detectsOn: "canvas",
+          events: {
+            onHover: {
+              enable: true,
+              mode: "repulse"
+            },
+            resize: true
+          },
+          modes: {
+            repulse: {
+              distance: 100,
+              duration: 0.4
+            }
+          }
+        },
+        particles: {
+          color: {
+            value: "#ffffff"
+          },
+          links: {
+            color: "#ffffff",
+            distance: 100,
+            enable: true,
+            opacity: 0.5,
+            width: 1
+          },
+          collisions: {
+            enable: true
+          },
+          move: {
+            direction: "right",
+            enable: true,
+            outMode: "out",
+            random: true,
+            speed: 0.2,
+            straight: false
+          },
+          number: {
+            density: {
+              enable: true,
+              value_area: 800
+            },
+            value: 20
+          },
+          opacity: {
+            value: 0.8
+          },
+          shape: {
+            type: "circle"
+          },
+          size: {
+            random: true,
+            value: 5
+          }
+        },
+        detectRetina: true
+      }
     };
   },
   methods: {
@@ -63,6 +124,10 @@ div {
   height: 80vh;
   width: 100%;
   background: linear-gradient(0deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.particle {
+  position: absolute;
 }
 
 .wave {
@@ -85,6 +150,7 @@ header h1 {
   color: white;
   font-size: 75px;
   font-weight: normal;
+  z-index: 99999;
 }
 
 header p {
@@ -92,10 +158,12 @@ header p {
   font-size: 20px;
   font-style: italic;
   margin-bottom: 25px;
+  z-index: 99999;
 }
 
 header section {
   color: white;
+  z-index: 99999;
 }
 
 .icon {
