@@ -121,18 +121,22 @@ export default {
 
 <style scoped>
 div {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background: linear-gradient(0deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 .particle {
   position: absolute;
+
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 
 .wave {
   position: absolute;
-  bottom: 20vh;
+  bottom: 10vh;
 }
 
 header {
@@ -144,6 +148,10 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
+
+  animation-duration: 1s;
+  animation-name: fadeHeader;
+  animation-timing-function: ease;
 }
 
 header h1 {
@@ -171,6 +179,11 @@ header section {
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: rotate(10deg);
 }
 
 .icon-label {
@@ -195,5 +208,32 @@ header section {
 
 header section a {
   color: white;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeHeader {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 </style>

@@ -1,6 +1,11 @@
 <template>
   <div class="part">
-    <h1>Presentation</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perferendis
+      natus ducimus aspernatur maiores qui? Vel harum magni provident nihil
+      eaque, soluta dolorem temporibus modi aliquid repudiandae. Dolor, animi
+      ipsa.
+    </p>
   </div>
 </template>
 
@@ -13,5 +18,14 @@ export default {
 <style scoped>
 div {
   background: #fdfffc;
+  padding-bottom: 25px;
+}
+
+div h1 {
+  padding-top: 0;
+}
+
+div p {
+  text-align: center;
 }
 </style>
