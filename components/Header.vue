@@ -61,7 +61,7 @@ export default {
           },
           modes: {
             repulse: {
-              distance: 100,
+              distance: 75,
               duration: 0.4
             }
           }
@@ -230,10 +230,12 @@ header section a {
 @keyframes fadeHeader {
   from {
     opacity: 0;
+    transform: scale(0.99);
   }
 
   to {
     opacity: 1;
+    transform: scale(1);
   }
 }
 </style>

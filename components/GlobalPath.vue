@@ -5,17 +5,22 @@
       <section>
         <h2>Scolaire</h2>
         <timeline>
-          <timeline-title>
-            <h4>2018 - Present</h4>
-            <h3>Master en informatique</h3>
-            <h5>Epsi Grenoble la pire école</h5>
+          <timeline-title v-for="(item, i) in schoolTab" :key="i" class="timeline-title-custom" bg-color="#00C3F6">
+            <h4>{{ item.beginDate }} - {{ item.endDate ? item.endDate : "Présent"}}</h4>
+            <h3>{{ item.label }}</h3>
+            <h5>{{ item.school }}</h5>
           </timeline-title>
-          <timeline-item bg-color="#9dd8e0">item1</timeline-item>
-          <timeline-item :hollow="true">item2</timeline-item>
         </timeline>
       </section>
       <section>
         <h2>Professionel</h2>
+        <timeline>
+          <timeline-title v-for="(item, j) in workTab" :key="j" class="timeline-title-custom" bg-color="#00ADFF">
+            <h4>{{ item.beginDate }} - {{ item.endDate ? item.endDate : "Présent"}}</h4>
+            <h3>{{ item.label }}</h3>
+            <h5>{{ item.work }}</h5>
+          </timeline-title>
+        </timeline>
       </section>
     </article>
   </div>
@@ -26,7 +31,11 @@ import { Timeline, TimelineItem, TimelineTitle } from "vue-cute-timeline";
 
 export default {
   name: "GlobalPath",
-  components: { Timeline, TimelineItem, TimelineTitle }
+  components: { Timeline, TimelineItem, TimelineTitle },
+  props: {
+    schoolTab: Array,
+    workTab: Array
+  }
 };
 </script>
 
@@ -35,8 +44,12 @@ div {
   background: #fdfffc;
 }
 
-div h1 .icon {
-  margin-right: 20px;
+.timeline-title-custom { 
+  display: block;
+}
+
+.timeline-title-custom:hover {
+  cursor: auto;
 }
 
 article {
@@ -51,11 +64,26 @@ article {
 }
 
 article section {
-  flex-grow: 1;
+  width: 50%;
 }
 
 article section h2 {
   padding-bottom: 10px;
+  color:rgb(50, 50, 50);
+}
+
+article section h3 {
+  font-size: 20px;
+}
+
+article section h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+article section h5 {
+  font-size: 12px;
+  font-weight: normal;
 }
 
 /*

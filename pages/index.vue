@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Presentation />
-    <GlobalPath />
+    <GlobalPath :schoolTab="schoolTab" :workTab="workTab" />
     <Skills />
     <Projects />
     <Contact />
@@ -25,6 +25,42 @@ export default {
     Skills,
     Projects,
     Contact
+  },
+  data() {
+    return {
+      schoolTab: [
+        {
+          beginDate: 2018,
+          label: "Master en informatique",
+          school: "Epsi Grenoble"
+        },
+        {
+          beginDate: 2015,
+          endDate: 2018,
+          label: "Baccalauréat STI2D",
+          school: "Lycée Polyvalent Vaucanson"
+        }
+      ],
+      workTab: [
+        {
+          beginDate: "Septembre 2020",
+          label: "Alternance en vue.js",
+          work: "Erplain"
+        },
+        {
+          beginDate: "Janvier",
+          endDate: "Février 2020",
+          label: "Stage en développement web",
+          work: "Agence Cerf à Lunettes"
+        },
+        {
+          beginDate: "Mai",
+          endDate: "Juin 2019",
+          label: "Stage en développement web",
+          work: "Auphys Technologie"
+        }
+      ]
+    }
   }
 };
 </script>
@@ -42,5 +78,15 @@ body {
 
 .part h1 {
   padding-top: 25px;
+
+  background: -webkit-linear-gradient(0deg, #00d2ff 0%, #3a47d5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.part .icon {
+  margin-right: 20px;
+  color: #00C3F6;
 }
 </style>
