@@ -3,7 +3,7 @@
     <Header />
     <Presentation />
     <GlobalPath :schoolTab="schoolTab" :workTab="workTab" />
-    <Skills />
+    <Skills :skills="skills" />
     <Projects />
     <Contact />
   </div>
@@ -59,6 +59,15 @@ export default {
           label: "Stage en développement web",
           work: "Auphys Technologie"
         }
+      ],
+      skills: [
+        "Vue.js",
+        "Javascript",
+        "Angular",
+        "C, C++, C#",
+        "PHP",
+        "MYSQL",
+        "GitHub"
       ]
     }
   }
@@ -87,6 +96,6 @@ body {
 
 .part .icon {
   margin-right: 20px;
-  color: #00C3F6;
+  color: #4ccff7;
 }
 </style>
