@@ -5,8 +5,16 @@
       <section>
         <h2>Scolaire</h2>
         <timeline>
-          <timeline-title v-for="(item, i) in schoolTab" :key="i" class="timeline-title-custom" bg-color="#00C3F6">
-            <h4>{{ item.beginDate }} - {{ item.endDate ? item.endDate : "Présent"}}</h4>
+          <timeline-title
+            v-for="(item, i) in schoolTab"
+            :key="i"
+            class="timeline-title-custom"
+            bg-color="#00C3F6"
+          >
+            <h4>
+              {{ item.beginDate }} -
+              {{ item.endDate ? item.endDate : "Présent" }}
+            </h4>
             <h3>{{ item.label }}</h3>
             <h5>{{ item.school }}</h5>
           </timeline-title>
@@ -15,8 +23,16 @@
       <section>
         <h2>Professionel</h2>
         <timeline>
-          <timeline-title v-for="(item, j) in workTab" :key="j" class="timeline-title-custom" bg-color="#00ADFF">
-            <h4>{{ item.beginDate }} - {{ item.endDate ? item.endDate : "Présent"}}</h4>
+          <timeline-title
+            v-for="(item, j) in workTab"
+            :key="j"
+            class="timeline-title-custom"
+            bg-color="#00ADFF"
+          >
+            <h4>
+              {{ item.beginDate }} -
+              {{ item.endDate ? item.endDate : "Présent" }}
+            </h4>
             <h3>{{ item.label }}</h3>
             <h5>{{ item.work }}</h5>
           </timeline-title>
@@ -44,8 +60,9 @@ div {
   background: #fdfffc;
 }
 
-.timeline-title-custom { 
+.timeline-title-custom {
   display: block;
+  font-family: "Quicksand", sans-serif;
 }
 
 .timeline-title-custom:hover {
@@ -69,7 +86,7 @@ article section {
 
 article section h2 {
   padding-bottom: 10px;
-  color:rgb(50, 50, 50);
+  color: rgb(50, 50, 50);
 }
 
 article section h3 {
@@ -82,8 +99,9 @@ article section h4 {
 }
 
 article section h5 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
+  color: rgb(150, 150, 150);
 }
 
 /*

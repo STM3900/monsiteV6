@@ -1,6 +1,6 @@
 <template>
   <div class="part">
-    <h1><fa class="icon" icon="clipboard-list" />Compétences</h1>
+    <h1><fa class="icon" icon="clipboard-list" />Compétences (pas fini)</h1>
     <ul>
       <li v-for="(item, i) in skills" :key="i">{{ item }}</li>
     </ul>
@@ -21,7 +21,7 @@ div {
   background: #fdfffc;
 }
 
-ul{
+ul {
   width: 100%;
   margin-top: 25px;
 
@@ -33,8 +33,8 @@ ul{
   align-content: center;
 }
 
-li{
+li {
   width: 50%;
-  color: rgb(50, 50, 50)
+  color: rgb(50, 50, 50);
 }
 </style>
