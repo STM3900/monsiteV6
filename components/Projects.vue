@@ -2,20 +2,22 @@
   <div class="part">
     <h1><fa class="icon" icon="code" />Projets</h1>
     <div class="list">
-      <article v-for="(project, i) in data" :key="i" class="profileCard">
-        <aside>
-          <img :src="project.img" alt="" />
-        </aside>
-
-        <h2>{{ project.name }}</h2>
-      </article>
+      <ProjectCard
+        v-for="(card, i) in data"
+        :key="i"
+        :img="card.img"
+        :name="card.name"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import ProjectCard from "./ProjectCard";
+
 export default {
   name: "Projects",
+  components: { ProjectCard },
   data() {
     return {
       data: [
@@ -92,8 +94,7 @@ export default {
         }
       ]
     };
-  },
-  mounted() {}
+  }
 };
 </script>
 
@@ -103,7 +104,7 @@ export default {
 }
 
 .part h1 {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .list {
@@ -119,49 +120,14 @@ export default {
   gap: 50px 0;
 }
 
-.list article {
-  width: 300px;
-  /*
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  border: solid 1px rgb(50, 50, 50);
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  */
+/* 
+      <ProjectCard
+        v-for="(card, i) in data"
+        :key="i"
+        :img="card.img"
+        :name="card.name"
+      />
 
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.list article aside {
-  position: absolute;
-  width: 300px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.list article img {
-  position: absolute;
-  height: 70px;
-  border: solid #fdfffc 6px;
-  border-radius: 50%;
-}
-
-.list article h2 {
-  font-size: 23px;
-  padding-top: 40px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  color: rgb(50, 50, 50);
-}
-
-.list article p {
-  padding: 20px;
-}
+      import ProjectCard from "./ProjectCard";
+*/
 </style>
