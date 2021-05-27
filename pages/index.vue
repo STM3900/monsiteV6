@@ -6,6 +6,7 @@
     <Skills :skills="skills" />
     <Projects />
     <Contact />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </div>
 </template>
 
