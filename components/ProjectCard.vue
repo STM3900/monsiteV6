@@ -1,5 +1,12 @@
 <template>
-  <article ref="card" @mousemove="handleMove" @mouseleave="leave">
+  <article
+    ref="card"
+    @mousemove="handleMove"
+    @mouseleave="leave"
+    @mousedown="clicked"
+    @mouseout="out"
+    @mouseup="up"
+  >
     <aside>
       <img :src="img" alt="" />
     </aside>
@@ -67,6 +74,18 @@ export default {
     leave() {
       this.el.style.transform =
         "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+    },
+    clicked() {
+      this.el.style.transform =
+        "perspective(500px) scale(0.98) rotateX(0) rotateY(0)";
+    },
+    out() {
+      this.el.style.transform =
+        "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+    },
+    up() {
+      this.el.style.transform =
+        "perspective(500px) scale(1.05) rotateX(0) rotateY(0)";
     }
   }
 };
@@ -83,6 +102,10 @@ article {
 
 article:hover {
   cursor: pointer;
+}
+
+article:active {
+  transform: perspective(500px) scale(0.9) rotateX(0) rotateY(0);
 }
 
 article aside {
