@@ -1,12 +1,20 @@
 <template>
   <div class="part">
     <h1><fa class="icon" icon="code" />Projets</h1>
+
     <div class="list">
       <ProjectCard
         v-for="(card, i) in data"
+        class="emitCard"
         :key="i"
         :img="card.img"
         :name="card.name"
+        :description="card.description"
+        :finishDate="card.finishDate"
+        :workTime="card.workTime"
+        :link="card.link"
+        :index="i"
+        @toggle="toggle"
       />
     </div>
   </div>
@@ -94,6 +102,27 @@ export default {
         }
       ]
     };
+  },
+  mounted() {},
+  methods: {
+    toggle(index, status) {
+      const cardList = document.querySelectorAll(".emitCard");
+      if (status) {
+        for (let i = 0; i < cardList.length; i++) {
+          if (i != index) {
+            // cardList[i].style.opacity = 0;
+            // cardList[i].style.zIndex = -1;
+          }
+        }
+      } else {
+        for (let i = 0; i < cardList.length; i++) {
+          if (i != index) {
+            // cardList[i].style.opacity = 1;
+            // cardList[i].style.zIndex = 1;
+          }
+        }
+      }
+    }
   }
 };
 </script>
@@ -119,15 +148,4 @@ export default {
   align-content: center;
   gap: 50px 0;
 }
-
-/* 
-      <ProjectCard
-        v-for="(card, i) in data"
-        :key="i"
-        :img="card.img"
-        :name="card.name"
-      />
-
-      import ProjectCard from "./ProjectCard";
-*/
 </style>
