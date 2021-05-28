@@ -26,7 +26,12 @@
       <section>
         <p>{{ description }}</p>
         <nav>
-          <button @click="goToWebSite">Voir le site</button>
+          <button
+            @click="goToWebSite"
+            :style="url ? '' : 'margin-bottom: 0px;'"
+          >
+            Voir le site
+          </button>
           <button v-if="url">En savoir plus</button>
         </nav>
       </section>
