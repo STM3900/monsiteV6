@@ -27,7 +27,7 @@
         <p>{{ description }}</p>
         <nav>
           <button @click="goToWebSite">Voir le site</button>
-          <button>En savoir plus</button>
+          <button v-if="url">En savoir plus</button>
         </nav>
       </section>
     </div>
@@ -44,6 +44,7 @@ export default {
     finishDate: String,
     workTime: String,
     link: String,
+    url: String,
     index: Number
   },
   data() {

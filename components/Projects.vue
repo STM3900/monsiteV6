@@ -13,6 +13,7 @@
         :finishDate="card.finishDate"
         :workTime="card.workTime"
         :link="card.link"
+        :url="card.url"
         :index="i"
         @toggle="toggle"
       />
@@ -30,20 +31,19 @@ export default {
     return {
       data: [
         {
-          name: "MusicHours",
-          url: "musichours",
+          name: "Jourbon",
+          url: "",
           category: "projet perso",
-          link: "https://theomigeat.com/MusicHours/",
-          imgColor: "https://theomigeat.com/medias/images/MusicHoursLogo.png",
-          background: "https://theomigeat.com/medias/images/MusicHours.png",
-          finishDate: "24/12/2020",
-          workTime: "72h19m",
+          link: "https://theomigeat.com/Jourbon/",
+          imgColor: "#ef476f",
+          background: "",
+          finishDate: "30/05/2020",
+          workTime: "6h",
           description:
-            "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !",
+            "Générateur prenant un mot (que l'ont peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
           objectives: [
-            "Expérimenter de nouvelles choses en JS",
-            "Surpasser mes limites en CSS",
-            "Se connecter à une API et l'utiliser"
+            "Se remettre à coder après un mois de pause",
+            "Tester de nouvelles choses comme les animations de texte"
           ],
           languages: ["HTML / CSS", "JS", "VSCode / GitHub"]
         },
@@ -99,6 +99,112 @@ export default {
             "Permettre de savoir si mon niveau en C# / Unity s'est amélioré"
           ],
           languages: ["C#", "Unity", "VSCode / GitHub"]
+        },
+        {
+          name: "MusicHours",
+          url: "musichours",
+          category: "projet perso",
+          link: "https://theomigeat.com/MusicHours/",
+          imgColor: "https://theomigeat.com/medias/images/MusicHoursLogo.png",
+          background: "https://theomigeat.com/medias/images/MusicHours.png",
+          finishDate: "24/12/2020",
+          workTime: "72h19m",
+          description:
+            "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !",
+          objectives: [
+            "Expérimenter de nouvelles choses en JS",
+            "Surpasser mes limites en CSS",
+            "Se connecter à une API et l'utiliser"
+          ],
+          languages: ["HTML / CSS", "JS", "VSCode / GitHub"]
+        },
+        {
+          name: "BeeLeave",
+          url: "beeleave",
+          category: "projet perso",
+          link: "https://little-rpg.fr/workshop/beeleave/public/index.php",
+          imgColor: "#1c2230",
+          background: "",
+          finishDate: "13/09/19",
+          workTime: "5 Jours de projet",
+          description:
+            "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5, BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
+          objectives: [
+            "Faire un site en 5 jours",
+            "Créer une système de messagerie instantanée",
+            "Créer un système de compte et de groupe, avec plusieurs rôles possibles"
+          ],
+          languages: ["HTML / CSS", "PHP", "VSCode / GitHub"]
+        },
+        {
+          name: "AuphysWorks",
+          url: "",
+          category: "entreprise",
+          link: "https://auphys.axsiow.ovh/",
+          imgColor: "#95c11c",
+          background: "",
+          finishDate: "06/2019",
+          workTime: "Sujet de mission du stage de 1ère année",
+          description:
+            "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposé ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
+          objectives: [
+            "Faire un site fonctionnel",
+            "Apprendre de nouveaux Framework",
+            "Découvrir la vie en entreprise"
+          ],
+          languages: ["HTML / CSS", "PHP", "VSCode / GitHub"]
+        },
+        {
+          name: "Hero And Monsters",
+          url: "",
+          category: "projet perso",
+          link: "https://theomigeat.com/medias/fichiers/Projet.exe",
+          imgColor: "#000000",
+          background: "",
+          finishDate: "30/04/19",
+          workTime: "40h",
+          description:
+            "Réalisé au cours d'un projet scolaire, Hero and Monsters est un petit jeu développé en C++, dans le but de nous apprendre à faire de la programmation orientée objet (POO)",
+          objectives: [
+            "Faire un prototype fonctionel en 40h",
+            "Utiliser la POO pour optimiser le code du projet"
+          ],
+          languages: ["C++", "Visual Studio / GitHub"]
+        },
+        {
+          name: "Safe Or Well",
+          url: "",
+          category: "projet perso",
+          link: "https://mrgove10.itch.io/safe-or-well",
+          imgColor: "https://theomigeat.com/medias/images/sowLogo.png",
+          background: "",
+          finishDate: "16/03/19",
+          workTime: "2 Jours Non-Stop",
+          description:
+            "Safe Or Well est un jeu réalisé dans une équipe de 6, lors de la Scientific Game Jam de Grenoble de 2019, où vous incarnez une personne malade, forcée d'utiliser les objets connectés pour l'aider dans sa vie. Mais va-t-elle accepter de rendre les données collectées accessible à son médecin et à son assurance ?",
+          objectives: [
+            "Faire un jeu de A à Z en seulement 48h",
+            "Découvrir Unity et le langage C#"
+          ],
+          languages: ["Unity", "C#", "GitHub"]
+        },
+        {
+          name: "TEMA",
+          url: "tema",
+          category: "projet perso",
+          link: "https://tema.axsiow.ovh/",
+          imgColor: "https://theomigeat.com/medias/images/tema.png",
+          background: "",
+          finishDate: "13/02/19",
+          workTime: "+30h",
+          description:
+            "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !",
+          objectives: [
+            "Faire un site fonctionnel",
+            "Faire pour la première fois un système de création de compte",
+            "Lier le site à une Base de données fonctionnelle"
+          ],
+          languages: ["HTML / CSS", "PHP / MySQL", "VSCode / GitHub"]
         }
       ]
     };
