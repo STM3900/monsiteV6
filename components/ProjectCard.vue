@@ -10,7 +10,10 @@
     @click="showProject"
   >
     <aside>
-      <img :src="img" alt="" />
+      <img v-if="checkIfColor" :src="imgColor" alt="" />
+      <div v-else class="color" :style="'background: ' + imgColor + ';'">
+        <fa class="icon-project" icon="code" />
+      </div>
     </aside>
     <div>
       <h2>{{ name }}</h2>
@@ -35,7 +38,7 @@
 export default {
   name: "ProjectCard",
   props: {
-    img: String,
+    imgColor: String,
     name: String,
     description: String,
     finishDate: String,
@@ -59,6 +62,11 @@ export default {
     /* Get the height and width of the element */
     this.height = this.el.clientHeight;
     this.width = this.el.clientWidth;
+  },
+  computed: {
+    checkIfColor() {
+      return this.imgColor.includes(".");
+    }
   },
   methods: {
     handleMove(e) {
@@ -185,6 +193,10 @@ article div section button:hover {
   transform: scale(0.99);
 }
 
+article div section button:first-child:hover {
+  background: rgb(240, 240, 240);
+}
+
 article div section button:active {
   transform: scale(0.98);
 }
@@ -230,6 +242,27 @@ article img {
   border-radius: 50%;
   z-index: 99999;
   overflow: visible;
+}
+
+article .color {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border: solid #fdfffc 6px;
+  border-radius: 50%;
+  z-index: 99999;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+article .color .icon-project {
+  color: white;
+  font-size: 22px;
 }
 
 article h2 {

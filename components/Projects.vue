@@ -7,7 +7,7 @@
         v-for="(card, i) in data"
         class="emitCard"
         :key="i"
-        :img="card.img"
+        :imgColor="card.imgColor"
         :name="card.name"
         :description="card.description"
         :finishDate="card.finishDate"
@@ -34,7 +34,7 @@ export default {
           url: "musichours",
           category: "projet perso",
           link: "https://theomigeat.com/MusicHours/",
-          img: "https://theomigeat.com/medias/images/MusicHoursLogo.png",
+          imgColor: "https://theomigeat.com/medias/images/MusicHoursLogo.png",
           background: "https://theomigeat.com/medias/images/MusicHours.png",
           finishDate: "24/12/2020",
           workTime: "72h19m",
@@ -52,7 +52,7 @@ export default {
           url: "lazublog",
           category: "projet perso",
           link: "https://theomigeat.com/LazuBlog/",
-          img: "https://theomigeat.com/medias/images/lazulogo.png",
+          imgColor: "https://theomigeat.com/medias/images/lazulogo.png",
           background: "https://theomigeat.com/medias/images/lazublog.jpg",
           finishDate: "20/03/2020",
           workTime: "30h40m",
@@ -70,7 +70,7 @@ export default {
           url: "breakingbot",
           category: "projet perso",
           link: "https://mrgove10.itch.io/breaking-bots",
-          img: "https://theomigeat.com/medias/images/BrLogo.png",
+          imgColor: "https://theomigeat.com/medias/images/BrLogo.png",
           background: "https://theomigeat.com/medias/images/Br.jpg",
           finishDate: "09/02/2020",
           workTime: "2 Jours Non-Stop",
@@ -88,7 +88,7 @@ export default {
           url: "ann",
           category: "projet perso",
           link: "https://manfredhq.itch.io/apocalypsenotnow",
-          img: "https://theomigeat.com/medias/images/ANNLogo.png",
+          imgColor: "https://theomigeat.com/medias/images/ANNLogo.png",
           background: "https://theomigeat.com/medias/images/ANN.jpg",
           finishDate: "02/02/2020",
           workTime: "2 Jours Non-Stop",
