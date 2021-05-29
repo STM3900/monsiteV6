@@ -10,7 +10,11 @@
     @click="showProject"
   >
     <aside>
-      <img v-if="checkIfColor" :src="imgColor" alt="" />
+      <img
+        v-if="!checkIfColor"
+        :src="require(`~/assets/img/${imgColor}.png`)"
+        alt=""
+      />
       <div v-else class="color" :style="'background: ' + imgColor + ';'">
         <fa class="icon-project" icon="code" />
       </div>
@@ -32,7 +36,7 @@
           >
             Voir le site
           </button>
-          <button v-if="url">En savoir plus</button>
+          <button v-if="url" @click="$router.push(url)">En savoir plus</button>
         </nav>
       </section>
     </div>
@@ -71,7 +75,7 @@ export default {
   },
   computed: {
     checkIfColor() {
-      return this.imgColor.includes(".");
+      return this.imgColor.includes("#");
     }
   },
   methods: {
