@@ -1,17 +1,112 @@
 <template>
   <div class="part">
-    <h1>Contact</h1>
+    <h1><fa class="icon" icon="code" />Contact</h1>
+    <article>
+      <section
+        v-for="(item, i) in contacts"
+        :key="i"
+        @click="goToWebSite(item.link)"
+      >
+        <fa
+          class="icon-contact"
+          :icon="item.icon"
+          :style="{ color: item.color }"
+        />
+        <h2>{{ item.label }}</h2>
+      </section>
+    </article>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Contact"
+  name: "Contact",
+  data() {
+    return {
+      contacts: [
+        {
+          label: "LinkedIn",
+          icon: ["fab", "linkedin-in"],
+          color: "#007bb6",
+          link: "https://www.linkedin.com/in/theo-migeat/"
+        },
+        {
+          label: "theo.migeat@epsi.fr",
+          icon: "envelope",
+          color: "#006fc0",
+          link: "mailto:theo.migeat@epsi.fr"
+        },
+        {
+          label: "GitHub",
+          icon: ["fab", "github"],
+          color: "#5b217b",
+          link: "https://github.com/STM3900"
+        }
+      ],
+      test: "red"
+    };
+  },
+  methods: {
+    goToWebSite(link) {
+      link.includes("mailto")
+        ? (window.location = link)
+        : window.open(link, "_blank");
+    }
+  }
 };
 </script>
 
 <style scoped>
-div {
-  background: #fdfffc;
+.part {
+  background: hsl(199, 100%, 65%);
+  padding-bottom: 50px;
+}
+
+.part h1 {
+  color: white;
+}
+
+.part article {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.part article section {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 15px 15px 27px hsl(199, 100%, 55%),
+    -15px -15px 27px hsl(199, 100%, 65%);
+  transition: 0.3s;
+}
+
+.part article section:hover {
+  cursor: pointer;
+  transform: rotate(1deg);
+}
+
+.part article section:active {
+  transform: rotate(1deg) scale(0.98);
+}
+
+.part article section h2 {
+  font-size: 20px;
+  color: rgb(50, 50, 50);
+  font-weight: normal;
+}
+
+.part article section .icon-contact {
+  font-size: 25px;
+  margin-right: 10px;
 }
 </style>

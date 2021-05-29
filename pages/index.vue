@@ -6,7 +6,6 @@
     <Skills :skills="skills" />
     <Projects />
     <Contact />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </div>
 </template>
 
@@ -78,15 +77,10 @@ export default {
 <style>
 .part h1 {
   padding-top: 25px;
-
-  background: -webkit-linear-gradient(0deg, #00d2ff 0%, #3a47d5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(50, 50, 50);
 }
 
 .part .icon {
   margin-right: 20px;
-  color: #4ccff7;
 }
 </style>

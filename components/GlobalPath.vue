@@ -60,6 +60,10 @@ div {
   background: #fdfffc;
 }
 
+.part .icon {
+  color: hsl(199, 100%, 50%);
+}
+
 .timeline-title-custom {
   display: block;
   font-family: "Quicksand", sans-serif;

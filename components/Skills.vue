@@ -21,6 +21,10 @@ div {
   background: #fdfffc;
 }
 
+.part .icon {
+  color: hsl(199, 100%, 60%);
+}
+
 ul {
   width: 100%;
   margin-top: 25px;

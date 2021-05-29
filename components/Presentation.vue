@@ -19,6 +19,7 @@ export default {
 div {
   background: #fdfffc;
   padding-bottom: 25px;
+  padding-top: 5px;
 }
 
 div h1 {

@@ -104,7 +104,7 @@ export default {
 
         /* Generate string for CSS transform property */
         const string =
-          "perspective(500px) scale(1.05) rotateX(" +
+          "perspective(500px) scale(1.03) rotateX(" +
           xRotation +
           "deg) rotateY(" +
           yRotation +
@@ -133,7 +133,7 @@ export default {
     up() {
       if (!this.isShowed) {
         this.el.style.transform =
-          "perspective(500px) scale(1.05) rotateX(0) rotateY(0)";
+          "perspective(500px) scale(1.03) rotateX(0) rotateY(0)";
       }
     },
     showProject() {
@@ -154,9 +154,12 @@ article {
   width: 300px;
   height: 95px;
 
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  /* box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;*/
   border-radius: 5px;
   transition: all 0.3s, height 0.6s ease;
+  background: white;
+  box-shadow: 15px 15px 27px hsl(199, 100%, 55%),
+    -15px -15px 27px hsl(199, 100%, 65%);
 }
 
 article div {
@@ -185,7 +188,7 @@ article div section button {
   width: 100%;
   /* haut | droit | bas | gauche */
   padding: 10px 20px;
-  background: rgb(50, 50, 50);
+  background: hsl(199, 100%, 65%);
   color: white;
   border-radius: 5px;
   transition: 0.3s;
@@ -252,6 +255,7 @@ article img {
   border-radius: 50%;
   z-index: 99999;
   overflow: visible;
+  background: white;
 }
 
 article .color {

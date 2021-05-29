@@ -136,7 +136,7 @@ div {
 
 .wave {
   position: absolute;
-  bottom: 10vh;
+  bottom: 9vh;
 }
 
 header {

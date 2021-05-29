@@ -1,11 +1,11 @@
 <template>
-  <div v-if="data" class="part">
-    <div
+  <div v-if="data" class="slug">
+    <header
       class="background"
       :style="`background-image: url(${data.background})`"
     >
       <h1>{{ data.name }}</h1>
-    </div>
+    </header>
   </div>
 </template>
 
@@ -42,7 +42,12 @@ export default {
 </script>
 
 <style scoped>
-.background {
+.slug {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+header {
   margin-top: 25px;
   width: 100%;
   height: 350px;
@@ -59,7 +64,7 @@ export default {
   background-size: cover;
 }
 
-.background h1 {
+header h1 {
   padding: 20px;
   color: white;
   font-size: 50px;
