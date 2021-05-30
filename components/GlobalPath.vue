@@ -75,7 +75,7 @@ div {
 
 article {
   margin-top: 25px;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 
   display: flex;
   flex-direction: row;

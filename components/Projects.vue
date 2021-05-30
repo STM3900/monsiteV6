@@ -58,6 +58,7 @@ export default {
 .part {
   background: hsl(199, 100%, 65%);
   margin-top: 0;
+  padding-bottom: 25px;
 }
 
 .part .icon {

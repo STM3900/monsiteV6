@@ -45,7 +45,7 @@ export default {
         "mailto:theo.migeat@epsi.fr",
         "medias/fichiers/Cv_Théo_Migeat.pdf"
       ],
-      iconLabel: ["LinkedIn", "Github", "Envoyer un mail", "Voir mon CV"],
+      iconLabel: ["LinkedIn", "Github", "M'envoyer un email", "Voir mon CV"],
       index: 0,
       isHover: false,
       particleConfig: {

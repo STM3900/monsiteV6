@@ -42,8 +42,7 @@ export default {
           color: "#5b217b",
           link: "https://github.com/STM3900"
         }
-      ],
-      test: "red"
+      ]
     };
   },
   methods: {
@@ -64,6 +63,7 @@ export default {
 
 .part h1 {
   color: white;
+  margin-bottom: 25px;
 }
 
 .part article {

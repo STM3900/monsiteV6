@@ -1,5 +1,49 @@
 [
   {
+    "name": "Wicook",
+    "url": "wicook",
+    "category": "projet perso",
+    "link": "https://theomigeat.com/wicook/",
+    "imgColor": "wicookLogo",
+    "background": "",
+    "finishDate": "11/05/2021",
+    "workTime": "43h18m",
+    "description": "Wicook est un site de cuisine communautaire, fait en nuxt.js (framework de vue.js), où tout le monde peut poster ses recettes en utilisant un json modèle",
+    "objectives": [
+      "Faire un site en vue.js",
+      "Avoir un site de cuisine qui est pas moche quoi"
+    ],
+    "languages": ["Vue / Nuxt.js", "HTML / CSS", "VSCode / GitHub"]
+  },
+  {
+    "name": "Asteroids",
+    "url": "asteroids",
+    "category": "projet perso",
+    "link": "http://theo.anawens.fr/",
+    "imgColor": "asteroidsLogo",
+    "background": "",
+    "finishDate": "31/03/2021",
+    "workTime": "72h20m",
+    "description": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu ou vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides et avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
+    "objectives": ["Faire un jeu de A à Z", "Prendre du plaisir"],
+    "languages": ["Phaser.js / node.js", "HTML / CSS", "VSCode / GitHub"]
+  },
+  {
+    "name": "Wikigame",
+    "url": "wikigame",
+    "category": "projet perso",
+    "imgColor": "wikigameLogo",
+    "background": "",
+    "finishDate": "20/02/2021",
+    "workTime": "44h06m",
+    "description": "Wikigame est un petit jeu en python se basant sûr le jeu de wikipédia ! L'objectif du jeu et d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
+    "objectives": [
+      "Apprendre en python mdr",
+      "attendre 6 ans que j'ai la note là"
+    ],
+    "languages": ["Python", "HTML / CSS", "VSCode / GitHub"]
+  },
+  {
     "name": "Jourbon",
     "url": "",
     "category": "projet perso",

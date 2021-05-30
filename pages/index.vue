@@ -64,42 +64,67 @@ export default {
         {
           label: "Vue.js / Nuxt",
           icon: ["fab", "vuejs"],
-          color: "#41b883"
+          color: "#41b883",
+          favorite: true,
+          hours: 135,
+          numProjects: 4
         },
         {
           label: "Javascript",
           icon: ["fab", "js-square"],
-          color: "#efd81d"
+          color: "#efd81d",
+          favorite: true,
+          hours: "+300",
+          numProjects: "+10"
         },
         {
           label: "Angular",
           icon: ["fab", "angular"],
-          color: "#d6002f"
+          color: "#d6002f",
+          hours: 30,
+          numProjects: 1
         },
         {
           label: "C, C++, C#",
           icon: ["fab", "cuttlefish"],
-          color: "#9b4f97"
+          color: "#9b4f97",
+          hours: "+300",
+          numProjects: 5
         },
         {
           label: "PHP",
           icon: ["fab", "php"],
-          color: "#858ebb"
+          color: "#858ebb",
+          hours: 200,
+          numProjects: 5
         },
         {
-          label: "MYSQL",
+          label: "Base de données",
           icon: "database",
-          color: "#005e86"
+          color: "#005e86",
+          hours: 100,
+          numProjects: 6
         },
         {
           label: "GitHub",
           icon: ["fab", "github"],
-          color: "#5b217b"
+          color: "#5b217b",
+          hours: "Utilisé pour chaque projet depuis 3 ans"
         },
         {
-          label: "CSS",
+          label: "CSS / Intégration",
           icon: ["fab", "css3"],
-          color: "#379ad6"
+          color: "#379ad6",
+          favorite: true,
+          hours: "+600",
+          numProjects: "+40"
+        },
+        {
+          label: "Python",
+          icon: ["fab", "python"],
+          color: "#356c9b",
+          hours: 50,
+          numProjects: 1
         }
       ]
     };

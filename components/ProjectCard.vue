@@ -31,6 +31,7 @@
         <p>{{ description }}</p>
         <nav>
           <button
+            v-show="link"
             @click="goToWebSite"
             :style="url ? '' : 'margin-bottom: 0px;'"
             @mouseover="isHover1 = true"
