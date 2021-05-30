@@ -41,11 +41,11 @@ export default {
         imports: [
           {
             set: "@fortawesome/free-solid-svg-icons",
-            icons: ["faEnvelope", "faFileAlt", "faAddressBook", "faClipboardList", "faCode"]
+            icons: ["faEnvelope", "faFileAlt", "faAddressBook", "faClipboardList", "faCode", "faUserCircle", "faDatabase"]
           },
           {
             set: "@fortawesome/free-brands-svg-icons",
-            icons: ["faLinkedinIn", "faGithub"]
+            icons: ["faLinkedinIn", "faGithub", "faVuejs", "faAngular", "faPhp", "faJsSquare", "faCuttlefish", "faCss3"]
           },
           { set: "@fortawesome/free-regular-svg-icons", icons: [] }
         ]

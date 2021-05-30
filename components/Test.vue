@@ -17,7 +17,6 @@ export default {
   mounted() {
     /* Store the element in el */
     this.el = this.$refs.card;
-    console.log(this.el.clientWidth);
 
     /* Get the height and width of the element */
     this.height = this.el.clientHeight;

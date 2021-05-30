@@ -87,7 +87,7 @@ body {
 .slide-bottom-enter,
 .slide-bottom-leave-to {
   opacity: 0;
-  transform: translate3d(-50px, 0, 0);
+  transform: translateY(-25px);
 }
 .bounce-enter-active {
   transform-origin: top;

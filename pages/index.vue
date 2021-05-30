@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @scroll.passive="handleScroll">
     <Header />
     <Presentation />
     <GlobalPath :schoolTab="schoolTab" :workTab="workTab" />
@@ -61,13 +61,38 @@ export default {
         }
       ],
       skills: [
-        "Vue.js",
-        "Javascript",
-        "Angular",
-        "C, C++, C#",
-        "PHP",
-        "MYSQL",
-        "GitHub"
+        {
+          label: "Vue.js",
+          icon: ["fab", "vuejs"]
+        },
+        {
+          label: "Javascript",
+          icon: ["fab", "js-square"]
+        },
+        {
+          label: "Angular",
+          icon: ["fab", "angular"]
+        },
+        {
+          label: "C, C++, C#",
+          icon: ["fab", "cuttlefish"]
+        },
+        {
+          label: "PHP",
+          icon: ["fab", "php"]
+        },
+        {
+          label: "MYSQL",
+          icon: "database"
+        },
+        {
+          label: "GitHub",
+          icon: ["fab", "github"]
+        },
+        {
+          label: "CSS",
+          icon: ["fab", "css3"]
+        }
       ]
     };
   }

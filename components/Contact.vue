@@ -85,7 +85,7 @@ export default {
   background: white;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 15px 15px 27px hsl(199, 100%, 55%),
+  box-shadow: 15px 15px 27px hsl(199, 100%, 45%),
     -15px -15px 27px hsl(199, 100%, 65%);
   transition: 0.3s;
 }

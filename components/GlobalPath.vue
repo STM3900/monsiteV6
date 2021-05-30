@@ -9,7 +9,7 @@
             v-for="(item, i) in schoolTab"
             :key="i"
             class="timeline-title-custom"
-            bg-color="#00C3F6"
+            bg-color="hsl(199, 100%, 65%)"
           >
             <h4>
               {{ item.beginDate }} -
@@ -27,7 +27,7 @@
             v-for="(item, j) in workTab"
             :key="j"
             class="timeline-title-custom"
-            bg-color="#00ADFF"
+            bg-color="hsl(199, 100%, 75%)"
           >
             <h4>
               {{ item.beginDate }} -
@@ -61,7 +61,7 @@ div {
 }
 
 .part .icon {
-  color: hsl(199, 100%, 50%);
+  color: hsl(199, 100%, 65%);
 }
 
 .timeline-title-custom {

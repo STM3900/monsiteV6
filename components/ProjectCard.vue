@@ -33,10 +33,19 @@
           <button
             @click="goToWebSite"
             :style="url ? '' : 'margin-bottom: 0px;'"
+            @mouseover="isHover1 = true"
+            @mouseleave="isHover1 = false"
           >
             Voir le site
           </button>
-          <button v-if="url" @click="$router.push(url)">En savoir plus</button>
+          <button
+            v-if="url"
+            @click="$router.push(url)"
+            @mouseover="isHover2 = true"
+            @mouseleave="isHover2 = false"
+          >
+            En savoir plus
+          </button>
         </nav>
       </section>
     </div>
@@ -61,13 +70,14 @@ export default {
       el: null,
       height: null,
       width: null,
-      isShowed: false
+      isShowed: false,
+      isHover1: false,
+      isHover2: false
     };
   },
   mounted() {
     /* Store the element in el */
     this.el = this.$refs.card;
-    console.log(this.el.clientWidth);
 
     /* Get the height and width of the element */
     this.height = this.el.clientHeight;
@@ -137,10 +147,12 @@ export default {
       }
     },
     showProject() {
-      this.isShowed = !this.isShowed;
-      this.el.style.transform =
-        "perspective(500px) scale(1) rotateX(0) rotateY(0)";
-      this.$emit("toggle", this.index, this.isShowed);
+      if (!this.isHover1 && !this.isHover2) {
+        this.isShowed = !this.isShowed;
+        this.el.style.transform =
+          "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+        this.$emit("toggle", this.index, this.isShowed);
+      }
     },
     goToWebSite() {
       window.location = this.link;
@@ -158,7 +170,7 @@ article {
   border-radius: 5px;
   transition: all 0.3s, height 0.6s ease;
   background: white;
-  box-shadow: 15px 15px 27px hsl(199, 100%, 55%),
+  box-shadow: 15px 15px 27px hsl(199, 100%, 45%),
     -15px -15px 27px hsl(199, 100%, 65%);
 }
 
@@ -280,7 +292,7 @@ article .color .icon-project {
 }
 
 article h2 {
-  font-size: 23px;
+  font-size: 20px;
   padding-top: 40px;
   padding-bottom: 25px;
   padding-left: 20px;

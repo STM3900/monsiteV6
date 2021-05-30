@@ -1,10 +1,10 @@
 <template>
   <div class="part">
+    <h1><fa class="icon" icon="user-circle" />Bonjour !</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perferendis
-      natus ducimus aspernatur maiores qui? Vel harum magni provident nihil
-      eaque, soluta dolorem temporibus modi aliquid repudiandae. Dolor, animi
-      ipsa.
+      Je suis un étudiant en troisième année, à l'Epsi et alternant chez
+      Erplain, je suis passionné par le web, où je prends plaisir à concevoir et
+      réaliser des sites internet avec de plus en plus de fonctionnalités !
     </p>
   </div>
 </template>
@@ -27,6 +27,11 @@ div h1 {
 }
 
 div p {
-  text-align: center;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.part .icon {
+  color: hsl(199, 100%, 65%);
 }
 </style>
