@@ -78,6 +78,14 @@ export default {
           numProjects: "+10"
         },
         {
+          label: "CSS / Intégration",
+          icon: ["fab", "css3"],
+          color: "#379ad6",
+          favorite: true,
+          hours: "+600",
+          numProjects: "+40"
+        },
+        {
           label: "Angular",
           icon: ["fab", "angular"],
           color: "#d6002f",
@@ -92,32 +100,25 @@ export default {
           numProjects: 5
         },
         {
-          label: "PHP",
-          icon: ["fab", "php"],
-          color: "#858ebb",
-          hours: 200,
-          numProjects: 5
-        },
-        {
-          label: "Base de données",
-          icon: "database",
-          color: "#005e86",
-          hours: 100,
-          numProjects: 6
-        },
-        {
           label: "GitHub",
           icon: ["fab", "github"],
           color: "#5b217b",
           hours: "Utilisé pour chaque projet depuis 3 ans"
         },
         {
-          label: "CSS / Intégration",
-          icon: ["fab", "css3"],
-          color: "#379ad6",
-          favorite: true,
-          hours: "+600",
-          numProjects: "+40"
+          label: "PHP",
+          icon: ["fab", "php"],
+          color: "#858ebb",
+          hours: 200,
+          numProjects: 5
+        },
+
+        {
+          label: "Base de données",
+          icon: "database",
+          color: "#005e86",
+          hours: 100,
+          numProjects: 6
         },
         {
           label: "Python",
