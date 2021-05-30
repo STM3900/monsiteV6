@@ -62,36 +62,44 @@ export default {
       ],
       skills: [
         {
-          label: "Vue.js",
-          icon: ["fab", "vuejs"]
+          label: "Vue.js / Nuxt",
+          icon: ["fab", "vuejs"],
+          color: "#41b883"
         },
         {
           label: "Javascript",
-          icon: ["fab", "js-square"]
+          icon: ["fab", "js-square"],
+          color: "#efd81d"
         },
         {
           label: "Angular",
-          icon: ["fab", "angular"]
+          icon: ["fab", "angular"],
+          color: "#d6002f"
         },
         {
           label: "C, C++, C#",
-          icon: ["fab", "cuttlefish"]
+          icon: ["fab", "cuttlefish"],
+          color: "#9b4f97"
         },
         {
           label: "PHP",
-          icon: ["fab", "php"]
+          icon: ["fab", "php"],
+          color: "#858ebb"
         },
         {
           label: "MYSQL",
-          icon: "database"
+          icon: "database",
+          color: "#005e86"
         },
         {
           label: "GitHub",
-          icon: ["fab", "github"]
+          icon: ["fab", "github"],
+          color: "#5b217b"
         },
         {
           label: "CSS",
-          icon: ["fab", "css3"]
+          icon: ["fab", "css3"],
+          color: "#379ad6"
         }
       ]
     };
