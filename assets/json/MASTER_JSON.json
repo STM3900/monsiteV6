@@ -2,7 +2,7 @@
   {
     "name": "Wicook",
     "url": "wicook",
-    "category": "projet perso",
+    "category": "Projet perso",
     "link": "https://theomigeat.com/wicook/",
     "imgColor": "wicookLogo",
     "background": "",
@@ -18,7 +18,7 @@
   {
     "name": "Asteroids",
     "url": "asteroids",
-    "category": "projet perso",
+    "category": "Projet d'école",
     "link": "http://theo.anawens.fr/",
     "imgColor": "asteroidsLogo",
     "background": "",
@@ -31,7 +31,7 @@
   {
     "name": "Wikigame",
     "url": "wikigame",
-    "category": "projet perso",
+    "category": "Projet d'école",
     "imgColor": "wikigameLogo",
     "background": "",
     "finishDate": "20/02/2021",
@@ -46,7 +46,7 @@
   {
     "name": "Jourbon",
     "url": "",
-    "category": "projet perso",
+    "category": "Projet perso",
     "link": "https://theomigeat.com/Jourbon/",
     "imgColor": "#ef476f",
     "background": "",
@@ -61,7 +61,7 @@
   },
   {
     "name": "Lazublog",
-    "url": "lazublog",
+    "url": "Lazublog",
     "category": "projet perso",
     "link": "https://theomigeat.com/LazuBlog/",
     "imgColor": "lazulogo",
@@ -79,7 +79,7 @@
   {
     "name": "Breaking Bot",
     "url": "breakingbot",
-    "category": "projet perso",
+    "category": "Projet perso",
     "link": "https://mrgove10.itch.io/breaking-bots",
     "imgColor": "BrLogo",
     "background": "https://theomigeat.com/medias/images/Br.jpg",
@@ -96,7 +96,7 @@
   {
     "name": "Apocalypse Not Now",
     "url": "ann",
-    "category": "projet perso",
+    "category": "Projet perso",
     "link": "https://manfredhq.itch.io/apocalypsenotnow",
     "imgColor": "ANNLogo",
     "background": "https://theomigeat.com/medias/images/ANN.jpg",
@@ -112,7 +112,7 @@
   {
     "name": "MusicHours",
     "url": "musichours",
-    "category": "projet perso",
+    "category": "Projet perso",
     "link": "https://theomigeat.com/MusicHours/",
     "imgColor": "MusicHoursLogo",
     "background": "https://theomigeat.com/medias/images/MusicHours.png",
@@ -129,7 +129,7 @@
   {
     "name": "BeeLeave",
     "url": "beeleave",
-    "category": "projet perso",
+    "category": "Projet d'école",
     "link": "https://little-rpg.fr/workshop/beeleave/public/index.php",
     "imgColor": "#1c2230",
     "background": "",
@@ -146,7 +146,7 @@
   {
     "name": "AuphysWorks",
     "url": "",
-    "category": "entreprise",
+    "category": "Projet d'entreprise",
     "link": "https://auphys.axsiow.ovh/",
     "imgColor": "#95c11c",
     "background": "",
@@ -163,7 +163,7 @@
   {
     "name": "Hero And Monsters",
     "url": "",
-    "category": "projet perso",
+    "category": "Projet d'école",
     "link": "https://theomigeat.com/medias/fichiers/Projet.exe",
     "imgColor": "#000000",
     "background": "",
@@ -179,7 +179,7 @@
   {
     "name": "Safe Or Well",
     "url": "",
-    "category": "projet perso",
+    "category": "Projet perso",
     "link": "https://mrgove10.itch.io/safe-or-well",
     "imgColor": "sowLogo",
     "background": "",
@@ -195,7 +195,7 @@
   {
     "name": "TEMA",
     "url": "tema",
-    "category": "projet perso",
+    "category": "Projet d'école",
     "link": "https://tema.axsiow.ovh/",
     "imgColor": "tema",
     "background": "",
