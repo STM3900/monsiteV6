@@ -1,10 +1,15 @@
 <template>
   <div v-if="data" class="slug">
-    <header
-      class="background"
-      :style="`background-image: url(${data.background})`"
-    >
+    <header class="background">
+      <img :src="data.background" alt="" />
       <h1>{{ data.name }}</h1>
+      <hr />
+      <article>
+        <section>Terminé le {{ data.finishDate }}</section>
+        <section>Fait en {{ data.workTime }}</section>
+        <section></section>
+        <section></section>
+      </article>
     </header>
   </div>
 </template>
@@ -50,24 +55,19 @@ export default {
 header {
   margin-top: 25px;
   width: 100%;
+}
+
+header img {
+  width: 100%;
   height: 350px;
-  background: red;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-  align-content: center;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
 }
 
 header h1 {
-  padding: 20px;
-  color: white;
-  font-size: 50px;
+  /* haut | droit | bas | gauche */
+  padding: 10px 10px 10px 0;
+  color: rgb(75, 75, 75);
+  font-size: 35px;
   font-weight: normal;
 }
 </style>
