@@ -2,60 +2,86 @@
   <div v-if="data" class="slug">
     <header class="background">
       <h1>{{ data.name }}</h1>
-      <p>Projet perso - <a :href="data.link">Aller au site</a></p>
-      <hr />
-      <img :src="data.background" alt="" />
+      <p>
+        Projet perso - <a v-if="data.link" :href="data.link">Aller au site</a>
+      </p>
+      <img
+        v-if="checkIfColor"
+        :src="require(`~/assets/background/${data.background}.jpg`)"
+        alt=""
+      />
+      <div
+        v-else
+        class="background-colored"
+        :style="
+          data.background.includes('linear-gradient')
+            ? 'background: ' + data.background + ';'
+            : 'background-image: ' + data.background + ';'
+        "
+      ></div>
       <article>
-        <section>Terminé le {{ data.finishDate }}</section>
-        <section>Réalisé en {{ data.workTime }}</section>
-        <section>Fait en Javascript</section>
+        <section>
+          Terminé le <b>{{ data.finishDate }}</b>
+        </section>
+        <section>
+          Réalisé en <b>{{ data.workTime }}</b>
+        </section>
+        <section>
+          Fait en <b>{{ data.languages.join(", ") }}</b>
+        </section>
       </article>
     </header>
-    <h2>Description du projet</h2>
-    <p>
-      MusicHours est un site vous permettant, à partir d'une ville de votre
-      choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo
-      de celle-ci !
-    </p>
-    <h2>Principaux objectifs</h2>
-    <ul>
-      <li>Expérimenter de nouvelles choses en JS</li>
-      <li>Surpasser mes limites en CSS</li>
-      <li>Se connecter à une API et l'utiliser</li>
-    </ul>
-    <h2>Outils utilisés</h2>
-    <ul>
-      <li>VSCode / GitHub</li>
-      <li>Jsp un logiciel comme ça</li>
-      <li>Ont est là</li>
-    </ul>
-    <h2>Description technique</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim vitae
-      adipisci nostrum ratione quia quaerat temporibus dicta. Velit eius
-      sapiente dolorum quo recusandae. Nihil vero tempore corporis aliquam
-      inventore quibusdam.
-    </p>
-    <h2>Difficultés et axes d'amélioration</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque odit
-      delectus assumenda perferendis, sint numquam, consectetur dignissimos
-      sapiente placeat, id accusamus dolore repellendus expedita veniam optio.
-      Quisquam porro ullam veniam!
-    </p>
-    <h2>Conclusion</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam
-      illo voluptatibus ducimus, consequuntur harum dicta magni atque totam,
-      exercitationem voluptatum dignissimos pariatur blanditiis dolor vel nobis
-      possimus et laborum!
-    </p>
-    <button v-if="checkIfExist(-1)" @click="changeProject(-1)">
-      projet précedent
-    </button>
-    <button v-if="checkIfExist(1)" @click="changeProject(+1)">
-      projet suivant
-    </button>
+    <article class="description">
+      <h2>Description du projet</h2>
+      <p>
+        {{ data.description }}
+      </p>
+    </article>
+    <article class="list">
+      <section>
+        <h2>Principaux objectifs</h2>
+        <ul>
+          <li v-for="(item, i) in data.objectives" :key="i">
+            {{ item }}
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Outils utilisés</h2>
+        <ul>
+          <li v-for="(item, i) in data.softwares" :key="i">
+            {{ item }}
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article>
+      <h2>Description technique</h2>
+      <p>
+        {{ data.technicalDescription }}
+      </p>
+    </article>
+    <article>
+      <h2>Difficultés et axes d'amélioration</h2>
+      <p>
+        {{ data.difficulties }}
+      </p>
+    </article>
+    <article>
+      <h2>Conclusion</h2>
+      <p>
+        {{ data.conclusion }}
+      </p>
+    </article>
+
+    <article class="button-group">
+      <button v-if="checkIfExist(-1)" @click="changeProject(-1)">
+        projet précedent
+      </button>
+      <button v-if="checkIfExist(1)" @click="changeProject(+1)">
+        projet suivant
+      </button>
+    </article>
   </div>
 </template>
 
@@ -68,6 +94,14 @@ export default {
       rawData: MASTER_JSON,
       data: null
     };
+  },
+  computed: {
+    checkIfColor() {
+      return (
+        !this.data.background.includes("#") ||
+        !this.data.background.includes("linear-gradient")
+      );
+    }
   },
   mounted() {
     this.checkUrl();
@@ -123,20 +157,30 @@ header img {
   width: 100%;
   height: 350px;
   object-fit: cover;
+  border-radius: 5px;
+}
+
+.background-colored {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
 }
 
 header h1 {
   /* haut | droit | bas | gauche */
   padding: 10px 10px 10px 0;
-  color: rgb(75, 75, 75);
+  color: rgb(50, 50, 50);
   font-size: 40px;
-  font-weight: normal;
   padding-bottom: 0;
 }
 
 header p {
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+header a {
+  color: hsl(199, 100%, 45%);
 }
 
 header article {
@@ -154,5 +198,59 @@ header article section {
   padding: 20px;
   box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
   border-radius: 5px;
+}
+
+article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+article h2 {
+  margin-bottom: 10px;
+  color: rgb(25, 25, 25);
+}
+
+.description {
+  width: 75%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+
+  gap: 10px 70px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 10px 20px;
+}
+
+.button-group button {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: none;
+  border: none;
+  background: rgb(240, 240, 240);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.button-group button:hover {
+  cursor: pointer;
+  transform: rotate(1deg);
+  background: rgb(235, 235, 235);
+}
+
+.button-group button:active {
+  transform: rotate(0deg) scale(0.98);
 }
 </style>

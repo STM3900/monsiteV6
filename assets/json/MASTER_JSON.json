@@ -13,7 +13,11 @@
       "Faire un site en vue.js",
       "Avoir un site de cuisine qui est pas moche quoi"
     ],
-    "languages": ["Vue / Nuxt.js", "HTML / CSS", "VSCode / GitHub"]
+    "languages": ["Vue / Nuxt.js", "Html/Css"],
+    "softwares": ["VSCode", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "Asteroids",
@@ -26,7 +30,11 @@
     "workTime": "72h20m",
     "description": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu ou vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides et avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
     "objectives": ["Faire un jeu de A à Z", "Prendre du plaisir"],
-    "languages": ["Phaser.js / node.js", "HTML / CSS", "VSCode / GitHub"]
+    "languages": ["Phaser.js", "Node.js", "Html/Css"],
+    "softwares": ["VSCode", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "Wikigame",
@@ -41,7 +49,11 @@
       "Apprendre en python mdr",
       "attendre 6 ans que j'ai la note là"
     ],
-    "languages": ["Python", "HTML / CSS", "VSCode / GitHub"]
+    "languages": ["Python", "Html/Css"],
+    "softwares": ["VSCode", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "Jourbon",
@@ -65,7 +77,7 @@
     "category": "projet perso",
     "link": "https://theomigeat.com/LazuBlog/",
     "imgColor": "lazulogo",
-    "background": "https://theomigeat.com/medias/images/lazublog.jpg",
+    "background": "lazublog",
     "finishDate": "20/03/2020",
     "workTime": "30h40m",
     "description": "Conçu pour la sortie du jeu \"Animal Crossing : New Horizon\" Lazublog est un petit blog où je partage mon aventure sur le jeu, avec une pointe de fiction !",
@@ -74,7 +86,11 @@
       "Mettre à l'œuvre ce que j'ai pu apprendre durant mon stage (animations en css et javascript)",
       "Me remettre à l'écriture"
     ],
-    "languages": ["HTML / CSS", "JS", "SQL", "PHP", "VSCode / GitHub"]
+    "languages": ["JavaScript", "PHP", "SQL", "Html/Css"],
+    "softwares": ["VSCode", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "Breaking Bot",
@@ -82,7 +98,7 @@
     "category": "Projet perso",
     "link": "https://mrgove10.itch.io/breaking-bots",
     "imgColor": "BrLogo",
-    "background": "https://theomigeat.com/medias/images/Br.jpg",
+    "background": "Br",
     "finishDate": "09/02/2020",
     "workTime": "2 Jours Non-Stop",
     "description": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologuue qui doit dater les gisements métaliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
@@ -91,7 +107,11 @@
       "Rencontrer des personnes talentueuses dans des dommaines autre que l'informatique",
       "Passer un moment inoubliable"
     ],
-    "languages": ["C#", "Unity", "VSCode / GitHub"]
+    "languages": ["C#"],
+    "softwares": ["Unity", "Visual Studio", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "Apocalypse Not Now",
@@ -99,7 +119,7 @@
     "category": "Projet perso",
     "link": "https://manfredhq.itch.io/apocalypsenotnow",
     "imgColor": "ANNLogo",
-    "background": "https://theomigeat.com/medias/images/ANN.jpg",
+    "background": "ANN",
     "finishDate": "02/02/2020",
     "workTime": "2 Jours Non-Stop",
     "description": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes étant présent sur la Terre",
@@ -107,7 +127,11 @@
       "Faire un jeu fonctionnel en seulement 48h",
       "Permettre de savoir si mon niveau en C# / Unity s'est amélioré"
     ],
-    "languages": ["C#", "Unity", "VSCode / GitHub"]
+    "languages": ["C#"],
+    "softwares": ["Unity", "Visual Studio", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "MusicHours",
@@ -115,7 +139,7 @@
     "category": "Projet perso",
     "link": "https://theomigeat.com/MusicHours/",
     "imgColor": "MusicHoursLogo",
-    "background": "https://theomigeat.com/medias/images/MusicHours.png",
+    "background": "MusicHours",
     "finishDate": "24/12/2020",
     "workTime": "72h19m",
     "description": "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !",
@@ -124,7 +148,11 @@
       "Surpasser mes limites en CSS",
       "Se connecter à une API et l'utiliser"
     ],
-    "languages": ["HTML / CSS", "JS", "VSCode / GitHub"]
+    "languages": ["JavaScript", "Html/Css"],
+    "softwares": ["VSCode", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "BeeLeave",
@@ -132,7 +160,7 @@
     "category": "Projet d'école",
     "link": "https://little-rpg.fr/workshop/beeleave/public/index.php",
     "imgColor": "#1c2230",
-    "background": "",
+    "background": "BeeLeave",
     "finishDate": "13/09/19",
     "workTime": "5 Jours de projet",
     "description": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5, BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
@@ -141,7 +169,11 @@
       "Créer une système de messagerie instantanée",
       "Créer un système de compte et de groupe, avec plusieurs rôles possibles"
     ],
-    "languages": ["HTML / CSS", "PHP", "VSCode / GitHub"]
+    "languages": ["PHP", "Html/Css", "SQL"],
+    "softwares": ["VSCode", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   },
   {
     "name": "AuphysWorks",
@@ -198,7 +230,7 @@
     "category": "Projet d'école",
     "link": "https://tema.axsiow.ovh/",
     "imgColor": "tema",
-    "background": "",
+    "background": "linear-gradient(to right top, #302e4e, #5f3569, #993070, #d02861, #f63d3d);",
     "finishDate": "13/02/19",
     "workTime": "+30h",
     "description": "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !",
@@ -207,6 +239,10 @@
       "Faire pour la première fois un système de création de compte",
       "Lier le site à une Base de données fonctionnelle"
     ],
-    "languages": ["HTML / CSS", "PHP / MySQL", "VSCode / GitHub"]
+    "languages": ["PHP", "Html/Css"],
+    "softwares": ["VSCode", "GitHub"],
+    "technicalDescription": "blablablabalblablablabla",
+    "difficulties": "ptn ct dur marion la gentille",
+    "conclusion": "ct koule"
   }
 ]
