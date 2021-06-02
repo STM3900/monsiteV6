@@ -1,5 +1,6 @@
 <template>
   <div v-if="data" class="slug">
+    <nav ref="nav" @click="goHome">Retour</nav>
     <header class="background">
       <h1>{{ data.name }}</h1>
       <p>
@@ -105,6 +106,9 @@ export default {
   },
   mounted() {
     this.checkUrl();
+    setTimeout(() => {
+      this.$refs["nav"].classList.add("show");
+    }, 500);
   },
   methods: {
     findIndex(json) {
@@ -112,7 +116,6 @@ export default {
     },
     checkUrl() {
       try {
-        console.log(this.rawData);
         this.data = this.rawData[this.findIndex(this.rawData)];
         if (this.data == undefined) {
           this.$router.push("/");
@@ -133,16 +136,42 @@ export default {
         }
         temp += destination;
       }
+      this.$refs["nav"].style.display = "none";
       this.$router.push(`/${url}`);
     },
     checkIfExist(e) {
       return this.rawData[this.findIndex(this.rawData) + e];
+    },
+    goHome() {
+      this.$refs["nav"].style.display = "none";
+      this.$router.push("/");
     }
   }
 };
 </script>
 
 <style scoped>
+nav {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background: rgb(240, 240, 240);
+  padding: 10px 15px 10px 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+nav:hover {
+  cursor: pointer;
+  padding-left: 27px;
+}
+
 .slug {
   padding-left: 20%;
   padding-right: 20%;
@@ -180,7 +209,7 @@ header p {
 }
 
 header a {
-  color: hsl(199, 100%, 45%);
+  color: black;
 }
 
 header article {

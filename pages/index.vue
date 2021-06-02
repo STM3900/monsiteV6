@@ -44,6 +44,7 @@ export default {
       workTab: [
         {
           beginDate: "Septembre 2020",
+          endDate: "Septembre 2021",
           label: "Alternance en vue.js",
           work: "Erplain"
         },

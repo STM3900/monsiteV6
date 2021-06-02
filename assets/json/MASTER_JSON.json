@@ -231,7 +231,7 @@
     "link": "https://tema.axsiow.ovh/",
     "imgColor": "tema",
     "background": "linear-gradient(to right top, #302e4e, #5f3569, #993070, #d02861, #f63d3d);",
-    "finishDate": "13/02/19",
+    "finishDate": "13/02/2019",
     "workTime": "+30h",
     "description": "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !",
     "objectives": [
@@ -241,7 +241,7 @@
     ],
     "languages": ["PHP", "Html/Css"],
     "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
+    "technicalDescription": "Pour ce projet d'école, les technologies étaient imposées.",
     "difficulties": "ptn ct dur marion la gentille",
     "conclusion": "ct koule"
   }
