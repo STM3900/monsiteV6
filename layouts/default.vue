@@ -119,4 +119,20 @@ body {
     transform: scale(0);
   }
 }
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  .part {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .part {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 </style>

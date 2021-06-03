@@ -34,4 +34,12 @@ div p {
 .part .icon {
   color: hsl(199, 100%, 65%);
 }
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  div h1 {
+    margin-top: 25px;
+  }
+}
 </style>

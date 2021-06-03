@@ -143,4 +143,16 @@ export default {
 .part .icon {
   margin-right: 20px;
 }
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  .part h1 {
+    font-size: 22px;
+  }
+
+  div p {
+    font-size: 14px;
+  }
+}
 </style>

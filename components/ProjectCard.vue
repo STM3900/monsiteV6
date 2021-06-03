@@ -19,7 +19,7 @@
         <fa class="icon-project" icon="code" />
       </div>
     </aside>
-    <div>
+    <div class="content">
       <h2>{{ name }}</h2>
       <p class="finish-date">
         Terminé le <b>{{ finishDate }}</b>
@@ -152,7 +152,6 @@ export default {
         this.isShowed = !this.isShowed;
         this.el.style.transform =
           "perspective(500px) scale(1) rotateX(0) rotateY(0)";
-        this.$emit("toggle", this.index, this.isShowed);
       }
     },
     goToWebSite() {
@@ -233,7 +232,7 @@ article div section button:active {
   margin-bottom: 10px;
 }
 
-.show div {
+.show .content {
   height: 500px;
   transition: 0.6s ease;
 }
@@ -315,5 +314,67 @@ article .work-time {
   padding-right: 20px;
   margin-bottom: 20px;
   margin-top: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    width: 100%;
+    height: 75px;
+  }
+
+  article div section {
+    margin-left: 30px;
+  }
+
+  article aside {
+    width: 100px;
+  }
+
+  article img {
+    height: 50px;
+  }
+
+  article h2 {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  article .finish-date {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  article .work-time {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  article .color {
+    height: 50px;
+    width: 50px;
+  }
+
+  article .color .icon-project {
+    font-size: 16px;
+  }
+
+  article div section {
+    margin-right: 30px;
+    height: 280px;
+  }
+
+  article div section button {
+    font-size: 14px;
+  }
+
+  .show {
+    height: 450px;
+  }
+
+  .show .content {
+    height: 450px;
+  }
 }
 </style>

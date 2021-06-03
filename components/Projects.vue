@@ -83,4 +83,20 @@ export default {
   align-content: center;
   gap: 50px 0;
 }
+
+@media screen and (max-width: 600px) {
+  .part h1 {
+    padding-top: 25px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 50px 0;
+  }
+}
 </style>

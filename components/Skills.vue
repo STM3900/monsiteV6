@@ -149,4 +149,30 @@ article section p {
 .tooltip-hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+  article section {
+    width: 100%;
+  }
+
+  article section .icon-skill {
+    font-size: 22px;
+  }
+
+  article section .icon-star {
+    font-size: 12px;
+  }
+
+  article section h2 {
+    font-size: 18px;
+  }
+
+  article section p {
+    font-size: 14px;
+  }
+
+  .tooltip {
+    font-size: 12px;
+  }
+}
 </style>

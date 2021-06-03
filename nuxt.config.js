@@ -57,5 +57,23 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+
+  generate: {
+		routes: [
+      '/wicook',
+      '/asteroids',
+      '/wikigame',
+      '/lazublog',
+      '/breakingbot',
+      '/ann',
+      '/musichours',
+      '/beeleave',
+      '/tema'
+		]
+	},
+
+  router: {
+    base: '/v6/'
+  }
 };

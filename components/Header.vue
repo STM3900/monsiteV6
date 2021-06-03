@@ -245,4 +245,64 @@ header section a {
     transform: scale(1);
   }
 }
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  div {
+    height: 50vh;
+  }
+
+  .wave {
+    bottom: 49vh;
+  }
+
+  header h1 {
+    font-size: 55px;
+  }
+
+  header p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .icon-label {
+    margin-bottom: 75px;
+  }
+
+  .icon-label-hover {
+    margin-bottom: 75px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  header {
+    align-items: flex-start;
+    padding-left: 5%;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+
+  .icon {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 8px;
+  }
+}
 </style>

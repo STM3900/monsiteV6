@@ -115,4 +115,39 @@ article section h5 {
       <timeline-item :hollow="true">item2</timeline-item>
     </timeline>
 */
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  article section h2 {
+    font-size: 18px;
+  }
+
+  article section h3 {
+    font-size: 17px;
+  }
+
+  article section h4 {
+    font-size: 14px;
+  }
+
+  article section h5 {
+    font-size: 12px;
+  }
+
+  article {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+  }
+
+  article section {
+    width: 100%;
+  }
+}
 </style>

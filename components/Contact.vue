@@ -58,7 +58,7 @@ export default {
 <style scoped>
 .part {
   background: hsl(199, 100%, 65%);
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .part h1 {
@@ -108,5 +108,27 @@ export default {
 .part article section .icon-contact {
   font-size: 25px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .part article {
+    flex-direction: column;
+    gap: 25px 0;
+  }
+
+  .part article section {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .part article section h2 {
+    font-size: 18px;
+  }
+
+  .part article section .icon-contact {
+    font-size: 20px;
+    margin-right: 0;
+  }
 }
 </style>
