@@ -28,7 +28,7 @@
         Fait en <b>{{ workTime }}</b>
       </p>
       <section>
-        <p>{{ description }}</p>
+        <p>{{ shortDescription }}</p>
         <nav>
           <button
             v-show="link"
@@ -59,7 +59,7 @@ export default {
   props: {
     imgColor: String,
     name: String,
-    description: String,
+    shortDescription: String,
     finishDate: String,
     workTime: String,
     link: String,

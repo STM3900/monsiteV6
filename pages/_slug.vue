@@ -34,7 +34,7 @@
     </header>
     <article class="description">
       <h2>Description du projet</h2>
-      <p>
+      <p style="white-space: pre-line;">
         {{ data.description }}
       </p>
     </article>
@@ -58,19 +58,19 @@
     </article>
     <article>
       <h2>Description technique</h2>
-      <p>
+      <p style="white-space: pre-line;">
         {{ data.technicalDescription }}
       </p>
     </article>
     <article>
       <h2>Difficultés et axes d'amélioration</h2>
-      <p>
+      <p style="white-space: pre-line;">
         {{ data.difficulties }}
       </p>
     </article>
     <article>
       <h2>Conclusion</h2>
-      <p>
+      <p style="white-space: pre-line;">
         {{ data.conclusion }}
       </p>
     </article>

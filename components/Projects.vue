@@ -23,7 +23,7 @@
           :key="i"
           :imgColor="card.imgColor"
           :name="card.name"
-          :description="card.description"
+          :shortDescription="card.shortDescription"
           :finishDate="card.finishDate"
           :workTime="card.workTime"
           :link="card.link"

@@ -8,6 +8,7 @@
     "background": "",
     "finishDate": "11/05/2021",
     "workTime": "43h18m",
+    "shortDescription": "Wicook est un site de cuisine communautaire, fait en nuxt.js (framework de vue.js), où tout le monde peut poster ses recettes en utilisant un json modèle",
     "description": "Wicook est un site de cuisine communautaire, fait en nuxt.js (framework de vue.js), où tout le monde peut poster ses recettes en utilisant un json modèle",
     "objectives": [
       "Faire un site en vue.js",
@@ -28,6 +29,7 @@
     "background": "",
     "finishDate": "31/03/2021",
     "workTime": "72h20m",
+    "shortDescription": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu ou vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides et avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
     "description": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu ou vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides et avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
     "objectives": ["Faire un jeu de A à Z", "Prendre du plaisir"],
     "languages": ["Phaser.js", "Node.js", "Html/Css"],
@@ -44,6 +46,7 @@
     "background": "",
     "finishDate": "20/02/2021",
     "workTime": "44h06m",
+    "shortDescription": "Wikigame est un petit jeu en python se basant sûr le jeu de wikipédia ! L'objectif du jeu et d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
     "description": "Wikigame est un petit jeu en python se basant sûr le jeu de wikipédia ! L'objectif du jeu et d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
     "objectives": [
       "Apprendre en python mdr",
@@ -64,6 +67,7 @@
     "background": "",
     "finishDate": "30/05/2020",
     "workTime": "6h",
+    "shortDescription": "Générateur prenant un mot (que l'ont peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
     "description": "Générateur prenant un mot (que l'ont peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
     "objectives": [
       "Se remettre à coder après un mois de pause",
@@ -80,6 +84,7 @@
     "background": "lazublog",
     "finishDate": "20/03/2020",
     "workTime": "30h40m",
+    "shortDescription": "Conçu pour la sortie du jeu \"Animal Crossing : New Horizon\" Lazublog est un petit blog où je partage mon aventure sur le jeu, avec une pointe de fiction !",
     "description": "Conçu pour la sortie du jeu \"Animal Crossing : New Horizon\" Lazublog est un petit blog où je partage mon aventure sur le jeu, avec une pointe de fiction !",
     "objectives": [
       "Apprendre à utiliser une base de données (ajout, modification, et suppression de contenu)",
@@ -101,6 +106,7 @@
     "background": "Br",
     "finishDate": "09/02/2020",
     "workTime": "2 Jours Non-Stop",
+    "shortDescription": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologuue qui doit dater les gisements métaliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
     "description": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologuue qui doit dater les gisements métaliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
     "objectives": [
       "Faire un jeu fonctionnel en moins de 48h",
@@ -122,6 +128,7 @@
     "background": "ANN",
     "finishDate": "02/02/2020",
     "workTime": "2 Jours Non-Stop",
+    "shortDescription": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes étant présent sur la Terre",
     "description": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes étant présent sur la Terre",
     "objectives": [
       "Faire un jeu fonctionnel en seulement 48h",
@@ -142,7 +149,8 @@
     "background": "MusicHours",
     "finishDate": "24/12/2020",
     "workTime": "72h19m",
-    "description": "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !",
+    "shortDescription": "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !",
+    "description": "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !\n\nCe projet est né fin 2019, pendant les vacances de la toussaint, suite à une idée que j'avais, mais que je ne pouvais pas réaliser avant d'avoir appris le langage JavaScript.\nCette idée, venait tout droit des jeux vidéo de la série d'Animal Crossing, ou la musique diffusée en jeu, change toutes les heures, s'adaptant aux différentes ambiances qu'il peut y avoir dans une journée. Etant fan de cet attribut, assez unique en son genre, j'ai eu l'idée de faire un site qui pourrait jouer une musique, en fonction de l'heure à laquelle nous sommes, et lui donner une allure assez agréable à regarder pour pouvoir le faire tourner en fond.\n\nC'est donc dans cette idée que je me suis lancé sur le développement du site, en me mettant en tête que ce ne serait qu'un petit projet qui ne prendrait pas beaucoup de temps. Au final, MusicHours fut le plus gros projet que j'ai pu faire en informatique, avec plus de 70 heures de dev, et surtout qui m'a permis d'apprendre énormément d'éléments en js.",
     "objectives": [
       "Expérimenter de nouvelles choses en JS",
       "Surpasser mes limites en CSS",
@@ -150,7 +158,7 @@
     ],
     "languages": ["JavaScript", "Html/Css"],
     "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
+    "technicalDescription": "Au départ le site ne devait jouer de la musique qu'en fonction de l'heure. Je suis donc parti sur un système très simple qui consistait juste à mettre 24 musiques mp3 dans un dossier, ou elles étaient nommées d'un nombre entre 0 et 23, et d'en fonction de l'heure de notre pc, chargé celle qui correspondait.\n\nEt voilà, j'avais donc fini mon site en quelques heures ! Mais bon je ne voulais pas vraiment en rester là. J'ai donc voulu ajouter des fonctionnalités. J'ai donc ajouté un cycle d'aurore / jour / crépuscule / nuit au site, puis ensuite un soleil et une lune qui bougeait en fonction de l'heure.\nÉtant assez satisfait du site, je me suis dit que je pouvais en rester la, et j'ai eu une idée qui a allongé le temps de développement de 60 heures : celle de faire en sorte que le site réagisse en fonction de la météo d'une ville rentrée.\nAyant une expérience d'environ 2 semaines en javascript, je n'avais absolument aucune idée de comment réaliser cette action, et en demandant à des amis et en suivant des tutos, j'ai donc compris que je devrais utiliser une api, qui me permettrait de récupérer les données météorologiques d'une ville donnée. Et cette api vient directement du site https://openweathermap.org/, qui propose une api gratuite, et avec le recul, pas très dure à utiliser.",
     "difficulties": "ptn ct dur marion la gentille",
     "conclusion": "ct koule"
   },
@@ -163,6 +171,7 @@
     "background": "BeeLeave",
     "finishDate": "13/09/19",
     "workTime": "5 Jours de projet",
+    "shortDescription": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5, BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
     "description": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5, BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
     "objectives": [
       "Faire un site en 5 jours",
@@ -184,6 +193,7 @@
     "background": "",
     "finishDate": "06/2019",
     "workTime": "Sujet de mission du stage de 1ère année",
+    "shortDescription": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposé ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
     "description": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposé ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
     "objectives": [
       "Faire un site fonctionnel",
@@ -201,6 +211,7 @@
     "background": "",
     "finishDate": "30/04/19",
     "workTime": "40h",
+    "shortDescription": "Réalisé au cours d'un projet scolaire, Hero and Monsters est un petit jeu développé en C++, dans le but de nous apprendre à faire de la programmation orientée objet (POO)",
     "description": "Réalisé au cours d'un projet scolaire, Hero and Monsters est un petit jeu développé en C++, dans le but de nous apprendre à faire de la programmation orientée objet (POO)",
     "objectives": [
       "Faire un prototype fonctionel en 40h",
@@ -217,6 +228,7 @@
     "background": "",
     "finishDate": "16/03/19",
     "workTime": "2 Jours Non-Stop",
+    "shortDescription": "Safe Or Well est un jeu réalisé dans une équipe de 6, lors de la Scientific Game Jam de Grenoble de 2019, où vous incarnez une personne malade, forcée d'utiliser les objets connectés pour l'aider dans sa vie. Mais va-t-elle accepter de rendre les données collectées accessible à son médecin et à son assurance ?",
     "description": "Safe Or Well est un jeu réalisé dans une équipe de 6, lors de la Scientific Game Jam de Grenoble de 2019, où vous incarnez une personne malade, forcée d'utiliser les objets connectés pour l'aider dans sa vie. Mais va-t-elle accepter de rendre les données collectées accessible à son médecin et à son assurance ?",
     "objectives": [
       "Faire un jeu de A à Z en seulement 48h",
@@ -233,6 +245,7 @@
     "background": "linear-gradient(to right top, #302e4e, #5f3569, #993070, #d02861, #f63d3d);",
     "finishDate": "13/02/2019",
     "workTime": "+30h",
+    "shortDescription": "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !",
     "description": "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !",
     "objectives": [
       "Faire un site fonctionnel",
