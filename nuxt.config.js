@@ -3,7 +3,7 @@ export default {
   head: {
     title: "monsiteV6",
     htmlAttrs: {
-      lang: "en"
+      lang: "fr"
     },
     meta: [
       { charset: "utf-8" },
@@ -41,7 +41,7 @@ export default {
         imports: [
           {
             set: "@fortawesome/free-solid-svg-icons",
-            icons: ["faEnvelope", "faFileAlt", "faAddressBook", "faClipboardList", "faCode", "faUserCircle", "faDatabase", "faStar"]
+            icons: ["faEnvelope", "faFileAlt", "faAddressBook", "faClipboardList", "faCode", "faUserCircle", "faDatabase", "faStar", "faHome"]
           },
           {
             set: "@fortawesome/free-brands-svg-icons",

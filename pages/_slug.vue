@@ -1,6 +1,9 @@
 <template>
   <div v-if="data" class="slug">
-    <nav ref="nav" @click="goHome">Retour</nav>
+    <nav ref="nav" @click="goHome">
+      <fa class="icon-menu" icon="home" />
+      <p>Retour</p>
+    </nav>
     <header class="background">
       <h1>{{ data.name }}</h1>
       <p>
@@ -163,6 +166,10 @@ nav {
   opacity: 0;
 }
 
+nav .icon-menu {
+  display: none;
+}
+
 .show {
   opacity: 1;
 }
@@ -216,7 +223,7 @@ header article {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
   margin-top: 25px;
   margin-bottom: 15px;
@@ -237,10 +244,6 @@ article {
 article h2 {
   margin-bottom: 10px;
   color: rgb(25, 25, 25);
-}
-
-.description {
-  width: 75%;
 }
 
 .list {
@@ -281,5 +284,86 @@ article h2 {
 
 .button-group button:active {
   transform: rotate(0deg) scale(0.98);
+}
+
+@media screen and (max-width: 940px) {
+  .list {
+    flex-direction: column;
+    gap: 25px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 10px 15px 10px 10px;
+  }
+
+  nav:hover {
+    padding: 10px 15px 10px 10px;
+  }
+
+  nav .icon-menu {
+    display: block;
+    color: rgb(25, 25, 25);
+  }
+
+  nav p {
+    display: none;
+  }
+
+  .slug {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .slug h1 {
+    font-size: 32px;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  header article {
+    flex-direction: column;
+  }
+
+  header img {
+    height: 250px;
+  }
+
+  header article section {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  nav {
+    padding: 10px 10px 10px 5px;
+  }
+
+  nav:hover {
+    padding: 10px 10px 10px 5px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  header img {
+    height: 200px;
+  }
 }
 </style>

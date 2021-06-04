@@ -2,9 +2,9 @@
   <div class="part">
     <h1><fa class="icon" icon="user-circle" />Bonjour !</h1>
     <p>
-      Je suis un étudiant en troisième année, à l'Epsi et alternant chez
-      Erplain, je suis passionné par le web, où je prends plaisir à concevoir et
-      réaliser des sites internet avec de plus en plus de fonctionnalités !
+      Je suis un étudiant en troisième année à l'Epsi et alternant chez Erplain,
+      je suis passionné par le web, où je prends plaisir à concevoir et réaliser
+      des sites internet avec de plus en plus de fonctionnalités !
     </p>
   </div>
 </template>

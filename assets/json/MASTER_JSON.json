@@ -1,7 +1,7 @@
 [
   {
     "name": "Wicook",
-    "url": "wicook",
+    "url": "",
     "category": "Projet perso",
     "link": "https://theomigeat.com/wicook/",
     "imgColor": "wicookLogo",
@@ -22,15 +22,15 @@
   },
   {
     "name": "Asteroids",
-    "url": "asteroids",
+    "url": "",
     "category": "Projet d'école",
     "link": "http://theo.anawens.fr/",
     "imgColor": "asteroidsLogo",
     "background": "",
     "finishDate": "31/03/2021",
     "workTime": "72h20m",
-    "shortDescription": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu ou vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides et avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
-    "description": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu ou vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides et avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
+    "shortDescription": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu où vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
+    "description": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu où vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
     "objectives": ["Faire un jeu de A à Z", "Prendre du plaisir"],
     "languages": ["Phaser.js", "Node.js", "Html/Css"],
     "softwares": ["VSCode", "GitHub"],
@@ -40,14 +40,14 @@
   },
   {
     "name": "Wikigame",
-    "url": "wikigame",
+    "url": "",
     "category": "Projet d'école",
     "imgColor": "wikigameLogo",
     "background": "",
     "finishDate": "20/02/2021",
     "workTime": "44h06m",
-    "shortDescription": "Wikigame est un petit jeu en python se basant sûr le jeu de wikipédia ! L'objectif du jeu et d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
-    "description": "Wikigame est un petit jeu en python se basant sûr le jeu de wikipédia ! L'objectif du jeu et d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
+    "shortDescription": "Wikigame est un petit jeu en python se basant sur le jeu de wikipédia ! L'objectif du jeu est d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
+    "description": "Wikigame est un petit jeu en python se basant sur le jeu de wikipédia ! L'objectif du jeu est d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
     "objectives": [
       "Apprendre en python mdr",
       "attendre 6 ans que j'ai la note là"
@@ -67,8 +67,8 @@
     "background": "",
     "finishDate": "30/05/2020",
     "workTime": "6h",
-    "shortDescription": "Générateur prenant un mot (que l'ont peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
-    "description": "Générateur prenant un mot (que l'ont peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
+    "shortDescription": "Générateur prenant un mot (que l'on peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
+    "description": "Générateur prenant un mot (que l'on peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
     "objectives": [
       "Se remettre à coder après un mois de pause",
       "Tester de nouvelles choses comme les animations de texte"
@@ -77,7 +77,7 @@
   },
   {
     "name": "Lazublog",
-    "url": "lazublog",
+    "url": "",
     "category": "projet perso",
     "link": "https://theomigeat.com/LazuBlog/",
     "imgColor": "lazulogo",
@@ -106,8 +106,8 @@
     "background": "Br",
     "finishDate": "09/02/2020",
     "workTime": "2 Jours Non-Stop",
-    "shortDescription": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologuue qui doit dater les gisements métaliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
-    "description": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologuue qui doit dater les gisements métaliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
+    "shortDescription": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métalliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
+    "description": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métaliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
     "objectives": [
       "Faire un jeu fonctionnel en moins de 48h",
       "Rencontrer des personnes talentueuses dans des dommaines autre que l'informatique",
@@ -121,15 +121,15 @@
   },
   {
     "name": "Apocalypse Not Now",
-    "url": "ann",
+    "url": "",
     "category": "Projet perso",
     "link": "https://manfredhq.itch.io/apocalypsenotnow",
     "imgColor": "ANNLogo",
     "background": "ANN",
     "finishDate": "02/02/2020",
     "workTime": "2 Jours Non-Stop",
-    "shortDescription": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes étant présent sur la Terre",
-    "description": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes étant présent sur la Terre",
+    "shortDescription": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes présents sur la Terre",
+    "description": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes présents sur la Terre",
     "objectives": [
       "Faire un jeu fonctionnel en seulement 48h",
       "Permettre de savoir si mon niveau en C# / Unity s'est amélioré"
@@ -171,8 +171,8 @@
     "background": "BeeLeave",
     "finishDate": "13/09/19",
     "workTime": "5 Jours de projet",
-    "shortDescription": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5, BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
-    "description": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5, BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
+    "shortDescription": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5. BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
+    "description": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5. BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
     "objectives": [
       "Faire un site en 5 jours",
       "Créer une système de messagerie instantanée",
@@ -193,8 +193,8 @@
     "background": "",
     "finishDate": "06/2019",
     "workTime": "Sujet de mission du stage de 1ère année",
-    "shortDescription": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposé ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
-    "description": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposé ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
+    "shortDescription": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposées ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
+    "description": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposées ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
     "objectives": [
       "Faire un site fonctionnel",
       "Apprendre de nouveaux Framework",
@@ -238,7 +238,7 @@
   },
   {
     "name": "TEMA",
-    "url": "tema",
+    "url": "",
     "category": "Projet d'école",
     "link": "https://tema.axsiow.ovh/",
     "imgColor": "tema",
