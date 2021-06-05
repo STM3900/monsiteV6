@@ -1,6 +1,7 @@
 <template>
   <div class="part">
     <h1><fa class="icon" icon="clipboard-list" />Compétences et langages</h1>
+    <p class="note">(Mesurées en nombre d'heures pratiquées hors entreprise)</p>
     <article>
       <section v-for="(item, i) in skills" :key="i">
         <aside>
@@ -73,8 +74,11 @@ export default {
   margin-bottom: 25px;
 }
 
-.part h1 {
+.part .note {
   margin-bottom: 25px;
+  color: rgb(100, 100, 100);
+  font-style: italic;
+  font-size: 14px;
 }
 
 .part .icon {
@@ -172,6 +176,10 @@ article section p {
   }
 
   .tooltip {
+    font-size: 12px;
+  }
+
+  .part .note {
     font-size: 12px;
   }
 }

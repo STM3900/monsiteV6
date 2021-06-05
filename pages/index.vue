@@ -154,5 +154,9 @@ export default {
   div p {
     font-size: 14px;
   }
+
+  .part .icon {
+    margin-right: 10px;
+  }
 }
 </style>

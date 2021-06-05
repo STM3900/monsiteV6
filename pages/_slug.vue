@@ -154,6 +154,21 @@ export default {
         }
       }
     }
+  },
+  head() {
+    if (this.data) {
+      return {
+        title: `Théo Migeat | ${this.data.name}`,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: "description",
+            name: "description",
+            content: this.data.shortDescription
+          }
+        ]
+      };
+    }
   }
 };
 </script>
@@ -309,7 +324,7 @@ article h2 {
 
   nav .icon-menu {
     display: block;
-    color: rgb(25, 25, 25);
+    color: rgb(50, 50, 50);
   }
 
   nav p {

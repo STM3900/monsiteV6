@@ -1,6 +1,6 @@
 <template>
   <div class="part">
-    <h1><fa class="icon" icon="code" />Contact</h1>
+    <h1><fa class="icon" icon="id-card" />Contact</h1>
     <article>
       <section
         v-for="(item, i) in contacts"

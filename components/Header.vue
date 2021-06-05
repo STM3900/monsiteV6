@@ -11,7 +11,11 @@
             :key="i"
             :href="iconLink[i]"
             :target="i != 2 ? '_blank' : ''"
-            ><fa class="icon" :icon="icon"
+            ><fa
+              class="icon"
+              :icon="icon"
+              @mouseover="setActiveLabel(i)"
+              @mouseleave="isHover = false"
           /></a>
         </section>
         <p :class="isHover ? 'icon-label-hover' : 'icon-label'">
@@ -44,7 +48,7 @@ export default {
         "https://www.linkedin.com/in/theo-migeat/",
         "https://github.com/STM3900",
         "mailto:theo.migeat@epsi.fr",
-        "medias/fichiers/Cv_Théo_Migeat.pdf"
+        "files/CvTheoMigeat.pdf"
       ],
       iconLabel: ["LinkedIn", "Github", "M'envoyer un email", "Voir mon CV"],
       index: 0,
@@ -110,6 +114,12 @@ export default {
       },
       svgShow: true
     };
+  },
+  methods: {
+    setActiveLabel(index) {
+      this.isHover = true;
+      this.index = index;
+    }
   }
 };
 </script>

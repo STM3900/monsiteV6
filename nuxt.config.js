@@ -8,10 +8,10 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "Je suis un étudiant en troisième année à l'Epsi et alternant chez Erplain, je suis passionné par le développement web, où je prends plaisir à concevoir et réaliser des sites avec de plus en plus de fonctionnalités !" }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: 'icon', type: 'image/png', href: './favicon.png' },
       {
         rel: "preconnect",
         href: "https://fonts.gstatic.com"
@@ -46,7 +46,7 @@ export default {
         imports: [
           {
             set: "@fortawesome/free-solid-svg-icons",
-            icons: ["faEnvelope", "faFileAlt", "faAddressBook", "faClipboardList", "faCode", "faUserCircle", "faDatabase", "faStar", "faHome"]
+            icons: ["faEnvelope", "faFileAlt", "faAddressBook", "faClipboardList", "faCode", "faUserCircle", "faDatabase", "faStar", "faHome", "faIdCard"]
           },
           {
             set: "@fortawesome/free-brands-svg-icons",
@@ -67,19 +67,14 @@ export default {
 
   generate: {
 		routes: [
-      '/wicook',
       '/asteroids',
       '/wikigame',
-      '/lazublog',
       '/breakingbot',
-      '/ann',
       '/musichours',
-      '/beeleave',
-      '/tema'
 		]
 	},
 
   router: {
-    base: '/v6/'
+    base: '/'
   }
 };
