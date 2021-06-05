@@ -7,7 +7,8 @@
     <header class="background">
       <h1>{{ data.name }}</h1>
       <p>
-        Projet perso - <a v-if="data.link" :href="data.link">Aller au site</a>
+        {{ data.category }}
+        <span v-if="data.link">- <a :href="data.link">Aller au site</a></span>
       </p>
       <img
         v-if="checkIfColor"
@@ -35,7 +36,7 @@
         </section>
       </article>
     </header>
-    <article class="description">
+    <article v-if="data.description" class="description">
       <h2>Description du projet</h2>
       <p style="white-space: pre-line;">
         {{ data.description }}
@@ -59,19 +60,19 @@
         </ul>
       </section>
     </article>
-    <article>
-      <h2>Description technique</h2>
+    <article v-if="data.technicalDescription">
+      <h2>Description avancée</h2>
       <p style="white-space: pre-line;">
         {{ data.technicalDescription }}
       </p>
     </article>
-    <article>
+    <article v-if="data.difficulties">
       <h2>Difficultés et axes d'amélioration</h2>
       <p style="white-space: pre-line;">
         {{ data.difficulties }}
       </p>
     </article>
-    <article>
+    <article v-if="data.conclusion">
       <h2>Conclusion</h2>
       <p style="white-space: pre-line;">
         {{ data.conclusion }}
@@ -96,7 +97,8 @@ export default {
   data() {
     return {
       rawData: MASTER_JSON,
-      data: null
+      data: null,
+      activeTab: []
     };
   },
   computed: {
@@ -109,6 +111,7 @@ export default {
   },
   mounted() {
     this.checkUrl();
+    this.createActiveTab();
     setTimeout(() => {
       this.$refs["nav"].classList.add("show");
     }, 500);
@@ -130,24 +133,26 @@ export default {
     },
     changeProject(destination) {
       let temp = destination;
-      let ok = false;
       let url = null;
-      while (!ok) {
-        if (this.rawData[this.findIndex(this.rawData) + temp].url) {
-          ok = true;
-          url = this.rawData[this.findIndex(this.rawData) + temp].url;
-        }
-        temp += destination;
-      }
+
+      url = this.activeTab[this.findIndex(this.activeTab) + temp].url;
+
       this.$refs["nav"].style.display = "none";
       this.$router.push(`/${url}`);
     },
     checkIfExist(e) {
-      return this.rawData[this.findIndex(this.rawData) + e];
+      return this.activeTab[this.findIndex(this.activeTab) + e];
     },
     goHome() {
       this.$refs["nav"].style.display = "none";
       this.$router.push("/");
+    },
+    createActiveTab() {
+      for (let i = 0; i < this.rawData.length; i++) {
+        if (this.rawData[i].url) {
+          this.activeTab.push(this.rawData[i]);
+        }
+      }
     }
   }
 };

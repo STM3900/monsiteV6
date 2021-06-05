@@ -8,55 +8,46 @@
     "background": "",
     "finishDate": "11/05/2021",
     "workTime": "43h18m",
-    "shortDescription": "Wicook est un site de cuisine communautaire, fait en nuxt.js (framework de vue.js), où tout le monde peut poster ses recettes en utilisant un json modèle",
-    "description": "Wicook est un site de cuisine communautaire, fait en nuxt.js (framework de vue.js), où tout le monde peut poster ses recettes en utilisant un json modèle",
-    "objectives": [
-      "Faire un site en vue.js",
-      "Avoir un site de cuisine qui est pas moche quoi"
-    ],
-    "languages": ["Vue / Nuxt.js", "Html/Css"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "shortDescription": "Wicook est un site de cuisine communautaire, fait en nuxt.js (framework de vue.js), où tout le monde peut poster ses recettes en utilisant un json modèle"
   },
   {
     "name": "Asteroids",
-    "url": "",
+    "url": "asteroids",
     "category": "Projet d'école",
     "link": "http://theo.anawens.fr/",
     "imgColor": "asteroidsLogo",
-    "background": "",
+    "background": "asteroids",
     "finishDate": "31/03/2021",
     "workTime": "72h20m",
     "shortDescription": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu où vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
-    "description": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu où vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
-    "objectives": ["Faire un jeu de A à Z", "Prendre du plaisir"],
+    "description": "Pour ce projet d'école, le sujet était tout simplement, en utilisant Phaser.io un framework JavaScript, de faire un jeu.\nNous avons carte blanche sur le type de jeu et ce que l'on allait créer N'ayant pas trop d'idées au départ, je me suis souvenu des jeux d'arcades auquel j'aimais bien jouer quand j'étais plus jeune, et je me suis souvenu d'Asteroids, un jeu où l'on contrôle un petit vaisseau de pixel et ou l'objectif et d'exploser le plus d'astéroïdes possibles tout en faisant attention à ne pas se les prendre. J'ai décidé de partir sur cette idée et de refaire le jeu depuis zéro en y ajoutant plus de fonctionnalités !",
+    "objectives": ["Faire un jeu de A à Z", "Se donner à fond dans un projet"],
     "languages": ["Phaser.js", "Node.js", "Html/Css"],
     "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "technicalDescription": "Le jeu propose plusieurs fonctionnalités :\n\n- Tout d'abord, quand le joueur lance la partie, il possède 3 vies, si il les perd, la partie est terminée\n- Le joueur peut se déplacer uniquement en avant, mais peut orienter la direction de son vaisseau. Les astéroïdes se déplacent uniquement en ligne droite, avec un angle défini aléatoirement qui reste fixe\n- Le joueur peut tirer son vaisseau et ainsi détruire des astéroïdes. Lui permettant de gagner des points, mais divisant aussi les astéroïdes en petits morceaux\n- Une fois par vie, le joueur peut utiliser son SuperTir, qui détruit tout ennemi en ligne droite pendant un court instant\n- Pour gagner plus de points, le joueur peut augmenter son combo s'il ne rate pas sa cible à plusieurs reprises. Au bout de 10 astéroïdes touchés d'affilé, le joueur obtient le SuperCombo, qui augmente considérablement sa cadence de tir\n\nLe jeu possède aussi un système de classement, qui n'est pas accessible dans la version publique. Celui-ci enregistre les 5 meilleurs scores.",
+    "difficulties": "Comme difficultés pour ce projet, il y avait tout d'abord le fait de devoir apprendre depuis zéro un nouveau framework, pas si bien documenté que ça. Et ensuite, faire l'api du système de classement.\nComme axe d'amélioration, j'aurais aimé ajouter encore plus de fonctionnalité, comme par exemple un système ou le jeu s'adapterait en fonction d'une musique.",
+    "conclusion": "Asteroids a été le plus gros projet que j'ai fait en cette année 2021, et sûrement l'un de ceux où j'ai pris le plus de plaisir à le faire !"
   },
   {
     "name": "Wikigame",
-    "url": "",
+    "url": "wikigame",
     "category": "Projet d'école",
+    "link": "https://github.com/STM3900/Wikigame",
     "imgColor": "wikigameLogo",
-    "background": "",
+    "background": "wikigame",
     "finishDate": "20/02/2021",
     "workTime": "44h06m",
     "shortDescription": "Wikigame est un petit jeu en python se basant sur le jeu de wikipédia ! L'objectif du jeu est d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
     "description": "Wikigame est un petit jeu en python se basant sur le jeu de wikipédia ! L'objectif du jeu est d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
     "objectives": [
-      "Apprendre en python mdr",
-      "attendre 6 ans que j'ai la note là"
+      "Pouvoir mettre en pratique ce que j'avais appris en Python",
+      "Faire un projet visuelement simple mais agréable à regarder"
     ],
     "languages": ["Python", "Html/Css"],
     "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "technicalDescription": "Le site fonctionne suivant cet ordre :\n\n- Tout d'abord le site choisit deux bornes : une de début et une de fin, (par exemple Gnocchi en début et Grenoble en fin) en se basant sur une page sélectionnée aléatoirement\n- Le site génère ensuite la variable du compteur, et \"scanne\" la page wikipédia de l'article et extrait tous ses liens valides (pas de doublons, pas d'hyperliens, que ceux dans une certaine zone)\n- Avec les liens extrait, le site génère sa page, en affichant le nom de l'article, le nombre de coups, une courte description, puis enfin, tous les liens\n- Quand l'utilisateur clique sur un lien, le site compare si sa destination correspond à la borne de fin, si c'est le cas, la partie est gagné et un message de victoire apparaît, ainsi que le nombre de cours que l'utilisateur a fait\n- Mais si la destination ne correspond pas, le site ajoute 1 au compteur et l'amène sur la page, en procédant de la méthode que celle de l'étape 2 et 3\n- L'utilisateur peut aussi revenir en arrière d'une, ou plusieurs pages, mais celui-lui coûtera 2 coups.",
+    "difficulties": "La principale difficulté de ce projet était le système d'extraction de liens sur une page wikipédia, qui m'a posé pas mal de difficultés.\n\nLe temps aussi a joué contre moi, je n'ai pas pu implémenter toutes les idées que j'avais en tête comme par exemple un meilleur historique de page et une navigation plus fluide entre les pages.",
+    "conclusion": "En conclusion, ce projet était très agréable à faire, et m'a permis d'apprendre beaucoup d'éléments en python !"
   },
   {
     "name": "Jourbon",
@@ -67,13 +58,7 @@
     "background": "",
     "finishDate": "30/05/2020",
     "workTime": "6h",
-    "shortDescription": "Générateur prenant un mot (que l'on peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
-    "description": "Générateur prenant un mot (que l'on peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens",
-    "objectives": [
-      "Se remettre à coder après un mois de pause",
-      "Tester de nouvelles choses comme les animations de texte"
-    ],
-    "languages": ["HTML / CSS", "JS", "VSCode / GitHub"]
+    "shortDescription": "Générateur prenant un mot (que l'on peut changer) et qui mélange ses lettres aléatoirement pour en faire un qui a plus ou moins de sens"
   },
   {
     "name": "Lazublog",
@@ -84,18 +69,7 @@
     "background": "lazublog",
     "finishDate": "20/03/2020",
     "workTime": "30h40m",
-    "shortDescription": "Conçu pour la sortie du jeu \"Animal Crossing : New Horizon\" Lazublog est un petit blog où je partage mon aventure sur le jeu, avec une pointe de fiction !",
-    "description": "Conçu pour la sortie du jeu \"Animal Crossing : New Horizon\" Lazublog est un petit blog où je partage mon aventure sur le jeu, avec une pointe de fiction !",
-    "objectives": [
-      "Apprendre à utiliser une base de données (ajout, modification, et suppression de contenu)",
-      "Mettre à l'œuvre ce que j'ai pu apprendre durant mon stage (animations en css et javascript)",
-      "Me remettre à l'écriture"
-    ],
-    "languages": ["JavaScript", "PHP", "SQL", "Html/Css"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "shortDescription": "Conçu pour la sortie du jeu \"Animal Crossing : New Horizon\" Lazublog est un petit blog où je partage mon aventure sur le jeu, avec une pointe de fiction !"
   },
   {
     "name": "Breaking Bot",
@@ -107,7 +81,7 @@
     "finishDate": "09/02/2020",
     "workTime": "2 Jours Non-Stop",
     "shortDescription": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métalliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
-    "description": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métaliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
+    "description": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métalliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !\n\nLa Scientific Game Jam consiste à développer un jeu complet en 48h, qui illustre le sujet de thèse du doctorant qui fait parti de l'équipe. Cette année, j'ai eu la chance d'être dans une grande équipe de 7 personnes très talentueuses et très bienveillante ! Mon rôle pendant cette game jam était celui de développeur (étonnant, n'est-ce pas ?)\nJe devais donc, en me basant sur les idées du game designer, et à partir des assets créés par les artistes, donner vie à un jeu, en moins de 48 heures.",
     "objectives": [
       "Faire un jeu fonctionnel en moins de 48h",
       "Rencontrer des personnes talentueuses dans des dommaines autre que l'informatique",
@@ -115,9 +89,9 @@
     ],
     "languages": ["C#"],
     "softwares": ["Unity", "Visual Studio", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "technicalDescription": "Pour le développement du jeu, nous sommes naturellement partis sur le logiciel Unity, que nous avons déjà utilisé lors des précédentes Game Jam, permettant d'écrire le jeu en C#. Nous avons aussi utilisé GitHub pour pouvoir collaborer ensemble sur le même projet.\n\nLe jeu comporte différentes phases. Tout d'abord celle d'exploration, on l'on se balade sur la surface d'une planète, ou notre objectif et de trouver des gisements à miner. Pour cela, il suffit de rester attentif à la musique du jeu qui varie en fonction du type de minerai. Ensuite, il faut miner le minerait en martelant la touche espace, puis l'analyser et le classer, pour enfin marquer des points, et recommencer l'opération jusqu'à la fin du temps imparti.",
+    "difficulties": "Tout comme chaque Game Jam, la difficulté majeure du projet et bien sur le temps.\nOu l'on se rend compte que 48h pour faire un jeu, c'est très peu. Il y a aussi la gestion de la fatigue qui joue beaucoup dans le développement, ou se pose le dilemme de dormir plus et moins coder, ou dormir moins et avoir plus de temps de dev, mais avec un risque d'erreur beaucoup plus élevé. En parlant d'erreurs, nous avons eu quelques soucis avec GitHub ce qui nous a fait perdre quelques heures. Un axe d'amélioration serait pour ma part de gérer mieux mon temps de travail et de repos.",
+    "conclusion": "En conclusion, cette Game Jam a été un moment inoubliable, remplie de bons souvenirs, et j'espère pouvoir en refaire une prochainement !"
   },
   {
     "name": "Apocalypse Not Now",
@@ -128,17 +102,7 @@
     "background": "ANN",
     "finishDate": "02/02/2020",
     "workTime": "2 Jours Non-Stop",
-    "shortDescription": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes présents sur la Terre",
-    "description": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes présents sur la Terre",
-    "objectives": [
-      "Faire un jeu fonctionnel en seulement 48h",
-      "Permettre de savoir si mon niveau en C# / Unity s'est amélioré"
-    ],
-    "languages": ["C#"],
-    "softwares": ["Unity", "Visual Studio", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "shortDescription": "Créé pendant la Global Game Jam de 2020, dans une équipe de 5, Apocalypse Not Now est un jeu dont le but est de surmontrer les nombreux cataclysmes présents sur la Terre"
   },
   {
     "name": "MusicHours",
@@ -164,25 +128,14 @@
   },
   {
     "name": "BeeLeave",
-    "url": "beeleave",
+    "url": "",
     "category": "Projet d'école",
     "link": "https://little-rpg.fr/workshop/beeleave/public/index.php",
     "imgColor": "#1c2230",
     "background": "BeeLeave",
     "finishDate": "13/09/19",
     "workTime": "5 Jours de projet",
-    "shortDescription": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5. BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
-    "description": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5. BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans.",
-    "objectives": [
-      "Faire un site en 5 jours",
-      "Créer une système de messagerie instantanée",
-      "Créer un système de compte et de groupe, avec plusieurs rôles possibles"
-    ],
-    "languages": ["PHP", "Html/Css", "SQL"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "blablablabalblablablabla",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "shortDescription": "Conçu pendant un Workshop : Une semaine de cours banalisée pour faire un projet, en équipe de 5. BeeLeave est une plateforme sur laquelle, en créant un compte, il est possible de créer des évènements, des groupes et de discuter avec les membres présents dedans."
   },
   {
     "name": "AuphysWorks",
@@ -193,31 +146,18 @@
     "background": "",
     "finishDate": "06/2019",
     "workTime": "Sujet de mission du stage de 1ère année",
-    "shortDescription": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposées ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
-    "description": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposées ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise.",
-    "objectives": [
-      "Faire un site fonctionnel",
-      "Apprendre de nouveaux Framework",
-      "Découvrir la vie en entreprise"
-    ],
-    "languages": ["HTML / CSS", "PHP", "VSCode / GitHub"]
+    "shortDescription": "AuphysWorks est un site vitrine réalisé avec Enzo Fogliano lors de notre stage de première année. Son but est de présenter dans un design accueillant et responsive, les futurs services proposées ainsi que de mettre à disposition un formulaire de contact pour permettre aux visiteurs de contacter rapidement l'entreprise."
   },
   {
     "name": "Hero And Monsters",
     "url": "",
     "category": "Projet d'école",
-    "link": "https://theomigeat.com/medias/fichiers/Projet.exe",
+    "link": "https://theomigeat.com/medias/files/Projet.exe",
     "imgColor": "#000000",
     "background": "",
     "finishDate": "30/04/19",
     "workTime": "40h",
-    "shortDescription": "Réalisé au cours d'un projet scolaire, Hero and Monsters est un petit jeu développé en C++, dans le but de nous apprendre à faire de la programmation orientée objet (POO)",
-    "description": "Réalisé au cours d'un projet scolaire, Hero and Monsters est un petit jeu développé en C++, dans le but de nous apprendre à faire de la programmation orientée objet (POO)",
-    "objectives": [
-      "Faire un prototype fonctionel en 40h",
-      "Utiliser la POO pour optimiser le code du projet"
-    ],
-    "languages": ["C++", "Visual Studio / GitHub"]
+    "shortDescription": "Réalisé au cours d'un projet scolaire, Hero and Monsters est un petit jeu développé en C++, dans le but de nous apprendre à faire de la programmation orientée objet (POO)"
   },
   {
     "name": "Safe Or Well",
@@ -228,13 +168,7 @@
     "background": "",
     "finishDate": "16/03/19",
     "workTime": "2 Jours Non-Stop",
-    "shortDescription": "Safe Or Well est un jeu réalisé dans une équipe de 6, lors de la Scientific Game Jam de Grenoble de 2019, où vous incarnez une personne malade, forcée d'utiliser les objets connectés pour l'aider dans sa vie. Mais va-t-elle accepter de rendre les données collectées accessible à son médecin et à son assurance ?",
-    "description": "Safe Or Well est un jeu réalisé dans une équipe de 6, lors de la Scientific Game Jam de Grenoble de 2019, où vous incarnez une personne malade, forcée d'utiliser les objets connectés pour l'aider dans sa vie. Mais va-t-elle accepter de rendre les données collectées accessible à son médecin et à son assurance ?",
-    "objectives": [
-      "Faire un jeu de A à Z en seulement 48h",
-      "Découvrir Unity et le langage C#"
-    ],
-    "languages": ["Unity", "C#", "GitHub"]
+    "shortDescription": "Safe Or Well est un jeu réalisé dans une équipe de 6, lors de la Scientific Game Jam de Grenoble de 2019, où vous incarnez une personne malade, forcée d'utiliser les objets connectés pour l'aider dans sa vie. Mais va-t-elle accepter de rendre les données collectées accessible à son médecin et à son assurance ?"
   },
   {
     "name": "TEMA",
@@ -245,17 +179,6 @@
     "background": "linear-gradient(to right top, #302e4e, #5f3569, #993070, #d02861, #f63d3d);",
     "finishDate": "13/02/2019",
     "workTime": "+30h",
-    "shortDescription": "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !",
-    "description": "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !",
-    "objectives": [
-      "Faire un site fonctionnel",
-      "Faire pour la première fois un système de création de compte",
-      "Lier le site à une Base de données fonctionnelle"
-    ],
-    "languages": ["PHP", "Html/Css"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "Pour ce projet d'école, les technologies étaient imposées.",
-    "difficulties": "ptn ct dur marion la gentille",
-    "conclusion": "ct koule"
+    "shortDescription": "Conçu en groupe de 4 pendant un projet d'application web, TEMA est une plateforme collaborative qui a pour but d'aider les personnes souhaitant donner leur sang !"
   }
 ]
