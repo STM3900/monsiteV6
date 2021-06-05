@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "monsiteV6",
+    title: "Théo Migeat",
     htmlAttrs: {
       lang: "fr"
     },
@@ -27,7 +27,12 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "@/plugins/particlesVue.js" }],
+  plugins: [
+    { src: "@/plugins/particlesVue.js" },
+    {
+      src: './plugins/GoogleAnalytics.js'
+    }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -50,7 +55,8 @@ export default {
           { set: "@fortawesome/free-regular-svg-icons", icons: [] }
         ]
       }
-    ]
+    ],
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

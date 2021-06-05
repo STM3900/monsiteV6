@@ -9,9 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
-    "vue-cute-timeline": "^1.2.8"
+    "vue-cute-timeline": "^1.2.8",
+    "vue-gtag": "^1.16.1"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
