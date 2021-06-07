@@ -155,7 +155,7 @@ export default {
       }
     },
     goToWebSite() {
-      window.location = this.link;
+      window.open(this.link, "_blank");
     }
   }
 };

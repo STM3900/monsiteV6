@@ -73,8 +73,4 @@ export default {
       '/musichours',
 		]
 	},
-
-  router: {
-    base: '/'
-  }
 };
