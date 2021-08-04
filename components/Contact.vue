@@ -110,7 +110,7 @@ export default {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 866px) {
   .part article {
     flex-direction: column;
     gap: 25px 0;

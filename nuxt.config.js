@@ -8,10 +8,15 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Je suis un étudiant en troisième année à l'Epsi et alternant chez Erplain, je suis passionné par le développement web, où je prends plaisir à concevoir et réaliser des sites avec de plus en plus de fonctionnalités !" }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Je suis un étudiant en troisième année à l'Epsi et alternant chez Erplain, je suis passionné par le développement web, où je prends plaisir à concevoir et réaliser des sites avec de plus en plus de fonctionnalités !"
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: './favicon.png' },
+      { rel: "icon", type: "image/png", href: "./favicon.png" },
       {
         rel: "preconnect",
         href: "https://fonts.gstatic.com"
@@ -30,7 +35,7 @@ export default {
   plugins: [
     { src: "@/plugins/particlesVue.js" },
     {
-      src: './plugins/GoogleAnalytics.js'
+      src: "./plugins/GoogleAnalytics.js"
     }
   ],
 
@@ -46,17 +51,38 @@ export default {
         imports: [
           {
             set: "@fortawesome/free-solid-svg-icons",
-            icons: ["faEnvelope", "faFileAlt", "faAddressBook", "faClipboardList", "faCode", "faUserCircle", "faDatabase", "faStar", "faHome", "faIdCard"]
+            icons: [
+              "faEnvelope",
+              "faFileAlt",
+              "faAddressBook",
+              "faClipboardList",
+              "faCode",
+              "faUserCircle",
+              "faDatabase",
+              "faStar",
+              "faHome",
+              "faIdCard"
+            ]
           },
           {
             set: "@fortawesome/free-brands-svg-icons",
-            icons: ["faLinkedinIn", "faGithub", "faVuejs", "faAngular", "faPhp", "faJsSquare", "faCuttlefish", "faCss3", "faPython"]
+            icons: [
+              "faLinkedinIn",
+              "faGithub",
+              "faVuejs",
+              "faAngular",
+              "faPhp",
+              "faJsSquare",
+              "faCuttlefish",
+              "faCss3",
+              "faPython"
+            ]
           },
           { set: "@fortawesome/free-regular-svg-icons", icons: [] }
         ]
       }
     ],
-    '@nuxtjs/dotenv'
+    "@nuxtjs/dotenv"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -66,11 +92,6 @@ export default {
   build: {},
 
   generate: {
-		routes: [
-      '/asteroids',
-      '/wikigame',
-      '/breakingbot',
-      '/musichours',
-		]
-	},
+    routes: ["/asteroids", "/wikigame", "/breakingbot", "/musichours"]
+  }
 };

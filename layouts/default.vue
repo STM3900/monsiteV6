@@ -121,15 +121,14 @@ body {
 }
 
 /* responsive */
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1300px) {
   .part {
     padding-left: 10%;
     padding-right: 10%;
   }
 }
 
-@media screen and (max-width: 364px) {
+@media screen and (max-width: 918px) {
   .part {
     padding-left: 5%;
     padding-right: 5%;
