@@ -61,7 +61,8 @@ export default {
               "faDatabase",
               "faStar",
               "faHome",
-              "faIdCard"
+              "faIdCard",
+              "faExternalLinkAlt"
             ]
           },
           {
@@ -92,6 +93,6 @@ export default {
   build: {},
 
   generate: {
-    routes: ["/asteroids", "/wikigame", "/breakingbot", "/musichours"]
+    routes: ["/qubi", "/asteroids", "/wikigame", "/breakingbot", "/musichours"]
   }
 };

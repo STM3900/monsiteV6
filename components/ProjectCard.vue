@@ -37,7 +37,7 @@
             @mouseover="isHover1 = true"
             @mouseleave="isHover1 = false"
           >
-            Voir le site
+            <fa class="icon-card" icon="external-link-alt" /> Voir le site
           </button>
           <button
             v-if="url"
@@ -208,9 +208,20 @@ article div section button {
 
 article div section button:first-child {
   margin-bottom: 15px;
-  background: white;
+  background: rgb(240, 240, 240);
+
   color: rgb(50, 50, 50);
   border: solid 1px white;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+.icon-card {
+  margin-right: 5px;
+  color: rgb(150, 150, 150);
 }
 
 article div section button:hover {

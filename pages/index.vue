@@ -67,7 +67,7 @@ export default {
           icon: ["fab", "vuejs"],
           color: "#41b883",
           favorite: true,
-          hours: 135,
+          hours: 209,
           numProjects: 4
         },
         {
@@ -75,7 +75,7 @@ export default {
           icon: ["fab", "js-square"],
           color: "#efd81d",
           favorite: true,
-          hours: "+300",
+          hours: "+350",
           numProjects: "+10"
         },
         {
@@ -83,7 +83,7 @@ export default {
           icon: ["fab", "css3"],
           color: "#379ad6",
           favorite: true,
-          hours: "+600",
+          hours: "+670",
           numProjects: "+40"
         },
         {

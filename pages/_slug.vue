@@ -12,7 +12,7 @@
       </p>
       <img
         v-if="checkIfColor"
-        :src="require(`~/assets/background/${data.background}.jpg`)"
+        :src="require(`~/assets/background/${data.background}.${testQubi()}`)"
         alt=""
       />
       <div
@@ -117,6 +117,14 @@ export default {
     }, 500);
   },
   methods: {
+    testQubi() {
+      let format = "jpg";
+      if (this.data.name == "Qubi") {
+        format = "gif";
+      }
+
+      return format;
+    },
     findIndex(json) {
       return json.findIndex(x => x.url === this.$route.params.slug);
     },
