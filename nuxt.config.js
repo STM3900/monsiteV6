@@ -93,6 +93,12 @@ export default {
   build: {},
 
   generate: {
-    routes: ["/qubi", "/asteroids", "/wikigame", "/breakingbot", "/musichours"]
+    routes: [
+      "/qubidoc",
+      "/asteroids",
+      "/wikigame",
+      "/breakingbot",
+      "/musichours"
+    ]
   }
 };
