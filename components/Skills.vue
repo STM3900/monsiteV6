@@ -154,6 +154,12 @@ article section p {
   opacity: 1;
 }
 
+@media screen and (max-width: 790px) {
+  article section {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   article section {
     width: 100%;

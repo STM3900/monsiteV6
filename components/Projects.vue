@@ -81,7 +81,7 @@ export default {
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: center;
-  gap: 50px 0;
+  gap: 50px 20px;
 }
 
 @media screen and (max-width: 600px) {

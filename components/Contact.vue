@@ -73,6 +73,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  gap: 25px 25px;
 }
 
 .part article section {
@@ -108,6 +109,17 @@ export default {
 .part article section .icon-contact {
   font-size: 25px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  .part article {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .part article section {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 866px) {

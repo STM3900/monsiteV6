@@ -316,6 +316,36 @@ article .work-time {
   margin-top: 3px;
 }
 
+@media screen and (max-width: 1175px) {
+  article {
+    width: 400px;
+  }
+
+  article aside {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  article {
+    width: 350px;
+  }
+
+  article aside {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  article {
+    width: 100%;
+  }
+
+  article aside {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   article {
     width: 100%;
