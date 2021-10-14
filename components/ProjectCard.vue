@@ -37,7 +37,8 @@
             @mouseover="isHover1 = true"
             @mouseleave="isHover1 = false"
           >
-            <fa class="icon-card" icon="external-link-alt" /> Voir le site
+            <fa class="icon-card" icon="external-link-alt" />
+            {{ testIfGitHub(link) }}
           </button>
           <button
             v-if="url"
@@ -90,6 +91,9 @@ export default {
     }
   },
   methods: {
+    testIfGitHub(url) {
+      return url.includes("github") ? "Voir le repo GitHub" : "Voir le site";
+    },
     handleMove(e) {
       if (!this.isShowed) {
         /*

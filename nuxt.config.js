@@ -95,6 +95,7 @@ export default {
   generate: {
     routes: [
       "/qubidoc",
+      "/simon",
       "/asteroids",
       "/wikigame",
       "/breakingbot",

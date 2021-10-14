@@ -21,6 +21,34 @@
     "conclusion": "Malgré les nombreuses difficultés de ce projet, entrainant une grosse pause du développement pendant le mois de septembre, j'ai beaucoup apprécié ce projet. J'ai vraiment eu la sensation d'apprendre des éléments qui me seront utiles dans mes prochains projets et j'ai hâte de les mettre en place !"
   },
   {
+    "name": "Simon",
+    "url": "simon",
+    "category": "Projet perso",
+    "link": "https://github.com/STM3900/Simon",
+    "imgColor": "simon",
+    "background": "simon",
+    "finishDate": "07/08/2021",
+    "workTime": "~20h",
+    "shortDescription": "Petit projet en Arduino cherchant à reproduire le jeu de société \"Simon\"",
+    "description": "Le Simon est au départ un jeu de société crée par Ralph Bear en 1978. Son principe est que le jeu affiche une couleur (rouge, bleu, jaune ou vert) et produit un son toujours associé à cette couleur. Le joueur doit alors appuyer sur la touche de la couleur qui vient de s'allumer dans un délai assez court.\n\nMon objectif pour ce premier projet d'électronique (enfin d'Arduino) était simplement de reproduire ce jeu, avec des leds, des boutons et un buzzer.",
+    "objectives": [
+      "Découvrir l'univers de l'électronique et de l'arduino",
+      "Coder dans un langage que je ne maitrise pas"
+    ],
+    "languages": ["C", "Arduino"],
+    "softwares": [
+      "VSCode",
+      "Carte arduino",
+      "Leds",
+      "Résistances",
+      "Buzzer",
+      "Boutons"
+    ],
+    "technicalDescription": "N'y connaissant pas grand-chose en électronique, c'est un ami, qui fait ses études dans ce domaine, qui m'a conseillé de réaliser ce projet comme initiation à l'électronique. J'ai donc commencé par me procurer des composants pour mettre en œuvre mon petit projet. J'ai donc eu besoin d'utiliser :\n\n- Des Leds pour les 4 couleurs du Simon (rouge, bleu, jaune et vert)\n- Un Buzzer\n- Des résistances\n- Des câbles\n- Et bien sûr, d'un microcontrôleur, comme un Arduino par exemple\n\nUne fois les composants mis en place, il m'a fallu développer l'algorithme permettant tout simplement de jouer au jeu ! Le jeu fonctionne de cette manière :\n\nChaque partie est séparée par des niveaux et des sous-niveaux.\nUn sous-niveau est une suite d'affichages de LED (et de sons), dans un ordre défini par une variable aléatoire, que le joueur doit reproduire en appuyant sur les boutons.\nQuand un joueur passe au sous-niveau suivant, la même suite se répète, mais elle est augmenté de 1.\nSi tous les sous-niveaux d'un niveau sont complétés, on monte en niveau. Cela veut dire que les prochains niveaux joueront une note maximale supplémentaire, mais aussi plus rapidement.\n\nCette logique se répète jusqu'à que le joueur se trompe, réinitialisant le jeu.",
+    "difficulties": "Comme tout projet, j'ai eu quelques difficultés. Tout d'abord, je n'avais pas vraiment d'expérience en électronique et Arduino, ce qui m'a causé de prendre un peu de temps à tout comprendre. Une autre difficulté et d'avoir réalisé le projet en C, qui est le langage de base utilisé pour les Arduino. N'ayant pas l'habitude de coder en C, j'ai eu un peu de mal à implémenté certaines fonctionnalités, comme par exemple : un tableau dynamique.\n\nComme axe d'amélioration, ce serait d'améliorer la structure du code, pour qu'elle soit plus lisible et plus propre.",
+    "conclusion": "En conclusion, ce projet a été pour moi une opportunité de découvrir tout l'univers de l'électronique, et cela m'a beaucoup plu. J'espère prochainement refaire des projets dans ce domaine, mais cette fois-ci plus complexe !"
+  },
+  {
     "name": "Wicook",
     "url": "",
     "category": "Projet perso",

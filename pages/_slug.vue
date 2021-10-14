@@ -8,7 +8,9 @@
       <h1>{{ data.name }}</h1>
       <p>
         {{ data.category }}
-        <span v-if="data.link">- <a :href="data.link">Aller au site</a></span>
+        <span v-if="data.link"
+          >- <a :href="data.link">{{ testIfGitHub(data.link) }}</a></span
+        >
       </p>
       <img
         v-if="checkIfColor"
@@ -124,6 +126,9 @@ export default {
       }
 
       return format;
+    },
+    testIfGitHub(url) {
+      return url.includes("github") ? "Voir le repo GitHub" : "Aller au site";
     },
     findIndex(json) {
       return json.findIndex(x => x.url === this.$route.params.slug);

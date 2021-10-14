@@ -101,7 +101,7 @@ export default {
 }
 
 .part article section h2 {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(50, 50, 50);
   font-weight: normal;
 }
