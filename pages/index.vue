@@ -43,6 +43,11 @@ export default {
       ],
       workTab: [
         {
+          beginDate: "Septembre 2021",
+          label: "Alternance en développement web",
+          work: "STMicroelectronics"
+        },
+        {
           beginDate: "Septembre 2020",
           endDate: "Septembre 2021",
           label: "Alternance en vue.js",

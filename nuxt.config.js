@@ -12,7 +12,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Je suis un étudiant en troisième année à l'Epsi et alternant chez Erplain, je suis passionné par le développement web, où je prends plaisir à concevoir et réaliser des sites avec de plus en plus de fonctionnalités !"
+          "Je suis un étudiant en quatrième année à l'Epsi et alternant à STMicroelectronics, je suis passionné par le développement web, où je prends plaisir à concevoir et réaliser des sites avec de plus en plus de fonctionnalités !"
       }
     ],
     link: [
