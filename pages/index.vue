@@ -73,14 +73,14 @@ export default {
           color: "#41b883",
           favorite: true,
           hours: 209,
-          numProjects: 4
+          numProjects: 5
         },
         {
           label: "Javascript",
           icon: ["fab", "js-square"],
           color: "#efd81d",
           favorite: true,
-          hours: "+350",
+          hours: "+400",
           numProjects: "+10"
         },
         {
