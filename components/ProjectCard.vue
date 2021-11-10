@@ -174,6 +174,11 @@ article {
   border-radius: 5px;
   transition: all 0.3s, height 0.6s ease;
   background: white;
+  box-shadow: 5px 5px 15px hsl(199, 100%, 45%),
+    -5px -5px 15px hsl(199, 100%, 65%);
+}
+
+article:hover {
   box-shadow: 15px 15px 27px hsl(199, 100%, 45%),
     -15px -15px 27px hsl(199, 100%, 65%);
 }

@@ -83,10 +83,10 @@
 
     <article class="button-group">
       <button v-if="checkIfExist(-1)" @click="changeProject(-1)">
-        projet précedent
+        projet suivant
       </button>
       <button v-if="checkIfExist(1)" @click="changeProject(+1)">
-        projet suivant
+        projet précedent
       </button>
     </article>
   </div>

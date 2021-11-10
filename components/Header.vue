@@ -142,6 +142,7 @@ div {
 .wave {
   z-index: 9999999999;
   width: 100%;
+  margin-bottom: -1px;
 }
 
 header {
