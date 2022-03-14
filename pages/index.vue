@@ -6,6 +6,7 @@
     <Skills :skills="skills" />
     <Projects />
     <Contact />
+    <nuxt-content :document="page" />
   </div>
 </template>
 
@@ -25,6 +26,13 @@ export default {
     Skills,
     Projects,
     Contact
+  },
+  async asyncData({ $content }) {
+    const page = await $content("testQubi").fetch();
+
+    return {
+      page
+    };
   },
   data() {
     return {
