@@ -28,7 +28,7 @@ export default {
     Contact
   },
   async asyncData({ $content }) {
-    const page = await $content("testQubi").fetch();
+    const page = await $content("qubi/qubi").fetch();
 
     return {
       page

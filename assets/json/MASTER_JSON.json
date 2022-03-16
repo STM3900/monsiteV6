@@ -2,6 +2,7 @@
   {
     "name": "Qubi",
     "url": "qubidoc",
+    "markdownFolder": "qubi",
     "category": "Projet perso",
     "link": "https://theomigeat.com/qubi",
     "imgColor": "qubi",

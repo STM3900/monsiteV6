@@ -1,10 +1,12 @@
 # Qubi
 
-## Short description
+## **Description du projet**
 
 Écrire des notes, gérez vos todos, et bien plus, tout ça dans une interface conviviale et personnalisable ! Qubi est un site mettant à disposition un tableau de bord personnalisable sur lequel il est possible de disposer différents widgets, ayant tous une fonction à eux !
 
-## Description
+![Je sais pas](markdown-img/qubi/image.png)
+
+## **Description avancée**
 
 Qubi est un site (et aussi un projet personnel) qui a pour but initial de me mettre au défi et de me sortir de ma zone de confort. Et nous allons voir que je suis bien, bien sorti de celle ci...
 
@@ -22,7 +24,7 @@ Chaque widget est un composant, donc cela veut dire qu'il a son propre petit éc
 
 Et enfin, toutes les données liés aux widgets, et au pilote du projet son stocké dans un endroit appelé le store : c'est une zone du projet qui permet de déclarer des variables, et des méthodes (et plus) de manière globale, et centralisé. Par exemple un composant A peut affiché une donnée du store, et si le composant B vient à changer cette donnée, elle sera automatiquement mis à jour dans le composant A.
 
-## Difficultés
+## **Difficultés et axes d'amélioration**
 
 Comme dit plus haut, Qubi est le projet qui m'a le plus donné de fil à retordre (et fait perdre des nuits de sommeil). le fait d'utiliser le système du Store pour la première fois m'a entrainé à faire des choix trop précipité dans mon projet que j'ai par la suite regretté. J'ai eu des difficultés plus ou moins pendant tout le développement, car je faisais des trucs que je n'avais pas du tout l'habitude de faire, et je sais que j'ai résolu certains problèmes d'une manière pas optimale. La conséquence de ça est que l'architecture du projet est assez bancale, et un peu complexe à comprendre, et je suis certain qu'il est possible de la simplifier et de l'optimiser. Mais ce sera pour un autre projet !
 

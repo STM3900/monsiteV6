@@ -38,6 +38,9 @@
         </section>
       </article>
     </header>
+    <article v-if="data.markdownFolder" class="markdown">
+      <nuxt-content :document="markdown" />
+    </article>
     <article v-if="data.description" class="description">
       <h2>Description du projet</h2>
       <p style="white-space: pre-line;">
@@ -101,6 +104,13 @@ export default {
       rawData: MASTER_JSON,
       data: null,
       activeTab: []
+    };
+  },
+  async asyncData({ $content }) {
+    const markdown = await $content("qubi/qubi").fetch();
+    console.log(MASTER_JSON[1]);
+    return {
+      markdown
     };
   },
   computed: {
