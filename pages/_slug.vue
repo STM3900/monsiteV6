@@ -106,9 +106,26 @@ export default {
       activeTab: []
     };
   },
-  async asyncData({ $content }) {
-    const markdown = await $content("qubi/qubi").fetch();
-    console.log(MASTER_JSON[1]);
+  async asyncData({ redirect, $content, route }) {
+    // Bon c'est pas le meilleur code du monde mais il est la quoi
+
+    const rawDataAsync = MASTER_JSON;
+    let markdown = "";
+
+    try {
+      const index = rawDataAsync.findIndex(x => x.url === route.params.slug);
+      const goodData = rawDataAsync[index];
+      if (goodData == undefined) {
+        redirect("/");
+      } else {
+        const path = goodData.markdownFolder + "/" + goodData.markdownFolder;
+        markdown = await $content(path).fetch();
+      }
+    } catch (e) {
+      console.error(e);
+      redirect("/");
+    }
+
     return {
       markdown
     };
@@ -176,6 +193,9 @@ export default {
           this.activeTab.push(this.rawData[i]);
         }
       }
+    },
+    test() {
+      alert("ouais");
     }
   },
   head() {
@@ -195,6 +215,29 @@ export default {
   }
 };
 </script>
+
+<style>
+.nuxt-content h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nuxt-content img {
+  width: 100%;
+  border-radius: 5px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nuxt-content p {
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+
+  margin-bottom: 10px;
+}
+</style>
 
 <style scoped>
 nav {

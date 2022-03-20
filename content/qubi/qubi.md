@@ -1,5 +1,3 @@
-# Qubi
-
 ## **Description du projet**
 
 Écrire des notes, gérez vos todos, et bien plus, tout ça dans une interface conviviale et personnalisable ! Qubi est un site mettant à disposition un tableau de bord personnalisable sur lequel il est possible de disposer différents widgets, ayant tous une fonction à eux !
