@@ -38,15 +38,6 @@
         </section>
       </article>
     </header>
-    <article v-if="data.markdownFolder" class="markdown">
-      <nuxt-content :document="markdown" />
-    </article>
-    <article v-if="data.description" class="description">
-      <h2>Description du projet</h2>
-      <p style="white-space: pre-line;">
-        {{ data.description }}
-      </p>
-    </article>
     <article class="list">
       <section>
         <h2>Principaux objectifs</h2>
@@ -64,6 +55,15 @@
           </li>
         </ul>
       </section>
+    </article>
+    <article v-if="data.markdownFolder" class="markdown">
+      <nuxt-content :document="markdown" />
+    </article>
+    <article v-if="data.description" class="description">
+      <h2>Description du projet</h2>
+      <p style="white-space: pre-line;">
+        {{ data.description }}
+      </p>
     </article>
     <article v-if="data.technicalDescription">
       <h2>Description avancée</h2>
