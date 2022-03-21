@@ -59,31 +59,6 @@
     <article v-if="data.markdownFolder" class="markdown">
       <nuxt-content :document="markdown" />
     </article>
-    <article v-if="data.description" class="description">
-      <h2>Description du projet</h2>
-      <p style="white-space: pre-line;">
-        {{ data.description }}
-      </p>
-    </article>
-    <article v-if="data.technicalDescription">
-      <h2>Description avancée</h2>
-      <p style="white-space: pre-line;">
-        {{ data.technicalDescription }}
-      </p>
-    </article>
-    <article v-if="data.difficulties">
-      <h2>Difficultés et axes d'amélioration</h2>
-      <p style="white-space: pre-line;">
-        {{ data.difficulties }}
-      </p>
-    </article>
-    <article v-if="data.conclusion">
-      <h2>Conclusion</h2>
-      <p style="white-space: pre-line;">
-        {{ data.conclusion }}
-      </p>
-    </article>
-
     <article class="button-group">
       <button v-if="checkIfExist(-1)" @click="changeProject(-1)">
         projet suivant
@@ -236,6 +211,18 @@ export default {
   line-height: 1.5;
 
   margin-bottom: 10px;
+}
+
+.nuxt-content ul {
+  margin-bottom: 10px;
+}
+
+.nuxt-content li {
+  margin-bottom: 5px;
+}
+
+.nuxt-content a {
+  color: black;
 }
 </style>
 
@@ -424,6 +411,10 @@ article h2 {
   }
 
   p {
+    font-size: 14px;
+  }
+
+  .nuxt-content ul li {
     font-size: 14px;
   }
 }

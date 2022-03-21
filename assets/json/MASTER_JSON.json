@@ -11,20 +11,17 @@
     "finishDate": "13/10/2021",
     "workTime": "74h13m",
     "shortDescription": "Écrire des notes, gérez vos todos, et bien plus, tout ça dans une interface conviviale et personnalisable ! Qubi est un site mettant à disposition un tableau de bord personnalisable sur lequel il est possible de disposer différents widgets, ayant tous une fonction à eux !",
-    "description": "Qubi est un site (et aussi un projet personnel) qui a pour but initial de me mettre au défi et de me sortir de ma zone de confort. Et nous allons voir que je suis bien, bien sorti de celle-ci...\n\nLe principe de base de Qubi repose sur ses widgets : C'est un site modulaire ou chaque widget contient toute une fonctionnalité en lui, plus ou moins complexe. Cette structure de projet a été très pratique pour apprendre, car chaque widget était un peu un projet dans un projet !",
     "objectives": [
       "Sortir de sa zone de confort",
       "Se mettre au défi de réaliser un projet complexe"
     ],
     "languages": ["Vue.js", "Nuxt.js", "Html/Css"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "Qubi est de loin le projet le plus complexe que j'ai réalisé en Vue/Nuxt.js. Je vais essayer d'essayer rapidement son fonctionnement.\n\nTout le site gravite autour du système de grille, qui permet de placer les widget, de les déplacer et de modifier leur taille. À côté de ce système, réside un objet qui est en gros le pilote du site : il contient toutes les informations des widgets affichés, comme le type, la taille, la position, etc.\nPour savoir quel widget afficher quand l'utilisateur souhaite en ajouter, un composant entre en jeu et permet de déterminer quel widget affiché, et de charger sa configuration.\n\nChaque widget est un composant, donc cela veut dire qu'il a son propre petit écosystème, dans lequel est conçu son fonctionnement. Cela est très pratique, car ça permet de s'abstraire du reste du code du projet et de se focaliser uniquement sur les fonctionnalités de notre widget.\n\nEt enfin, toutes les données liées aux widgets, et au pilote du projet son stocké dans un endroit appelé le store : c'est une zone du projet qui permet de déclarer des variables, et des méthodes (et plus) de manière globale, et centralisée. Par exemple un composant A peut afficher une donnée du store, et si le composant B vient à changer cette donnée, elle sera automatiquement mise à jour dans le composant A.",
-    "difficulties": "Comme dit plus haut, Qubi est le projet qui m'a le plus donné de fil à retordre (et fait perdre des nuits de sommeil). Le fait d'utiliser le système du Store pour la première fois m'a entraîné à faire des choix trop précipité dans mon projet que j'ai par la suite regretté.\n\nJ'ai eu des difficultés plus ou moins pendant tout le développement, car je faisais des trucs que je n'avais pas du tout l'habitude de faire, et je sais que j'ai résolu certains problèmes d'une manière pas optimale. La conséquence de ça est que l'architecture du projet est assez bancale, et un peu complexe à comprendre, et je suis certain qu'il est possible de la simplifier et de l'optimiser. Mais ce sera pour un autre projet !\n\nMais ces difficultés m'ont permis de faire un grand pas en avant sur mon apprentissage de Nuxt.js et j'en suis reconnaissant.",
-    "conclusion": "Malgré les nombreuses difficultés de ce projet, entrainant une grosse pause du développement pendant le mois de septembre, j'ai beaucoup apprécié ce projet. J'ai vraiment eu la sensation d'apprendre des éléments qui me seront utiles dans mes prochains projets et j'ai hâte de les mettre en place !"
+    "softwares": ["VSCode", "GitHub"]
   },
   {
     "name": "Simon",
     "url": "simon",
+    "markdownFolder": "simon",
     "category": "Projet perso",
     "link": "https://github.com/STM3900/Simon",
     "imgColor": "simon",
@@ -33,7 +30,6 @@
     "finishDate": "07/08/2021",
     "workTime": "~20h",
     "shortDescription": "Petit projet en Arduino cherchant à reproduire le jeu de société \"Simon\"",
-    "description": "Le Simon est au départ un jeu de société crée par Ralph Bear en 1978. Son principe est que le jeu affiche une couleur (rouge, bleu, jaune ou vert) et produit un son toujours associé à cette couleur. Le joueur doit alors appuyer sur la touche de la couleur qui vient de s'allumer dans un délai assez court.\n\nMon objectif pour ce premier projet d'électronique (enfin d'Arduino) était simplement de reproduire ce jeu, avec des leds, des boutons et un buzzer.",
     "objectives": [
       "Découvrir l'univers de l'électronique et de l'arduino",
       "Coder dans un langage que je ne maitrise pas"
@@ -46,10 +42,7 @@
       "Résistances",
       "Buzzer",
       "Boutons"
-    ],
-    "technicalDescription": "N'y connaissant pas grand-chose en électronique, c'est un ami, qui fait ses études dans ce domaine, qui m'a conseillé de réaliser ce projet comme initiation à l'électronique. J'ai donc commencé par me procurer des composants pour mettre en œuvre mon petit projet. J'ai donc eu besoin d'utiliser :\n\n- Des Leds pour les 4 couleurs du Simon (rouge, bleu, jaune et vert)\n- Un Buzzer\n- Des résistances\n- Des câbles\n- Et bien sûr, d'un microcontrôleur, comme un Arduino par exemple\n\nUne fois les composants mis en place, il m'a fallu développer l'algorithme permettant tout simplement de jouer au jeu ! Le jeu fonctionne de cette manière :\n\nChaque partie est séparée par des niveaux et des sous-niveaux.\nUn sous-niveau est une suite d'affichages de LED (et de sons), dans un ordre défini par une variable aléatoire, que le joueur doit reproduire en appuyant sur les boutons.\nQuand un joueur passe au sous-niveau suivant, la même suite se répète, mais elle est augmenté de 1.\nSi tous les sous-niveaux d'un niveau sont complétés, on monte en niveau. Cela veut dire que les prochains niveaux joueront une note maximale supplémentaire, mais aussi plus rapidement.\n\nCette logique se répète jusqu'à que le joueur se trompe, réinitialisant le jeu.",
-    "difficulties": "Comme tout projet, j'ai eu quelques difficultés. Tout d'abord, je n'avais pas vraiment d'expérience en électronique et Arduino, ce qui m'a causé de prendre un peu de temps à tout comprendre. Une autre difficulté et d'avoir réalisé le projet en C, qui est le langage de base utilisé pour les Arduino. N'ayant pas l'habitude de coder en C, j'ai eu un peu de mal à implémenté certaines fonctionnalités, comme par exemple : un tableau dynamique.\n\nComme axe d'amélioration, ce serait d'améliorer la structure du code, pour qu'elle soit plus lisible et plus propre.",
-    "conclusion": "En conclusion, ce projet a été pour moi une opportunité de découvrir tout l'univers de l'électronique, et cela m'a beaucoup plu. J'espère prochainement refaire des projets dans ce domaine, mais cette fois-ci plus complexe !"
+    ]
   },
   {
     "name": "Wicook",
@@ -66,6 +59,7 @@
   {
     "name": "Asteroids",
     "url": "asteroids",
+    "markdownFolder": "asteroids",
     "category": "Projet d'école",
     "link": "http://theo.anawens.fr/",
     "imgColor": "asteroidsLogo",
@@ -74,17 +68,14 @@
     "finishDate": "31/03/2021",
     "workTime": "72h20m",
     "shortDescription": "Réalisé en phaser.js, pour un projet d'école, Asteroids est un jeu où vous contrôlez un petit vaiseau qui doit faire le meilleur score, en détruisant le plus d'astéroides avant d'être à court de vies. Aidez-vous de votre SuperTir et du SuperCombo pour faire des ravages !",
-    "description": "Pour ce projet d'école, le sujet était tout simplement, en utilisant Phaser.io un framework JavaScript, de faire un jeu.\nNous avons carte blanche sur le type de jeu et ce que l'on allait créer N'ayant pas trop d'idées au départ, je me suis souvenu des jeux d'arcades auquel j'aimais bien jouer quand j'étais plus jeune, et je me suis souvenu d'Asteroids, un jeu où l'on contrôle un petit vaisseau de pixel et ou l'objectif et d'exploser le plus d'astéroïdes possibles tout en faisant attention à ne pas se les prendre. J'ai décidé de partir sur cette idée et de refaire le jeu depuis zéro en y ajoutant plus de fonctionnalités !",
     "objectives": ["Faire un jeu de A à Z", "Se donner à fond dans un projet"],
     "languages": ["Phaser.js", "Node.js", "Html/Css"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "Le jeu propose plusieurs fonctionnalités :\n\n- Tout d'abord, quand le joueur lance la partie, il possède 3 vies, si il les perd, la partie est terminée\n- Le joueur peut se déplacer uniquement en avant, mais peut orienter la direction de son vaisseau. Les astéroïdes se déplacent uniquement en ligne droite, avec un angle défini aléatoirement qui reste fixe\n- Le joueur peut tirer son vaisseau et ainsi détruire des astéroïdes. Lui permettant de gagner des points, mais divisant aussi les astéroïdes en petits morceaux\n- Une fois par vie, le joueur peut utiliser son SuperTir, qui détruit tout ennemi en ligne droite pendant un court instant\n- Pour gagner plus de points, le joueur peut augmenter son combo s'il ne rate pas sa cible à plusieurs reprises. Au bout de 10 astéroïdes touchés d'affilé, le joueur obtient le SuperCombo, qui augmente considérablement sa cadence de tir\n\nLe jeu possède aussi un système de classement, qui n'est pas accessible dans la version publique. Celui-ci enregistre les 5 meilleurs scores.",
-    "difficulties": "Comme difficultés pour ce projet, il y avait tout d'abord le fait de devoir apprendre depuis zéro un nouveau framework, pas si bien documenté que ça. Et ensuite, faire l'api du système de classement.\nComme axe d'amélioration, j'aurais aimé ajouter encore plus de fonctionnalité, comme par exemple un système ou le jeu s'adapterait en fonction d'une musique.",
-    "conclusion": "Asteroids a été le plus gros projet que j'ai fait en cette année 2021, et sûrement l'un de ceux où j'ai pris le plus de plaisir à le faire !"
+    "softwares": ["VSCode", "GitHub"]
   },
   {
     "name": "Wikigame",
     "url": "wikigame",
+    "markdownFolder": "wikigame",
     "category": "Projet d'école",
     "link": "https://github.com/STM3900/Wikigame",
     "imgColor": "wikigameLogo",
@@ -93,16 +84,12 @@
     "finishDate": "20/02/2021",
     "workTime": "44h06m",
     "shortDescription": "Wikigame est un petit jeu en python se basant sur le jeu de wikipédia ! L'objectif du jeu est d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
-    "description": "Wikigame est un petit jeu en python se basant sur le jeu de wikipédia ! L'objectif du jeu est d'aller d'une page A à une page B (donnés aléatoirement) en moins de coups possibles, et en ne passant que par des liens wikipédia.",
     "objectives": [
       "Pouvoir mettre en pratique ce que j'avais appris en Python",
       "Faire un projet visuelement simple mais agréable à regarder"
     ],
     "languages": ["Python", "Html/Css"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "Le site fonctionne suivant cet ordre :\n\n- Tout d'abord le site choisit deux bornes : une de début et une de fin, (par exemple Gnocchi en début et Grenoble en fin) en se basant sur une page sélectionnée aléatoirement\n- Le site génère ensuite la variable du compteur, et \"scanne\" la page wikipédia de l'article et extrait tous ses liens valides (pas de doublons, pas d'hyperliens, que ceux dans une certaine zone)\n- Avec les liens extrait, le site génère sa page, en affichant le nom de l'article, le nombre de coups, une courte description, puis enfin, tous les liens\n- Quand l'utilisateur clique sur un lien, le site compare si sa destination correspond à la borne de fin, si c'est le cas, la partie est gagné et un message de victoire apparaît, ainsi que le nombre de cours que l'utilisateur a fait\n- Mais si la destination ne correspond pas, le site ajoute 1 au compteur et l'amène sur la page, en procédant de la méthode que celle de l'étape 2 et 3\n- L'utilisateur peut aussi revenir en arrière d'une, ou plusieurs pages, mais celui-lui coûtera 2 coups.",
-    "difficulties": "La principale difficulté de ce projet était le système d'extraction de liens sur une page wikipédia, qui m'a posé pas mal de difficultés.\n\nLe temps aussi a joué contre moi, je n'ai pas pu implémenter toutes les idées que j'avais en tête comme par exemple un meilleur historique de page et une navigation plus fluide entre les pages.",
-    "conclusion": "En conclusion, ce projet était très agréable à faire, et m'a permis d'apprendre beaucoup d'éléments en python !"
+    "softwares": ["VSCode", "GitHub"]
   },
   {
     "name": "Jourbon",
@@ -131,6 +118,7 @@
   {
     "name": "Breaking Bot",
     "url": "breakingbot",
+    "markdownFolder": "breakingbot",
     "category": "Projet perso",
     "link": "https://mrgove10.itch.io/breaking-bots",
     "imgColor": "BrLogo",
@@ -139,17 +127,13 @@
     "finishDate": "09/02/2020",
     "workTime": "2 Jours Non-Stop",
     "shortDescription": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métalliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !",
-    "description": "Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métalliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !\n\nLa Scientific Game Jam consiste à développer un jeu complet en 48h, qui illustre le sujet de thèse du doctorant qui fait parti de l'équipe. Cette année, j'ai eu la chance d'être dans une grande équipe de 7 personnes très talentueuses et très bienveillante ! Mon rôle pendant cette game jam était celui de développeur (étonnant, n'est-ce pas ?)\nJe devais donc, en me basant sur les idées du game designer, et à partir des assets créés par les artistes, donner vie à un jeu, en moins de 48 heures.",
     "objectives": [
       "Faire un jeu fonctionnel en moins de 48h",
       "Rencontrer des personnes talentueuses dans des dommaines autre que l'informatique",
       "Passer un moment inoubliable"
     ],
     "languages": ["C#"],
-    "softwares": ["Unity", "Visual Studio", "GitHub"],
-    "technicalDescription": "Pour le développement du jeu, nous sommes naturellement partis sur le logiciel Unity, que nous avons déjà utilisé lors des précédentes Game Jam, permettant d'écrire le jeu en C#. Nous avons aussi utilisé GitHub pour pouvoir collaborer ensemble sur le même projet.\n\nLe jeu comporte différentes phases. Tout d'abord celle d'exploration, on l'on se balade sur la surface d'une planète, ou notre objectif et de trouver des gisements à miner. Pour cela, il suffit de rester attentif à la musique du jeu qui varie en fonction du type de minerai. Ensuite, il faut miner le minerait en martelant la touche espace, puis l'analyser et le classer, pour enfin marquer des points, et recommencer l'opération jusqu'à la fin du temps imparti.",
-    "difficulties": "Tout comme chaque Game Jam, la difficulté majeure du projet et bien sur le temps.\nOu l'on se rend compte que 48h pour faire un jeu, c'est très peu. Il y a aussi la gestion de la fatigue qui joue beaucoup dans le développement, ou se pose le dilemme de dormir plus et moins coder, ou dormir moins et avoir plus de temps de dev, mais avec un risque d'erreur beaucoup plus élevé. En parlant d'erreurs, nous avons eu quelques soucis avec GitHub ce qui nous a fait perdre quelques heures. Un axe d'amélioration serait pour ma part de gérer mieux mon temps de travail et de repos.",
-    "conclusion": "En conclusion, cette Game Jam a été un moment inoubliable, remplie de bons souvenirs, et j'espère pouvoir en refaire une prochainement !"
+    "softwares": ["Unity", "Visual Studio", "GitHub"]
   },
   {
     "name": "Apocalypse Not Now",
@@ -166,6 +150,7 @@
   {
     "name": "MusicHours",
     "url": "musichours",
+    "markdownFolder": "musichours",
     "category": "Projet perso",
     "link": "https://theomigeat.com/MusicHours/",
     "imgColor": "MusicHoursLogo",
@@ -174,17 +159,13 @@
     "finishDate": "24/12/2019",
     "workTime": "72h19m",
     "shortDescription": "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !",
-    "description": "MusicHours est un site vous permettant, à partir d'une ville de votre choix, d'avoir une musique et un thème s'adaptant à l'heure et à la météo de celle-ci !\n\nCe projet est né fin 2019, pendant les vacances de la toussaint, suite à une idée que j'avais, mais que je ne pouvais pas réaliser avant d'avoir appris le langage JavaScript.\nCette idée, venait tout droit des jeux vidéo de la série d'Animal Crossing, où la musique diffusée en jeu change toutes les heures, s'adaptant aux différentes ambiances qu'il peut y avoir dans une journée. Etant fan de cet attribut, assez unique en son genre, j'ai eu l'idée de faire un site qui pourrait jouer une musique, en fonction de l'heure à laquelle nous sommes, et lui donner une allure assez agréable à regarder pour pouvoir le faire tourner en fond.\n\nC'est donc dans cette idée que je me suis lancé sur le développement du site, en me mettant en tête que ce ne serait qu'un petit projet qui ne prendrait pas beaucoup de temps. Au final, MusicHours fut le plus gros projet que j'ai pu faire en informatique, avec plus de 70 heures de dev, et surtout qui m'a permis d'apprendre énormément d'éléments en js.",
     "objectives": [
       "Expérimenter de nouvelles choses en JS",
       "Surpasser mes limites en CSS",
       "Se connecter à une API et l'utiliser"
     ],
     "languages": ["JavaScript", "Html/Css"],
-    "softwares": ["VSCode", "GitHub"],
-    "technicalDescription": "Au départ le site ne devait jouer de la musique qu'en fonction de l'heure. Je suis donc parti sur un système très simple qui consistait juste à mettre 24 musiques mp3 dans un dossier, ùu elles étaient nommées d'un nombre entre 0 et 23, et d'en fonction de l'heure de notre pc, chargé celle qui correspondait.\n\nEt voilà, j'avais donc fini mon site en quelques heures ! Mais bon je ne voulais pas vraiment en rester là. J'ai donc voulu ajouter des fonctionnalités. J'ai donc ajouté un cycle d'aurore / jour / crépuscule / nuit au site, puis ensuite un soleil et une lune qui bougeait en fonction de l'heure.\nÉtant assez satisfait du site, je me suis dit que je pouvais en rester la, et j'ai eu une idée qui a allongé le temps de développement de 60 heures : celle de faire en sorte que le site réagisse en fonction de la météo d'une ville rentrée.\nAyant une expérience d'environ 2 semaines en javascript, je n'avais absolument aucune idée de comment réaliser cette action, et en demandant à des amis et en suivant des tutos, j'ai donc compris que je devrais utiliser une api, qui me permettrait de récupérer les données météorologiques d'une ville donnée. Et cette api vient directement du site https://openweathermap.org/, qui propose une api gratuite, et avec le recul, pas très dure à utiliser.\n\nAvec donc cette api, et des heures de galères, j'avais réussi à faire en sorte que le site réagisse quand il pleuvait dans une ville fixe.\nMais je me suis dit qu'il était dommage d'arrêter là, et j'ai donc fait en sorte que l'utilisateur puisse choisir sa ville, puis ensuite que le site réagisse à plus de météos différentes (orage, brouillard, neige), ainsi que des variantes de musiques en fonction de la météo (la bande son du jeu Animal Crossing : New Leaf possède des musiques prévues quand il pleut, ou neige). Mais voulant toujours ajouter des fonctionnalités au site, j'ai vu qu'il était possible de récupérer le fuseau horaire de la ville, en plus de sa météo. J'ai donc fait en sorte que l'heure affichée sur le site s'adapte automatiquement à celle de la ville, en plus d'avoir rajouté des variantes de style par rapport aux saisons.\n\nEt c'est comme ça que ce site qui n'était qu'au départ, un petit projet à vu le jour !",
-    "difficulties": "Ce projet a été l'un des plus durs que j'ai pu faire dans ma vie d'étudiant en seconde année, car il me confrontait en permanence sur des problèmes sur lesquels je n'avais strictement aucune idée de comment faire pour les résoudre.\n\nMais les plus grosses difficultés de ce projet était la connexion à l'api, la récupération et le traitement des données reçues. Bien que je sois assez satisfait du site, il y a une multitude d'éléments qui peuvent être améliorés, comme par exemple :\n\n- Utiliser un meilleur système pour traiter les musiques, autre que de toutes les stocker dans un dossier et les sélectionner dynamiquement\n- Écrire le code d'une manière plus propre, dans différents dossiers et avec plus de fonctions\n- Améliorer le site de façon générale\n\n En fait, j'aimerais beaucoup faire une nouvelle version de ce site, à partir de zéro, qui serait plus belle, plus détaillée, avec plus de fonctionnalités (comme par exemple de prendre en compte le vent des villes pour faire bouger les arbres, etc.), mais je n'en ai pas encore les compétences !",
-    "conclusion": "En conclusion MusicHours a été sans doute le projet le plus agréable et formateur de cette seconde année d'école. Il m'a permis d'apprendre vraiment beaucoup de fonctionnalités en js et il était vraiment satisfaisant d'arriver à faire des choses que l'on pensait impossible 10 heures plus tôt, en prenant juste le temps de chercher et de ne pas hésiter à demander de l'aide à des personnes plus fortes que soi pour avoir des avis et des indices de comment faire !"
+    "softwares": ["VSCode", "GitHub"]
   },
   {
     "name": "BeeLeave",

@@ -1,4 +1,4 @@
-## **Description du projet**
+## **Résumé du projet**
 
 Écrire des notes, gérez vos todos, et bien plus, tout ça dans une interface conviviale et personnalisable ! Qubi est un site mettant à disposition un tableau de bord personnalisable sur lequel il est possible de disposer différents widgets, ayant tous une fonction à eux !
 
@@ -8,7 +8,7 @@ Qubi est un site (et aussi un projet personnel) qui a pour but initial de me met
 
 Le principe de base de Qubi repose sur ses widgets : C'est un site modulaire ou chaque widget contient toute une fonctionnalité en lui, plus ou moins complexe. Cette structure de projet a été très pratique pour apprendre car chaque widget était un peu un projet dans un projet !
 
-![Untitled](markdown-img/qubi/image.png)
+![Untitled](markdown-img/qubi/qubigif.gif)
 
 ## Description avancée
 
