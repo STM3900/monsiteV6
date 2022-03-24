@@ -181,7 +181,7 @@ header p {
   color: white;
   font-size: 20px;
   font-style: italic;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   z-index: 99999;
 }
 
@@ -191,7 +191,7 @@ header section {
 }
 
 .icon {
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 10px;
