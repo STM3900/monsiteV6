@@ -98,6 +98,7 @@ export default {
 
   generate: {
     routes: [
+      "halloween",
       "/qubidoc",
       "/simon",
       "/asteroids",

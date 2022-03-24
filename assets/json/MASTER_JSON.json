@@ -1,5 +1,21 @@
 [
   {
+    "name": "Halloween",
+    "url": "halloween",
+    "markdownFolder": "halloween",
+    "category": "Projet perso",
+    "link": "https://github.com/STM3900/Halloween",
+    "imgColor": "halloween",
+    "iconLanguage": ["fab", "cuttlefish"],
+    "background": "halloween",
+    "finishDate": "30/10/2021",
+    "workTime": "6h51m",
+    "shortDescription": "Ce petit projet portant le nom original d'Halloween, est un projet d'électronique se basant sur une carte Arduino, et des trucs en plus. Son principe et de jouer une séquence de lumière et de son qui s'active quand il fait sombre.",
+    "objectives": ["Expérimenter en arduino et me faire plaisir"],
+    "languages": ["C", "Arduino"],
+    "softwares": ["VSCode", "GitHub"]
+  },
+  {
     "name": "Qubi",
     "url": "qubidoc",
     "markdownFolder": "qubi",

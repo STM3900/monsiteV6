@@ -224,6 +224,24 @@ export default {
 .nuxt-content a {
   color: black;
 }
+
+.nuxt-content a img {
+  transition: 0.3s;
+}
+.nuxt-content a img:hover {
+  transform: scale(0.995);
+}
+
+.nuxt-content aside {
+  padding: 25px 16px;
+  background: rgb(245, 242, 240);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  word-break: break-word;
+  line-height: 1.5;
+}
 </style>
 
 <style scoped>
