@@ -57,12 +57,15 @@ export default {
 
 <style scoped>
 .part {
-  background: hsl(199, 100%, 65%);
+  background: rgb(245, 245, 245);
   padding-bottom: 70px;
 }
 
+.part .icon {
+  color: hsl(199, 100%, 65%);
+}
+
 .part h1 {
-  color: white;
   margin-bottom: 25px;
 }
 
@@ -86,8 +89,7 @@ export default {
   background: white;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 15px 15px 27px hsl(199, 100%, 45%),
-    -15px -15px 27px hsl(199, 100%, 65%);
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px rgb(245, 245, 245);
   transition: 0.3s;
 }
 
