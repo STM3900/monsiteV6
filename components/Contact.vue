@@ -27,19 +27,19 @@ export default {
         {
           label: "LinkedIn",
           icon: ["fab", "linkedin-in"],
-          color: "#007bb6",
+          color: "#6ca5f1",
           link: "https://www.linkedin.com/in/theo-migeat/"
         },
         {
           label: "theo.migeat@epsi.fr",
           icon: "envelope",
-          color: "#006fc0",
+          color: "#6ccbf1",
           link: "mailto:theo.migeat@epsi.fr"
         },
         {
           label: "GitHub",
           icon: ["fab", "github"],
-          color: "#5b217b",
+          color: "#8b6cf1",
           link: "https://github.com/STM3900"
         }
       ]
@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .part {
-  background: rgb(245, 245, 245);
+  background: #f1f2f7;
   padding-bottom: 70px;
 }
 
@@ -83,7 +83,7 @@ export default {
   width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   background: white;
@@ -109,7 +109,7 @@ export default {
 }
 
 .part article section .icon-contact {
-  font-size: 25px;
+  font-size: 22px;
   margin-right: 10px;
 }
 

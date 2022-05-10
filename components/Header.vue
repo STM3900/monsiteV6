@@ -4,7 +4,7 @@
     <header>
       <article>
         <h1>Théo Migeat</h1>
-        <p>Étudiant et développeur front-end</p>
+        <p class="subtitle">Étudiant et développeur front-end</p>
         <section>
           <a
             v-for="(icon, i) in iconName"
@@ -134,9 +134,9 @@ div {
 .particle {
   position: absolute;
 
-  animation-name: fade;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+  opacity: 0;
+  animation: fade 1s ease forwards;
+  animation-delay: 0.6s;
 }
 
 .wave {
@@ -164,10 +164,6 @@ header article {
   justify-content: center;
   align-items: center;
   align-content: center;
-
-  animation-duration: 1s;
-  animation-name: fadeHeader;
-  animation-timing-function: ease;
 }
 
 header h1 {
@@ -175,6 +171,9 @@ header h1 {
   font-size: 75px;
   font-weight: normal;
   z-index: 99999;
+
+  opacity: 0;
+  animation: fadeHeader 1s ease forwards;
 }
 
 header p {
@@ -185,9 +184,20 @@ header p {
   z-index: 99999;
 }
 
+.subtitle {
+  opacity: 0;
+  animation: fadeHeader 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
 header section {
   color: white;
   z-index: 99999;
+
+  transition: 0.3s;
+  opacity: 0;
+  animation: fadeHeader 1s ease forwards;
+  animation-delay: 0.7s;
 }
 
 .icon {
