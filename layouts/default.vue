@@ -5,6 +5,23 @@
 </template>
 
 <style>
+::-webkit-scrollbar {
+  width: 8px;
+  background: #ffffff;
+  border-left: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(200, 200, 200);
+  border-left: 0px solid #ffffff;
+  border-radius: 3px;
+}
+
 html {
   font-size: 16px;
   word-spacing: 1px;
