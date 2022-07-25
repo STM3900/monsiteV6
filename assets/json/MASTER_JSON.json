@@ -1,5 +1,27 @@
 [
   {
+    "name": "RemoteLight",
+    "url": "remotelight",
+    "markdownFolder": "remotelight",
+    "category": "Projet perso",
+    "link": "https://github.com/STM3900/RemoteLight",
+    "imgColor": "RemoteLightLogo",
+    "iconLanguage": ["fab", "cuttlefish"],
+    "background": "remotelight",
+    "finishDate": "10/07/2022",
+    "workTime": "~30h",
+    "shortDescription": "RemoteLight est une télécomande permettant de controler une ampoule connectée (ou d'autres appareils) en utilisant HomeAssistant !",
+    "objectives": [
+      "Faire communiquer deux appareils en Wifi",
+      "Apprendre comment transmettre des données",
+      "Renforcer son niveau en IoT",
+      "Apprendre à souder",
+      "Explorer de nouvelles solutions et de nouveau protocoles"
+    ],
+    "languages": ["C", "Arduino"],
+    "softwares": ["VSCode", "GitHub", "HomeAssistant", "NodeRed", "API Tuya"]
+  },
+  {
     "name": "MusicBox",
     "url": "musicbox",
     "markdownFolder": "musicbox",

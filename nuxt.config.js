@@ -98,6 +98,8 @@ export default {
 
   generate: {
     routes: [
+      "/remotelight",
+      "/musicbox",
       "/halloween",
       "/qubidoc",
       "/simon",
