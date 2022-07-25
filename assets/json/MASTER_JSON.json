@@ -1,5 +1,21 @@
 [
   {
+    "name": "MusicBox",
+    "url": "musicbox",
+    "markdownFolder": "musicbox",
+    "category": "Projet perso",
+    "link": "https://github.com/STM3900/mp3Player",
+    "imgColor": "musicboxLogo",
+    "iconLanguage": ["fab", "cuttlefish"],
+    "background": "boitepres",
+    "finishDate": "21/05/2022",
+    "workTime": "~10h",
+    "shortDescription": "Projet complettant un cadeau pour une amie, cette boite à musique, joue la bande son du jeu \"Inscryption\" depuis un petit haut parleur. Il est possible de régler le volume, ainsi que de changer de musique",
+    "objectives": ["Réaliser un vrai projet Arduino avec du son"],
+    "languages": ["C", "Arduino"],
+    "softwares": ["VSCode", "GitHub"]
+  },
+  {
     "name": "Halloween",
     "url": "halloween",
     "markdownFolder": "halloween",
