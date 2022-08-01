@@ -31,7 +31,7 @@ Si tous les sous niveaux d'un niveau sont complété, on monte en niveau. Cela v
 Cette logique se répète jusqu'à que le joueur se trompe, réinitialisant le jeu.
 
 _Cliquez sur l'image pour voir la démo :_
-[![Image preview youtube](markdown-img/simon/arduino.jpg)](https://www.youtube.com/watch?v=_EgEeAPs9yA)
+[![Image preview youtube](../markdown-img/simon/arduino.jpg)](https://www.youtube.com/watch?v=_EgEeAPs9yA)
 
 ## **Difficultés et axes d'amélioration**
 

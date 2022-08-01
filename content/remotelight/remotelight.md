@@ -38,15 +38,15 @@ Et voilà, encore une fois, rien de très complexe sur les branchements
 
 Après avoir conçu un prototype sur Breadboard fonctionnel, le schéma de branchement ressemble à ça :
 
-![Untitled](markdown-img/remotelight/schema.jpeg)
+![Untitled](../markdown-img/remotelight/schema.jpeg)
 
 Rien de bien dur. Voici à quoi ressemble la télécommande une fois assemblée :
 
-![Untitled](markdown-img/remotelight/telefront.png)
+![Untitled](../markdown-img/remotelight/telefront.png)
 
 La télécommande tient d’elle-même en position verticale, et elle à un petit interrupteur à côté de l’ESP pour l’allumer. Voyons maintenant à quoi ressemble l’arrière de la télécommande…
 
-![Untitled](markdown-img/remotelight/teleback.png)
+![Untitled](../markdown-img/remotelight/teleback.png)
 
 Beaucoup de câbles ! Il va sans dire que bien que cette installation donne un style un peu “cyberpunk” à la télécommande, cela la rend aussi très vulnérable lors de la manipulation. En effet, il serait très facile de débrancher des câbles accidentellement en manipulant la télécommande (ce qui est arrivé durant des tests oups)
 
@@ -80,7 +80,7 @@ Pour faire la communication entre l’ampoule et _HA_, j’ai fait la découvert
 
 Encore mieux, _HA_ possède une intégration permettant d’ajouter facilement un compte Tuya à son écosystème ! Il suffit juste d’y renseigner les informations de son compte Tuya, ainsi que de son projet IoT, et l’intégration s’occupe d’ajouter les appareils présent sur le compte Tuya directement dans _HA_ !
 
-![Untitled](markdown-img/remotelight/hatuya.png)
+![Untitled](../markdown-img/remotelight/hatuya.png)
 
 ### Installer un broker MQTT sur _HA_
 
@@ -96,7 +96,7 @@ Comme dit précédemment, le MQTT fonctionne sur base d’abonnement et d’abon
 
 Voici un diagramme trouvé sur [ce site](https://arduino.blaisepascal.fr/mqtt-avec-arduino/) expliquant de manière plus visuelle le protocole MQTT
 
-![Untitled](markdown-img/remotelight/schemamqtt.png)
+![Untitled](../markdown-img/remotelight/schemamqtt.png)
 
 On y voit à gauche un capteur de température qui publie sur le topic portant le nom `température` une valeur correspondant à `28°C`.
 
@@ -112,7 +112,7 @@ NodeRed à la particularité de fonctionner via une interface web, ou il est pos
 
 Voici une capture d’écran d’une interface NodeRed toute simple, faisant une seule action
 
-![Untitled](markdown-img/remotelight/noderedexemple.png)
+![Untitled](../markdown-img/remotelight/noderedexemple.png)
 
 On peut y voir qu’une node d’_input_ est reliée à une node de _debug_, qui affiche simplement le message envoyé dans la console à droite de l’écran.
 
@@ -124,7 +124,7 @@ Maintenant que tout est installé il est temps d’assembler les différentes pa
 
 Voici un diagramme illustrant comment communique et fonctionne les différents appareils de l’écosystème de mon projet :
 
-![GnoccHome.png](markdown-img/remotelight/GnoccHome.png)
+![GnoccHome.png](../markdown-img/remotelight/GnoccHome.png)
 
 Notre télécommande, va envoyer des informations dans divers topics, qui seront traités par NodeRed pour être converti en information à envoyer à l’ampoule via l’API de Tuya.
 
@@ -134,7 +134,7 @@ On peut remarquer qu’une entité dont je n’ai pas encore parlé, figure sur 
 
 Voici à quoi ressemble le NodeRed du projet :
 
-![Untitled](markdown-img/remotelight/nodered.png)
+![Untitled](../markdown-img/remotelight/nodered.png)
 
 On peut voir que le “**flow**” est composé de petits groupes de nodes toutes simple. En effet, les nodes de couleurs rosâtres correspondes à des topics MQTT, qui s’occupe de transmettre l’information reçue aux nodes vertes (pour un affichage console) et aux nodes bleues, qui correspondent à l’ampoule connectée !
 
@@ -144,7 +144,7 @@ Maintenant que tout est mis en place, notre projet fonctionne !
 
 _Cliquez sur l'image pour voir la démo :_
 
-[![Image preview youtube](markdown-img/remotelight/remotedemo.png)](https://www.youtube.com/watch?v=QTSX4rNyHMg)
+[![Image preview youtube](../markdown-img/remotelight/remotedemo.png)](https://www.youtube.com/watch?v=QTSX4rNyHMg)
 
 ## Difficultés
 
@@ -164,7 +164,7 @@ Elle est aussi assez fragile, et si elle est manipulée sans trop de précaution
 
 Et surtout, elle manque un élément qui a été retiré lors de sa seconde création : une LED RGB permettant de savoir le statut de la télécommande (allumée / en cours de connexion au wifi / connexion au MQTT / hors ligne). En effet lors du premier prototype, j’ai tout simplement mal branché la LED et je l’ai fait griller 😐 Et donc je n’en avais plus de rechange pour la seconde version de la télécommande, comme quoi, il est important de bien faire attention aux endroits où l’on soude !
 
-![Untitled](markdown-img/remotelight/remotedead.png)
+![Untitled](../markdown-img/remotelight/remotedead.png)
 
 ## Axes d’amélioration
 

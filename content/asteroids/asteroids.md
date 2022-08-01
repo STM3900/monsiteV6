@@ -16,7 +16,7 @@ Le jeu propose plusieurs fonctionnalités :
 - Une fois par vie, le joueur peut utiliser son SuperTir, qui détruit tout ennemi en ligne droite pendant un court instant
 - Pour gagner plus de points, le joueur peut augmenter son combo s'il ne rate pas sa cible à plusieurs reprises. Au bout de 10 astéroïdes touchés d'affilé, le joueur obtient le SuperCombo, qui augmente considérablement sa cadence de tir
 
-![Asteroids](markdown-img/asteroids/asteroids.gif)
+![Asteroids](../markdown-img/asteroids/asteroids.gif)
 
 Le jeu possède aussi un système de classement, qui n'est pas accessible dans la version publique. Celui-ci enregistre les 5 meilleurs scores.
 

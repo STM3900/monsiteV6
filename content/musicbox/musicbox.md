@@ -18,7 +18,7 @@ Le projet est composé de quelques composants :
 
 Pour ce premier essai de circuit que je n’allais pas démonter par le futur, j’ai fait le choix de relier le circuit sur des “breadboards” de prototypage et de les mettre dans une boite en carton.
 
-![Photo du circuit de la boite à musique. On y voit l’Arduino connecté au lecteur de carte SD, lui-même connecté ](markdown-img/musicbox/boiteopen.png)
+![Photo du circuit de la boite à musique. On y voit l’Arduino connecté au lecteur de carte SD, lui-même connecté ](../markdown-img/musicbox/boiteopen.png)
 
 ^ Photo du circuit de la boite à musique. On y voit l’Arduino connecté au lecteur de carte SD, lui-même connecté
 
@@ -32,7 +32,7 @@ Bon, rien de bien dur que ce soit sur le code, ou le fonctionnement ! Au lanceme
 
 _Cliquez sur l'image pour voir la démo :_
 
-[![Image preview youtube](markdown-img/musicbox/boitepres.png)](https://www.youtube.com/watch?v=2fT92TD4VNI)
+[![Image preview youtube](../markdown-img/musicbox/boitepres.png)](https://www.youtube.com/watch?v=2fT92TD4VNI)
 
 ## Difficultés et axes d’amélioration
 
@@ -50,7 +50,7 @@ Mon niveau en électronique n’étant que celui d’un débutant, je n’avais 
 
 Comme vous pouvez le voir sur les différentes images, je n’ai pas d’expérience pour réaliser de jolis boîtiers en électronique, donc j’en ai conçu un en découpant une boite en carton avec un cutter et en collant les breadboard et autres composant avec du scotch double face
 
-![Untitled](markdown-img/musicbox/boitecontrol.png)
+![Untitled](../markdown-img/musicbox/boitecontrol.png)
 
 Comme le montre cette image, il y a des câbles exposés qui risquent d’être débranchés accidentellement lors de l’utilisation de la boite.
 

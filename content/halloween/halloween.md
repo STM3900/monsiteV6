@@ -8,7 +8,7 @@ Alors comment que ça marche tout ça ? Eh bien nous allons le voir !
 
 Pour que ce projet ai pu prendre forme, bah faut bien brancher des trucs ensemble pour que ça marche !
 
-![photo du circuit du projet, avec en arrière plan la carte Arduino](markdown-img/halloween/IMG20211026215720.jpg)
+![photo du circuit du projet, avec en arrière plan la carte Arduino](../markdown-img/halloween/IMG20211026215720.jpg)
 
 ^ photo du circuit du projet, avec en arrière plan la carte Arduino
 
@@ -33,7 +33,7 @@ Une carte Arduino, c'est en fait ce que l'on appelle un _Microcontrôleur_ ! Un 
 
 La puissance de cette carte viens de sa simplicité, et de son système plus ou moins modulaire : en fait vous pouvez voir que sur la carte, il y a des sorte de petits trous qui sont destinés à être utilisé pour y brancher des composants électroniques !
 
-![Photo rapprochée de la carte Arduino : on y aperçoit les pins de branchement](markdown-img/halloween/IMG20211026215736.jpg)
+![Photo rapprochée de la carte Arduino : on y aperçoit les pins de branchement](../markdown-img/halloween/IMG20211026215736.jpg)
 
 ^ Photo rapprochée de la carte Arduino : on y aperçoit les pins de branchement
 

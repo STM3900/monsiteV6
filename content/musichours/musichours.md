@@ -30,7 +30,7 @@ Mais voulant toujours ajouter des fonctionnalités au site, j'ai vu qu'il était
 
 Et c'est comme ça que ce site qui n'était qu'au départ, un petit projet à vu le jour !
 
-![Untitled](markdown-img/musichours/comparatif.png)
+![Untitled](../markdown-img/musichours/comparatif.png)
 
 ## Difficultés et axes d'amélioration
 

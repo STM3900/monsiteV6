@@ -8,7 +8,7 @@ Qubi est un site (et aussi un projet personnel) qui a pour but initial de me met
 
 Le principe de base de Qubi repose sur ses widgets : C'est un site modulaire ou chaque widget contient toute une fonctionnalité en lui, plus ou moins complexe. Cette structure de projet a été très pratique pour apprendre car chaque widget était un peu un projet dans un projet !
 
-![Untitled](markdown-img/qubi/qubigif.gif)
+![Untitled](../markdown-img/qubi/qubigif.gif)
 
 ## Description avancée
 
