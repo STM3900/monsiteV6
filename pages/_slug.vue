@@ -61,10 +61,10 @@
     </article>
     <article class="button-group">
       <button v-if="checkIfExist(-1)" @click="changeProject(-1)">
-        projet suivant
+        projet suivant : {{ getTitleArticle(-1) }}
       </button>
       <button v-if="checkIfExist(1)" @click="changeProject(+1)">
-        projet précedent
+        projet précedent : {{ getTitleArticle(1) }}
       </button>
     </article>
   </div>
@@ -158,6 +158,9 @@ export default {
     checkIfExist(e) {
       return this.activeTab[this.findIndex(this.activeTab) + e];
     },
+    getTitleArticle(e) {
+      return this.activeTab[this.findIndex(this.activeTab) + e].name;
+    },
     goHome() {
       this.$refs["nav"].style.display = "none";
       this.$router.push("/");
@@ -168,9 +171,6 @@ export default {
           this.activeTab.push(this.rawData[i]);
         }
       }
-    },
-    test() {
-      alert("ouais");
     }
   },
   head() {
@@ -434,6 +434,14 @@ article h2 {
 
   .nuxt-content ul li {
     font-size: 14px;
+  }
+
+  code {
+    font-size: 14px !important;
+  }
+
+  code span {
+    font-size: 14px !important;
   }
 }
 
