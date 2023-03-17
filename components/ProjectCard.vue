@@ -285,7 +285,6 @@ article img {
   border: solid #fdfffc 6px;
   border-radius: 50%;
   z-index: 99999;
-  overflow: visible;
   background: white;
 }
 
