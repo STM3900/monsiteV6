@@ -1,5 +1,6 @@
 <template>
   <div class="part">
+    <aside>
     <h1><fa class="icon" icon="address-book" />Parcours / Expériences</h1>
     <article>
       <section>
@@ -39,6 +40,8 @@
         </timeline>
       </section>
     </article>
+    </aside>
+
   </div>
 </template>
 
@@ -57,7 +60,17 @@ export default {
 
 <style scoped>
 div {
-  background: #fdfffc;
+  background: #eb000000;
+}
+
+div h1 {
+  font-size: 32px;
+}
+
+aside {
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  padding: 20px 40px;
+  border-radius: 20px;
 }
 
 .part .icon {

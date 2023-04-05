@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
 .part {
-  background: #fdfffc;
+  background: #fdfffc00;
   margin-bottom: 25px;
 }
 
