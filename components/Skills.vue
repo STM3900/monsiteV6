@@ -1,38 +1,40 @@
 <template>
   <div class="part">
-    <h1><fa class="icon" icon="clipboard-list" />Compétences et langages</h1>
-    <p class="note">(Mesurées en nombre d'heures pratiquées hors entreprise)</p>
-    <article>
-      <section v-for="(item, i) in skills" :key="i">
-        <aside>
-          <fa
-            class="icon-skill"
-            :icon="item.icon"
-            :style="{ color: item.color }"
-          />
-          <span v-if="item.favorite && hoverTab.length > 0">
-            <span
-              :class="hoverTab[i].isHover ? 'tooltip tooltip-hover' : 'tooltip'"
-            >
-              Compétence favorite
-            </span>
+    <div class="border-part">
+      <h1><fa class="icon" icon="clipboard-list" />Compétences et langages</h1>
+      <p class="note">(Mesurées en nombre d'heures pratiquées hors entreprise)</p>
+      <article>
+        <section v-for="(item, i) in skills" :key="i">
+          <aside>
             <fa
-              class="icon-star"
-              icon="star"
-              @mouseover="hoverTab[i].isHover = true"
-              @mouseleave="hoverTab[i].isHover = false"
+              class="icon-skill"
+              :icon="item.icon"
+              :style="{ color: item.color }"
             />
-          </span>
-        </aside>
-        <h2>{{ item.label }}</h2>
-        <p>
-          {{ item.hours }}<span v-if="item.numProjects">h</span>
-          <span v-if="item.numProjects"
-            >- {{ item.numProjects + getProjects(item.numProjects) }}</span
-          >
-        </p>
-      </section>
-    </article>
+            <span v-if="item.favorite && hoverTab.length > 0">
+              <span
+                :class="hoverTab[i].isHover ? 'tooltip tooltip-hover' : 'tooltip'"
+              >
+                Compétence favorite
+              </span>
+              <fa
+                class="icon-star"
+                icon="star"
+                @mouseover="hoverTab[i].isHover = true"
+                @mouseleave="hoverTab[i].isHover = false"
+              />
+            </span>
+          </aside>
+          <h2>{{ item.label }}</h2>
+          <p>
+            {{ item.hours }}<span v-if="item.numProjects">h</span>
+            <span v-if="item.numProjects"
+              >- {{ item.numProjects + getProjects(item.numProjects) }}</span
+            >
+          </p>
+        </section>
+      </article>
+    </div>
   </div>
 </template>
 
@@ -70,8 +72,9 @@ export default {
 
 <style scoped>
 .part {
-  background: #fdfffc;
+  background: #fdfffc00;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .part .note {
@@ -102,11 +105,11 @@ article section {
   align-items: flex-start;
   align-content: center;
 
-  width: 350px;
+  width: 340px;
 
   padding: 20px;
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  border-radius: 5px;
+  box-shadow: 2px 2px 0px #eeeeee, -2px -2px 0px #ffffff;
+  border-radius: 10px;
 }
 
 article section aside {

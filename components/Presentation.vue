@@ -1,12 +1,16 @@
 <template>
   <div class="part">
-    <h1><fa class="icon" icon="user-circle" />Bonjour !</h1>
-    <p>
-      Je suis un étudiant en quatrième année à l'Epsi et alternant à
-      STMicroelectronics, je suis passionné par le développement web, où je
-      prends plaisir à concevoir et réaliser des sites avec de plus en plus de
-      fonctionnalités !
-    </p>
+    <div class="border-part">
+      <h1>
+        <fa class="icon" icon="user-circle" />Bonjour !
+      </h1>
+      <p>
+        Je suis un étudiant en quatrième année à l'Epsi et alternant à
+        STMicroelectronics, je suis passionné par le développement web, où je
+        prends plaisir à concevoir et réaliser des sites avec de plus en plus de
+        fonctionnalités !
+      </p>
+    </div>
   </div>
 </template>
 

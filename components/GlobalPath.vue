@@ -1,44 +1,46 @@
 <template>
   <div class="part">
-    <h1><fa class="icon" icon="address-book" />Parcours / Expériences</h1>
-    <article>
-      <section>
-        <h2>Scolaire</h2>
-        <timeline>
-          <timeline-title
-            v-for="(item, i) in schoolTab"
-            :key="i"
-            class="timeline-title-custom"
-            bg-color="hsl(199, 100%, 65%)"
-          >
-            <h4>
-              {{ item.beginDate }} -
-              {{ item.endDate ? item.endDate : "Présent" }}
-            </h4>
-            <h3>{{ item.label }}</h3>
-            <h5>{{ item.school }}</h5>
-          </timeline-title>
-        </timeline>
-      </section>
-      <section>
-        <h2>Professionel</h2>
-        <timeline>
-          <timeline-title
-            v-for="(item, j) in workTab"
-            :key="j"
-            class="timeline-title-custom"
-            bg-color="hsl(199, 100%, 75%)"
-          >
-            <h4>
-              {{ item.beginDate }} -
-              {{ item.endDate ? item.endDate : "Présent" }}
-            </h4>
-            <h3>{{ item.label }}</h3>
-            <h5>{{ item.work }}</h5>
-          </timeline-title>
-        </timeline>
-      </section>
-    </article>
+    <div class="border-part">
+      <h1><fa class="icon" icon="address-book" />Parcours / Expériences</h1>
+      <article>
+        <section>
+          <h2>Scolaire</h2>
+          <timeline>
+            <timeline-title
+              v-for="(item, i) in schoolTab"
+              :key="i"
+              class="timeline-title-custom"
+              bg-color="hsl(199, 100%, 65%)"
+            >
+              <h4>
+                {{ item.beginDate }} -
+                {{ item.endDate ? item.endDate : "Présent" }}
+              </h4>
+              <h3>{{ item.label }}</h3>
+              <h5>{{ item.school }}</h5>
+            </timeline-title>
+          </timeline>
+        </section>
+        <section>
+          <h2>Professionel</h2>
+          <timeline>
+            <timeline-title
+              v-for="(item, j) in workTab"
+              :key="j"
+              class="timeline-title-custom"
+              bg-color="hsl(199, 100%, 75%)"
+            >
+              <h4>
+                {{ item.beginDate }} -
+                {{ item.endDate ? item.endDate : "Présent" }}
+              </h4>
+              <h3>{{ item.label }}</h3>
+              <h5>{{ item.work }}</h5>
+            </timeline-title>
+          </timeline>
+        </section>
+      </article>
+    </div>
   </div>
 </template>
 
