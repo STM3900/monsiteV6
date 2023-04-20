@@ -74,7 +74,7 @@ export default {
 .part {
   background: #fdfffc00;
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .part .note {
