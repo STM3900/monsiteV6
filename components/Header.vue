@@ -4,7 +4,7 @@
     <header>
       <article>
         <h1>Théo Migeat</h1>
-        <p class="subtitle">Étudiant et développeur front-end</p>
+        <p class="subtitle">Développeur Front-End, intégrateur web</p>
         <section>
           <a
             v-for="(icon, i) in iconName"

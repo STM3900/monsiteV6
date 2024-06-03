@@ -31,10 +31,10 @@ export default {
           link: "https://www.linkedin.com/in/theo-migeat/"
         },
         {
-          label: "theo.migeat@epsi.fr",
+          label: "theo.migeat@gmail.com",
           icon: "envelope",
           color: "#6ccbf1",
-          link: "mailto:theo.migeat@epsi.fr"
+          link: "mailto:theo.migeat@gmail.com"
         },
         {
           label: "GitHub",

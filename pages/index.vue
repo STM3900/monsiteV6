@@ -31,6 +31,7 @@ export default {
       schoolTab: [
         {
           beginDate: 2018,
+          endDate: 2023,
           label: "Master en informatique",
           school: "Epsi Grenoble"
         },
@@ -42,8 +43,15 @@ export default {
         }
       ],
       workTab: [
+      {
+          beginDate: "Novembre 2023",
+          endDate: "Mai 2024",
+          label: "Développeur front-end, mobile",
+          work: "Kaizen Solutions"
+        },
         {
           beginDate: "Septembre 2021",
+          endDate: "Septembre 2023",
           label: "Alternance en développement web",
           work: "STMicroelectronics"
         },
@@ -72,24 +80,24 @@ export default {
           icon: ["fab", "vuejs"],
           color: "#41b883",
           favorite: true,
-          hours: 209,
-          numProjects: 5
+          hours: 600,
+          numProjects: 10
         },
         {
           label: "Javascript",
           icon: ["fab", "js-square"],
           color: "#efd81d",
           favorite: true,
-          hours: "+400",
-          numProjects: "+10"
+          hours: "+800",
+          numProjects: "+15"
         },
         {
           label: "CSS / Intégration",
           icon: ["fab", "css3"],
           color: "#379ad6",
           favorite: true,
-          hours: "+670",
-          numProjects: "+40"
+          hours: "+2000",
+          numProjects: "+50"
         },
         {
           label: "Angular",
