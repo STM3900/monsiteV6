@@ -1,5 +1,29 @@
 [
   {
+    "name": "Pico",
+    "url": "",
+    "category": "Projet perso",
+    "link": "",
+    "imgColor": "#4cc6ff",
+    "iconLanguage": ["fab", "css3"],
+    "background": "",
+    "finishDate": "23/09/2023",
+    "workTime": "60h",
+    "shortDescription": "Boitiers composés d'un écran et d'un bouton,communiquant entre eux via un server MQTT, ainsi que d'un site websécurisé par un système authentifi cation, pouvant envoyer etrecevoir des messages"
+  },
+  {
+    "name": "Omorifton",
+    "url": "",
+    "category": "Projet perso",
+    "link": "",
+    "imgColor": "#000000",
+    "iconLanguage": ["fab", "css3"],
+    "background": "",
+    "finishDate": "25/06/2022",
+    "workTime": "130h",
+    "shortDescription": "site pour un streamer adoptant l'esthétique d'un jeuvidéo, avec pages musicales, animations et eff ets pour uneexpérience immersive"
+  },
+  {
     "name": "RemoteLight",
     "url": "remotelight",
     "markdownFolder": "remotelight",
