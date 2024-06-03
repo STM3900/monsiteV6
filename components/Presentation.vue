@@ -1,13 +1,12 @@
 <template>
   <div class="part">
     <div class="border-part">
-      <h1>
-        <fa class="icon" icon="user-circle" />Bonjour !
-      </h1>
+      <h1><fa class="icon" icon="user-circle" />Bonjour !</h1>
       <p>
-        Passioné par le développement web, dans lequel je prends plaisir à
-        concevoir, et réaliser des sites de tout genre, je suis diplomé d'un
-        titre RNCP niveau 7 - Expert en informatique & Système d’Information
+        Je suis passionné de développement web, où je prends plaisir à concevoir
+        et réaliser des sites variés. Titulaire d'un titre RNCP niveau 7 -
+        Expert en informatique et systèmes d'information, je suis toujours
+        curieux d'apprendre et d'explorer de nouvelles technologies !
       </p>
     </div>
   </div>

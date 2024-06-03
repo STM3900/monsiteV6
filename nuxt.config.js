@@ -12,7 +12,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Je suis un étudiant en quatrième année à l'Epsi et alternant à STMicroelectronics, je suis passionné par le développement web, où je prends plaisir à concevoir et réaliser des sites avec de plus en plus de fonctionnalités !"
+          "Je suis passionné de développement web, où je prends plaisir à concevoir et réaliser des sites variés. Titulaire d'un titre RNCP niveau 7 - Expert en informatique et systèmes d'information, je suis toujours curieux d'apprendre et d'explorer de nouvelles technologies !"
       }
     ],
     link: [
