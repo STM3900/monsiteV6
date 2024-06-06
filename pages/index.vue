@@ -45,7 +45,7 @@ export default {
       workTab: [
       {
           beginDate: "Novembre 2023",
-          endDate: "Mai 2024",
+          endDate: "Juin 2024",
           label: "Développeur front-end, mobile",
           work: "Kaizen Solutions"
         },
