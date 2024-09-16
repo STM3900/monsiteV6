@@ -1,8 +1,8 @@
 ## Description du projet
 
-Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métalliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci soit hors service !
+Créé pendant la Scientific Game Jam de 2020, dans une équipe de 8, Breacking Bot nous met dans la peau de Stein, le premier robot géologue qui doit dater les gisements métalliques en cherchant et analysant un minerai datable dans les roches Monazite avant que celui-ci ne soit hors service !
 
-La Scientific Game Jam consiste à développer un jeu complet en 48h, qui illustre le sujet de thèse du doctorant qui fait parti de l'équipe.
+La Scientific Game Jam consiste à développer un jeu complet en 48h, qui illustre le sujet de thèse du doctorant qui fait partie de l'équipe.
 
 Cette année, j'ai eu la chance d'être dans une grande équipe de 7 personnes très talentueuses et très bienveillante !
 

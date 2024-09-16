@@ -22,10 +22,26 @@
           </timeline>
         </section>
         <section>
-          <h2>Professionel</h2>
+          <h2>Professionnel</h2>
           <timeline>
             <timeline-title
               v-for="(item, j) in workTab"
+              :key="j"
+              class="timeline-title-custom"
+              bg-color="hsl(199, 100%, 75%)"
+            >
+              <h4>
+                {{ item.beginDate }} -
+                {{ item.endDate ? item.endDate : "Présent" }}
+              </h4>
+              <h3>{{ item.label }}</h3>
+              <h5>{{ item.work }}</h5>
+            </timeline-title>
+          </timeline>
+          <h2>Professionnel bénévole</h2>
+          <timeline>
+            <timeline-title
+              v-for="(item, j) in voluntaryTab"
               :key="j"
               class="timeline-title-custom"
               bg-color="hsl(199, 100%, 75%)"
@@ -52,7 +68,8 @@ export default {
   components: { Timeline, TimelineItem, TimelineTitle },
   props: {
     schoolTab: Array,
-    workTab: Array
+    workTab: Array,
+    voluntaryTab: Array
   }
 };
 </script>

@@ -57,7 +57,7 @@ maintenant que les différents types de composants ont été présentés, je vai
 
 En réalité, la logique du projet est toute simple : La photorésistance envoie toute les demie-secondes une valeur indiquant la luminosité présente. Si elle est inférieure à une valeur indiquant que le système est dans un endroit sombre, l'Arduino active une séquence de lumière et de son.
 
-Voila, c'est tout mdr
+Et voila c'est tout-
 
 Mais comment faire en sorte que cette description devienne réalité et que notre superbe circuit fasse ça ? Et bien c'est simple : on tape sur un clavier jusqu'à que l'Arduino fasse ce qu'on a envie de faire !
 

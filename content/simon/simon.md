@@ -10,23 +10,23 @@ Mon objectif pour ce premier projet d'électronique (enfin d'Arduino) était sim
 
 ## Description avancée
 
-N'y connaissant pas grand chose en électronique, c'est un ami, qui fait ses études dans ce domaine, qui m'a conseillé de réaliser ce projet comme initiation à l'électronique. J'ai donc commencé par me procurer des composants pour mettre en œuvre mon petit projet. J'ai donc eu besoin d'utiliser :
+N'y connaissant pas grand-chose en électronique, c'est un ami, qui fait ses études dans ce domaine, qui m'a conseillé de réaliser ce projet comme initiation à l'électronique. J'ai donc commencé par me procurer des composants pour mettre en œuvre mon petit projet. J'ai donc eu besoin d'utiliser :
 
 - Des Leds pour les 4 couleurs du Simon (rouge, bleu, jaune et vert)
 - Un Buzzer
 - Des résistances
-- Des cables
-- Et bien sur, d'un microcontrôleur, comme un Arduino par exemple
+- Des câbles
+- Et bien sûr, d'un microcontrôleur, comme un Arduino par exemple
 
 Une fois les composants mis en place, il m'a fallu développer l'algorithme permettant tout simplement de jouer au jeu !
 
-Le fonctionne de cette manière : Chaque partie est séparé par des niveaux et des sous niveaux.
+Le fonctionne de cette manière : Chaque partie est séparée par des niveaux et des sous-niveaux.
 
-Un sous niveau est une suite d'affichage de LED (et de sons), dans un ordre défini par une variable aléatoire, que le joueur doit reproduire en appuyant sur les boutons.
+Un sous-niveau est une suite d'affichages de LED (et de sons), dans un ordre défini par une variable aléatoire, que le joueur doit reproduire en appuyant sur les boutons.
 
-Quand un joueur passe au sous niveau suivant, la même suite se répète, mais elle est augmenté de 1.
+Quand un joueur passe au sous-niveau suivant, la même suite se répète, mais elle est augmenté de 1.
 
-Si tous les sous niveaux d'un niveau sont complété, on monte en niveau. Cela veut dire que les prochains niveaux joueront une note maximale supplémentaire, mais aussi plus rapidement
+Si tous les sous-niveaux d'un niveau sont complétés, on monte en niveau. Cela veut dire que les prochains niveaux joueront une note maximale supplémentaire, mais aussi plus rapidement
 
 Cette logique se répète jusqu'à que le joueur se trompe, réinitialisant le jeu.
 

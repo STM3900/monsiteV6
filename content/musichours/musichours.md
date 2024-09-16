@@ -18,7 +18,7 @@ Et voilà, j'avais donc fini mon site en quelques heures ! Mais bon je ne voulai
 
 J'ai donc ajouté un cycle d'aurore / jour / crépuscule / nuit au site, puis ensuite un soleil et une lune qui bougeait en fonction de l'heure.
 
-Étant assez satisfait du site, je me suis dit que je pouvais en rester la, et j'ai eu une idée qui a allongé le temps de développement de 60 heures : celle de faire en sorte que le site réagisse en fonction de la météo d'une ville rentrée.
+Étant assez satisfait du site, je me suis dit que je pouvais en rester la, mais j'ai eu une idée qui a allongé le temps de développement de 60 heures : celle de faire en sorte que le site réagisse en fonction de la météo d'une ville rentrée.
 
 Ayant une expérience d'environ 2 semaines en javascript, je n'avais absolument aucune idée de comment réaliser cette action, et en demandant à des amis et en suivant des tutos, j'ai donc compris que je devrais utiliser une api, qui me permettrait de récupérer les données météorologiques d'une ville donnée. Et cette api vient directement du site [https://openweathermap.org/](https://openweathermap.org/), qui propose une api gratuite, et avec le recul, pas très dure à utiliser.
 

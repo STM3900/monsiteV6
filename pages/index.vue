@@ -2,7 +2,7 @@
   <div @scroll.passive="handleScroll">
     <Header />
     <Presentation />
-    <GlobalPath :schoolTab="schoolTab" :workTab="workTab" />
+    <GlobalPath :schoolTab="schoolTab" :workTab="workTab" :voluntaryTab="voluntaryProjects" />
     <Skills :skills="skills" />
     <Projects />
     <Contact />
@@ -74,23 +74,21 @@ export default {
           work: "Auphys Technologie"
         }
       ],
+      voluntaryProjects: [
+        {
+          beginDate: "Juin 2023",
+          endDate: "Février 2024",
+          label: "Intégrateur, développeur web, responsable web d'un projet internationnal",
+          work: "QSMP"
+        },
+        {
+          beginDate: "2022",
+          endDate: "2024",
+          label: "Intégrateur et développeur front-end au sein d'une association",
+          work: "Cartoon Fantasy"
+        }
+      ],
       skills: [
-        {
-          label: "Vue.js / Nuxt",
-          icon: ["fab", "vuejs"],
-          color: "#41b883",
-          favorite: true,
-          hours: 600,
-          numProjects: 10
-        },
-        {
-          label: "Javascript",
-          icon: ["fab", "js-square"],
-          color: "#efd81d",
-          favorite: true,
-          hours: "+800",
-          numProjects: "+15"
-        },
         {
           label: "CSS / Intégration",
           icon: ["fab", "css3"],
@@ -100,24 +98,40 @@ export default {
           numProjects: "+50"
         },
         {
+          label: "Vue.js / Nuxt",
+          icon: ["fab", "vuejs"],
+          color: "#41b883",
+          favorite: true,
+          hours: "+600",
+          numProjects: 16
+        },
+        {
+          label: "Javascript",
+          icon: ["fab", "js-square"],
+          color: "#efd81d",
+          favorite: true,
+          hours: "+1400",
+          numProjects: "+20"
+        },
+        {
           label: "Angular",
           icon: ["fab", "angular"],
           color: "#d6002f",
           hours: 30,
-          numProjects: 1
+          numProjects: 2
         },
         {
           label: "C, C++, C#",
           icon: ["fab", "cuttlefish"],
           color: "#9b4f97",
           hours: "+300",
-          numProjects: 5
+          numProjects: 6
         },
         {
           label: "GitHub",
           icon: ["fab", "github"],
           color: "#5b217b",
-          hours: "Utilisé pour chaque projet depuis 3 ans"
+          hours: "Utilisé pour chaque projet depuis 6 ans"
         },
         {
           label: "PHP",
@@ -139,7 +153,7 @@ export default {
           icon: ["fab", "python"],
           color: "#356c9b",
           hours: 50,
-          numProjects: 1
+          numProjects: 2
         }
       ]
     };

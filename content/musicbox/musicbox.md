@@ -9,7 +9,7 @@ Comme son nom l’indique, cette petite boite a pour simple but de jouer de la m
 Le projet est composé de quelques composants :
 
 - Une carte Arduino
-- Un \*\*\*\*DFPlayer Mini, permettant d’insérer une carte microSD et d’y lire des fichiers mp3
+- Un DFPlayer Mini, permettant d’insérer une carte microSD et d’y lire des fichiers mp3
 - Trois boutons
 - Un potentiomètre pour régler le volume
 - Un haut-parleur
@@ -58,6 +58,6 @@ Si la conception de petits projets en électronique de ce genre continue de me p
 
 ## Conclusion
 
-Malgré les difficultés, j’ai adoré réaliser ce projet, et c’est très satisfaisant de pouvoir créer quelque chose que l’ont peut tenir dans ses mains (à l’instar d’un site web), et qui en plus, diffuse de la musique d’un jeu que l’on aime beaucoup !
+Malgré les difficultés, j’ai adoré réaliser ce projet, et c’est très satisfaisant de pouvoir créer quelque chose que l’on peut tenir dans ses mains (à l’instar d’un site web), et qui en plus, diffuse de la musique d’un jeu que l’on aime beaucoup !
 
 Je pense faire d’autres projets dans ce genre, mais cette fois-ci en prenant un peu plus de temps.

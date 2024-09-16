@@ -58,7 +58,7 @@ Maintenant que notre télécommande est prête, comment la faire communiquer ave
 
 Voici la partie qui m’a le plus retourné les méninges ! N’ayant absolument aucune idée de comment faire ça, j’ai fait ce que chaque développeur fait quand il ne sait pas quelque chose : chercher sur le net
 
-Mon idée de base était que mon ampoule pouvait communiquer en Wifi, et que l’ESP8266, pouvait lui aussi communiquer en Wifi. Donc par une magie noire je pouvais faire parler les deux, peux être en répliquant ce que fait l’application de l’ampoule ou je-ne-sais-quoi…
+Mon idée de base était que mon ampoule pouvait communiquer en Wifi, et que l’ESP8266, pouvait lui aussi communiquer en Wifi. Donc par une magie noire, je pouvais faire parler les deux, peux être en répliquant ce que fait l’application de l’ampoule ou je-ne-sais-quoi…
 
 Me rendant compte que j’avais mal jugé la complexité de mon projet et que j’étais un peu perdu, j’ai demandé quelques conseils sur un réseau social très pratique pour poser des questions sur des sujets précis : **Reddit**
 
@@ -78,7 +78,7 @@ _pour la suite de l’article, HomeAssitant sera abrégé sous le terme “HA”
 
 Pour faire la communication entre l’ampoule et _HA_, j’ai fait la découverte d’une app, ou plutôt d’un service s’appelant “**Tuya**”, celui-ci permet déjà de connecter son téléphone à l’ampoule, afin de l’utiliser normalement. Mais en plus de cela, Tuya propose une plateforme web qui permet d’associer son application, à une API, permettant donc, de piloter l’ampoule en utilisant l’API, au lieu de l’app.
 
-Encore mieux, _HA_ possède une intégration permettant d’ajouter facilement un compte Tuya à son écosystème ! Il suffit juste d’y renseigner les informations de son compte Tuya, ainsi que de son projet IoT, et l’intégration s’occupe d’ajouter les appareils présent sur le compte Tuya directement dans _HA_ !
+Encore mieux, _HA_ possède une intégration permettant d’ajouter facilement un compte Tuya à son écosystème ! Il suffit juste d’y renseigner les informations de son compte Tuya, ainsi que de son projet IoT, et l’intégration s’occupe d’ajouter les appareils présents sur le compte Tuya directement dans _HA_ !
 
 ![Untitled](../markdown-img/remotelight/hatuya.png)
 
