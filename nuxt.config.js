@@ -98,6 +98,7 @@ export default {
 
   generate: {
     routes: [
+      "qsmp",
       "/remotelight",
       "/musicbox",
       "/halloween",

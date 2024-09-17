@@ -1,5 +1,25 @@
 [
   {
+    "name": "QSMP",
+    "url": "qsmp",
+    "markdownFolder": "qsmp",
+    "category": "Projet professionnel bénévole",
+    "link": "",
+    "imgColor": "qsmp_logo",
+    "iconLanguage": ["fab", "css3"],
+    "background": "qsmp_banner",
+    "finishDate": "Février 2024",
+    "workTime": "300h",
+    "shortDescription": "PLACEHOLDER",
+    "objectives": [
+      "Concevoir des sites au design exigeant et innovateur",
+      "Travailler avec des délais très restraints",
+      "Se renouveler constamment"
+    ],
+    "languages": ["HTML/CSS", "JS", "Vue3/Nuxt3"],
+    "softwares": ["VSCode", "GitHub"]
+  },
+  {
     "name": "Pico",
     "url": "",
     "category": "Projet perso",
