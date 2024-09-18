@@ -2,7 +2,7 @@ Au cours de l’année 2023 et 2024, j’ai rejoint un projet d’envergure inte
 
 ## Qu’est ce que le QSMP ?
 
-Le QSMP (Quackity Survival MultiPlayer) est un serveur Minecraft créé par Quackity, un streamer mexicain-américain. Il se distingue par son invitation de créateurs de contenu venant de divers horizons et nationalités, notamment espagnole, mexicaine, anglaise, américaine, brésilienne, portugaise et française. Le serveur a rapidement gagné en notoriété et est devenu une référence en matière de serveur et de projet de création de contenu. Son objectif principal était de rester à la pointe de l'innovation pour connecter des communautés internationales. Pour cela, un système de traduction et de sous-titrage en temps réel a été mis en place, permettant à chaque membre de communiquer dans sa langue natale tout en étant compris par tous.
+Le QSMP (Quackity Survival MultiPlayer) est un serveur Minecraft créé par Quackity, un streamer mexicain-américain. Le serveur se distingue par la diversité des créateurs de contenu qui y évoluent, venus des quatre coins de monde. Espagnols, mexicains, anglais, américains, brésiliens, français et plus encore sont réunis au même endroit pour se rencontrer et faire se rencontrer leurs communautés. Le serveur a rapidement gagné en notoriété et est devenu une référence en matière de serveur et de projet de création de contenu. Son objectif principal était de rester à la pointe de l'innovation pour connecter des communautés internationales. Pour cela, un système de traduction et de sous-titrage en temps réel a été mis en place, permettant à chaque membre de communiquer dans sa langue natale tout en étant compris par tous.
 
 Pendant un an, le QSMP a été un serveur extrêmement actif, axé sur les interactions entre les joueurs et sur l’aspect narratif. Ce dernier était au cœur du serveur et, du point de vue des spectateurs, ressemblait à une série en temps réel, avec de nombreux rebondissements, mystères et actions.
 
@@ -84,7 +84,7 @@ La page de vote. Vers la fin de l’événement, QSMP allait proposer directemen
 
 Plusieurs mois après les élections du QSMP, j’ai été contacté pour la réalisation d’un nouveau site, bien plus ambitieux que le précèdent. Il porterait sur un prochain événement principal et déterminant pour le QSMP : la seconde édition du “Purgatoire”
 
-Le “Purgatoire” (ou Purgatory) est un événement très compétitif visant à pousser les capacités et le sang-froid de ses participants à l’extrême. Il se déroule pendant plusieurs jours, et est composé d’épreuves de tout genre, visant à séparer et à créer du conflit, pour qu’à la fin, une équipe, et un jour, puisse y sortir victorieux.
+Le “Purgatoire” (ou Purgatory) est un événement très compétitif visant à pousser les capacités et le sang-froid de ses participants à l’extrême. Il se déroule pendant plusieurs jours, et est composé d’épreuves de tout genre, visant à séparer et à créer du conflit, pour qu'au final, une équipe, ou plutot un joueur, puisse en sortir victorieux.
 
 La particularité de cette seconde édition du Purgatory, et qu’elle était ouverte à des personnes qui ne faisaient pas partie du QSMP. Un grand nombre de créateurs de contenu de toute nationalité ont été invités à l’événement, grâce à un code unique.
 
